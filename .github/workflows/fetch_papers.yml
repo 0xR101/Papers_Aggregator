@@ -1,0 +1,46 @@
+name: Fetch arXiv Papers
+
+on:
+  # Run every day at 08:00 UTC
+  schedule:
+    - cron: "0 8 * * *"
+
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write   # required to push the updated papers.json
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Checkout repository ──────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Set up Python ────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # ── 3. Install dependencies (stdlib only, no pip needed) ────────────────
+      # fetch_papers.py uses only the Python standard library, so no
+      # requirements.txt is needed.  Add a pip install step here if you ever
+      # extend the script with third-party packages.
+
+      # ── 4. Run the fetcher ──────────────────────────────────────────────────
+      - name: Fetch latest papers from arXiv
+        run: python fetch_papers.py
+
+      # ── 5. Commit & push updated papers.json ────────────────────────────────
+      - name: Commit and push papers.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add papers.json
+          # Only commit if there are actual changes
+          git diff --cached --quiet || git commit -m "chore: update papers.json [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git push
