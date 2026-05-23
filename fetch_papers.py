@@ -1,179 +1,143 @@
 #!/usr/bin/env python3
 """
-arXiv Paper Fetcher
-Queries the arXiv API for papers in quantum computing / condensed matter
-and serializes results to papers.json for the static frontend.
+arXiv fetcher — Quantum Computing & Spin Qubits
+Saves results to papers.json
 """
 
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
-import json
-import datetime
-import os
-import sys
+import json, datetime, os, time
 
-# ── Configuration ────────────────────────────────────────────────────────────
+# ── Your field configuration ──────────────────────────────────────────────────
 
-# arXiv categories to search
+# Best arXiv categories for spin qubits + quantum computing
 CATEGORIES = [
-    "quant-ph",
-    "cond-mat.mes-hall",
-    "cond-mat.supr-con",
-    "cond-mat.str-el",
+    "quant-ph",           # quantum physics (main QC category)
+    "cond-mat.mes-hall",  # mesoscale — where spin qubit experiments live
 ]
 
-# Keywords for title/abstract matching (at least one must appear)
+# Focused spin-qubit keywords (title search only — keeps URL short)
 KEYWORDS = [
-    "quantum computing",
-    "qubit",
-    "quantum error correction",
-    "topological qubit",
-    "quantum gate",
-    "quantum circuit",
-    "quantum algorithm",
-    "quantum entanglement",
-    "decoherence",
-    "quantum supremacy",
-    "variational quantum",
-    "quantum annealing",
-    "quantum simulation",
-    "quantum hardware",
-    "superconducting qubit",
-    "trapped ion",
     "spin qubit",
-    "photonic qubit",
-    "quantum advantage",
-    "fault tolerant",
+    "spin-orbit qubit",
+    "hole spin qubit",
+    "singlet triplet qubit",
+    "exchange interaction qubit",
+    "quantum dot qubit",
+    "silicon spin qubit",
+    "germanium spin qubit",
+    "GaAs spin qubit",
+    "two-qubit gate spin",
 ]
 
-MAX_RESULTS = 100          # papers per query
+MAX_RESULTS = 50
 OUTPUT_FILE = "papers.json"
+ARXIV_API   = "https://export.arxiv.org/api/query"
+NS          = {"atom": "http://www.w3.org/2005/Atom"}
+USER_AGENT  = "spin-qubit-aggregator/1.0 (personal research tool)"
 
-ARXIV_API = "https://export.arxiv.org/api/query"
-NS = {"atom": "http://www.w3.org/2005/Atom"}
+# ── Query builder ─────────────────────────────────────────────────────────────
 
+def build_query():
+    cats = " OR ".join(f"cat:{c}" for c in CATEGORIES)
+    kws  = " OR ".join(f'ti:"{k}"' for k in KEYWORDS)
+    return f"({cats}) AND ({kws})"
 
-# ── Query Builder ─────────────────────────────────────────────────────────────
+# ── Fetcher ───────────────────────────────────────────────────────────────────
 
-def build_query() -> str:
-    """Construct a boolean arXiv search query."""
-    cat_clause = " OR ".join(f"cat:{c}" for c in CATEGORIES)
-    kw_clause  = " OR ".join(f'ti:"{k}" OR abs:"{k}"' for k in KEYWORDS)
-    return f"({cat_clause}) AND ({kw_clause})"
-
-
-# ── arXiv Fetcher ─────────────────────────────────────────────────────────────
-
-def fetch_arxiv(query: str, max_results: int = MAX_RESULTS) -> list[dict]:
-    """Fetch papers from arXiv and return a list of structured dicts."""
+def fetch(query):
     params = urllib.parse.urlencode({
         "search_query": query,
         "start":        0,
-        "max_results":  max_results,
+        "max_results":  MAX_RESULTS,
         "sortBy":       "submittedDate",
         "sortOrder":    "descending",
     })
     url = f"{ARXIV_API}?{params}"
-    print(f"[fetch] GET {url[:120]}…")
+    print(f"[fetch] querying arXiv…")
+    print(f"[fetch] {url[:100]}…\n")
 
-    with urllib.request.urlopen(url, timeout=30) as resp:
-        xml_bytes = resp.read()
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
 
-    root    = ET.fromstring(xml_bytes)
-    entries = root.findall("atom:entry", NS)
-    print(f"[fetch] Received {len(entries)} entries")
+    for attempt in range(1, 4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                raw = r.read()
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                wait = 20 * attempt
+                print(f"[warn] rate limited — waiting {wait}s (attempt {attempt}/3)…")
+                time.sleep(wait)
+            else:
+                raise
+    else:
+        raise SystemExit("Still rate-limited after 3 retries. Wait a few minutes and try again.")
+
+    entries = ET.fromstring(raw).findall("atom:entry", NS)
+    print(f"[fetch] {len(entries)} papers returned\n")
 
     papers = []
-    for entry in entries:
-        paper = parse_entry(entry)
-        if paper:
-            papers.append(paper)
+    for e in entries:
+        try:
+            abs_url = next(
+                (l.get("href","") for l in e.findall("atom:link", NS) if l.get("rel") == "alternate"),
+                ""
+            )
+            if not abs_url:
+                continue
+
+            papers.append({
+                "id":         abs_url.split("/abs/")[-1],
+                "title":      (e.findtext("atom:title",   "", NS) or "").strip().replace("\n", " "),
+                "authors":    [a.findtext("atom:name", "", NS).strip() for a in e.findall("atom:author", NS)],
+                "abstract":   (e.findtext("atom:summary", "", NS) or "").strip().replace("\n", " "),
+                "date":       (e.findtext("atom:published","", NS) or "")[:10],
+                "abs_url":    abs_url,
+                "pdf_url":    abs_url.replace("/abs/", "/pdf/") + ".pdf",
+                "categories": [c.get("term","") for c in e.findall("atom:category", NS)],
+            })
+        except Exception as ex:
+            print(f"[warn] skipped one entry: {ex}")
 
     return papers
-
-
-def parse_entry(entry: ET.Element) -> dict | None:
-    """Extract metadata from a single <entry> element."""
-    try:
-        title    = (entry.findtext("atom:title",   "", NS) or "").strip().replace("\n", " ")
-        abstract = (entry.findtext("atom:summary", "", NS) or "").strip().replace("\n", " ")
-        pub_date = (entry.findtext("atom:published","", NS) or "")[:10]  # YYYY-MM-DD
-        updated  = (entry.findtext("atom:updated",  "", NS) or "")[:10]
-
-        # Authors
-        authors = [
-            a.findtext("atom:name", "", NS).strip()
-            for a in entry.findall("atom:author", NS)
-        ]
-
-        # Links – prefer the abs page; derive PDF from it
-        abs_url = pdf_url = ""
-        for link in entry.findall("atom:link", NS):
-            rel  = link.get("rel", "")
-            href = link.get("href", "")
-            typ  = link.get("type", "")
-            if rel == "alternate":
-                abs_url = href
-            elif "pdf" in typ or "pdf" in href:
-                pdf_url = href
-
-        if not abs_url:
-            return None
-
-        if not pdf_url and abs_url:
-            pdf_url = abs_url.replace("/abs/", "/pdf/") + ".pdf"
-
-        # arXiv ID
-        arxiv_id = abs_url.split("/abs/")[-1] if "/abs/" in abs_url else ""
-
-        # Categories
-        cats = [
-            c.get("term", "")
-            for c in entry.findall("atom:category", NS)
-        ]
-
-        return {
-            "id":         arxiv_id,
-            "title":      title,
-            "authors":    authors,
-            "abstract":   abstract,
-            "date":       pub_date,
-            "updated":    updated,
-            "abs_url":    abs_url,
-            "pdf_url":    pdf_url,
-            "categories": cats,
-        }
-    except Exception as exc:
-        print(f"[warn] Failed to parse entry: {exc}", file=sys.stderr)
-        return None
-
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    query  = build_query()
-    papers = fetch_arxiv(query)
+    # Polite delay — arXiv recommends ~3s between requests
+    print("[info] waiting 3s before request (arXiv rate limit courtesy)…")
+    time.sleep(3)
 
-    # Deduplicate by arXiv ID
+    papers = fetch(build_query())
+
+    # Deduplicate
     seen, unique = set(), []
     for p in papers:
         if p["id"] not in seen:
             seen.add(p["id"])
             unique.append(p)
 
-    payload = {
-        "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
-        "total":        len(unique),
-        "papers":       unique,
-    }
+    # Print preview
+    print("─" * 60)
+    for p in unique[:5]:
+        print(f"  {p['date']}  {p['title'][:70]}")
+    if len(unique) > 5:
+        print(f"  … and {len(unique)-5} more")
+    print("─" * 60)
 
-    out_path = os.path.join(os.path.dirname(__file__), OUTPUT_FILE)
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    # Save
+    out = os.path.join(os.path.dirname(os.path.abspath(__file__)), OUTPUT_FILE)
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump({
+            "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+            "total":        len(unique),
+            "papers":       unique,
+        }, f, ensure_ascii=False, indent=2)
 
-    print(f"[done] Wrote {len(unique)} papers → {out_path}")
-
+    print(f"\n[done] saved {len(unique)} papers → {out}")
+    print(f"[next] run:  python3 -m http.server 8080  then open http://localhost:8080")
 
 if __name__ == "__main__":
     main()

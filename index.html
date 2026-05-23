@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <style>
-    /* ── Design tokens ──────────────────────────────────────────────────────── */
+    /* ── Design tokens — dark (default) ────────────────────────────────────── */
     :root {
       --bg:        #09090f;
       --surface:   #10101a;
@@ -30,8 +30,52 @@
       --muted:     #7070a0;
       --tag-bg:    #1e1e36;
       --tag-text:  #9898d0;
+      --abstract:  #a0a0c0;
       --red:       #f87171;
       --green:     #34d399;
+    }
+
+    /* ── Design tokens — light ──────────────────────────────────────────────── */
+    html.light {
+      --bg:        #f5f5fa;
+      --surface:   #ffffff;
+      --surface2:  #eeeef6;
+      --border:    #d4d4e8;
+      --accent:    #4355e8;
+      --accent2:   #7c3aed;
+      --glow:      rgba(67, 85, 232, 0.12);
+      --text:      #1a1a2e;
+      --muted:     #6060a0;
+      --tag-bg:    #ebebf8;
+      --tag-text:  #5050a0;
+      --abstract:  #444466;
+      --red:       #dc2626;
+      --green:     #059669;
+    }
+
+    /* ── Theme toggle button ────────────────────────────────────────────────── */
+    #theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      z-index: 100;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    #theme-toggle:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--glow);
+      transform: scale(1.08);
     }
 
     /* ── Reset & base ───────────────────────────────────────────────────────── */
@@ -45,6 +89,7 @@
       color: var(--text);
       min-height: 100vh;
       overflow-x: hidden;
+      transition: background 0.25s, color 0.25s;
     }
 
     /* ── Background grid ────────────────────────────────────────────────────── */
@@ -84,7 +129,7 @@
       font-family: 'DM Serif Display', serif;
       font-size: clamp(2.4rem, 6vw, 3.8rem);
       line-height: 1.1;
-      background: linear-gradient(135deg, #e4e4f0 20%, var(--accent2) 80%);
+      background: linear-gradient(135deg, var(--text) 20%, var(--accent2) 80%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -261,7 +306,7 @@
 
     .paper-abstract {
       font-size: 0.88rem;
-      color: #a0a0c0;
+      color: var(--abstract);
       line-height: 1.7;
       margin-bottom: 16px;
       display: -webkit-box;
@@ -382,6 +427,7 @@
 </head>
 
 <body>
+<button id="theme-toggle" title="Toggle light/dark mode">🌙</button>
 <div class="page">
 
   <!-- ── Header ──────────────────────────────────────────────────────────── -->
@@ -435,6 +481,24 @@
 </div><!-- /.page -->
 
 <script>
+/* ── Theme toggle ────────────────────────────────────────────────────────────── */
+const toggleBtn = document.getElementById("theme-toggle");
+
+function applyTheme(light) {
+  document.documentElement.classList.toggle("light", light);
+  toggleBtn.textContent = light ? "🌙" : "☀️";
+  localStorage.setItem("theme", light ? "light" : "dark");
+}
+
+// Load saved preference, or fall back to system preference
+const saved = localStorage.getItem("theme");
+const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+applyTheme(saved ? saved === "light" : prefersLight);
+
+toggleBtn.addEventListener("click", () => {
+  applyTheme(!document.documentElement.classList.contains("light"));
+});
+
 /* ── State ──────────────────────────────────────────────────────────────────── */
 let allPapers   = [];
 let activeQuery = "";
