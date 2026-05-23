@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Papers — arXiv Aggregator</title>
+
+  <!-- KaTeX for LaTeX rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+          onload="renderMathInPage()"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Design tokens ──────────────────────────────────────────────────────── */
+    :root {
+      --bg:        #09090f;
+      --surface:   #10101a;
+      --surface2:  #17172a;
+      --border:    #252540;
+      --accent:    #5b6af5;
+      --accent2:   #a78bfa;
+      --glow:      rgba(91, 106, 245, 0.18);
+      --text:      #e4e4f0;
+      --muted:     #7070a0;
+      --tag-bg:    #1e1e36;
+      --tag-text:  #9898d0;
+      --red:       #f87171;
+      --green:     #34d399;
+    }
+
+    /* ── Reset & base ───────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── Background grid ────────────────────────────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 48px 48px;
+      opacity: 0.35;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Layout wrapper ─────────────────────────────────────────────────────── */
+    .page { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 0 24px 80px; }
+
+    /* ── Header ─────────────────────────────────────────────────────────────── */
+    header {
+      padding: 64px 0 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .header-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      line-height: 1.1;
+      background: linear-gradient(135deg, #e4e4f0 20%, var(--accent2) 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1rem;
+      font-weight: 300;
+      max-width: 560px;
+      line-height: 1.6;
+      margin-top: 4px;
+    }
+
+    /* ── Stats bar ──────────────────────────────────────────────────────────── */
+    .stats-bar {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .stat span {
+      color: var(--accent2);
+      font-weight: 500;
+    }
+
+    .dot { color: var(--border); }
+
+    /* ── Search & filters ───────────────────────────────────────────────────── */
+    .controls {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    #search {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    #search:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--glow);
+    }
+    #search::placeholder { color: var(--muted); }
+
+    .filter-btn {
+      padding: 10px 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover   { border-color: var(--accent); color: var(--text); }
+    .filter-btn.active  { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* ── Sort select ────────────────────────────────────────────────────────── */
+    #sort-select {
+      padding: 10px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    #sort-select:focus { border-color: var(--accent); }
+    #sort-select option { background: var(--surface2); }
+
+    /* ── Result count ───────────────────────────────────────────────────────── */
+    #result-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 20px;
+      min-height: 18px;
+    }
+    #result-count strong { color: var(--accent2); }
+
+    /* ── Paper card ─────────────────────────────────────────────────────────── */
+    #papers-list { display: flex; flex-direction: column; gap: 16px; }
+
+    .paper-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 28px;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      animation: fadeUp 0.4s ease both;
+    }
+    .paper-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 24px var(--glow);
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .paper-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+
+    .paper-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      color: var(--text);
+      text-decoration: none;
+      flex: 1;
+    }
+    .paper-title:hover { color: var(--accent2); }
+
+    .paper-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--muted);
+      white-space: nowrap;
+      margin-top: 4px;
+    }
+
+    .paper-authors {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .paper-authors em { font-style: normal; color: var(--tag-text); }
+
+    .paper-abstract {
+      font-size: 0.88rem;
+      color: #a0a0c0;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      transition: -webkit-line-clamp 0.3s;
+    }
+    .paper-abstract.expanded {
+      display: block;
+    }
+
+    .paper-footer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      padding: 3px 8px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 5px;
+      border: 1px solid transparent;
+      letter-spacing: 0.03em;
+    }
+    .tag.primary { border-color: var(--accent); color: var(--accent2); }
+
+    .paper-links {
+      display: flex;
+      gap: 8px;
+      margin-left: auto;
+    }
+
+    .link-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      padding: 5px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: all 0.2s;
+    }
+    .link-btn.abs {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid var(--border);
+    }
+    .link-btn.abs:hover { border-color: var(--accent2); color: var(--accent2); }
+
+    .link-btn.pdf {
+      background: var(--accent);
+      color: #fff;
+      border: 1px solid var(--accent);
+    }
+    .link-btn.pdf:hover { background: var(--accent2); border-color: var(--accent2); }
+
+    .expand-btn {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      cursor: pointer;
+      padding: 0;
+      letter-spacing: 0.05em;
+    }
+    .expand-btn:hover { color: var(--accent2); }
+
+    /* ── Empty / loading states ─────────────────────────────────────────────── */
+    .state-msg {
+      text-align: center;
+      padding: 80px 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .state-msg .icon { font-size: 2.5rem; margin-bottom: 12px; opacity: 0.5; }
+    .state-msg strong { display: block; color: var(--text); margin-top: 8px; font-size: 1rem; }
+
+    /* ── Spinner ────────────────────────────────────────────────────────────── */
+    .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 80px auto;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Footer ─────────────────────────────────────────────────────────────── */
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { color: var(--accent2); }
+
+    /* ── Responsive ─────────────────────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .paper-header { flex-direction: column; }
+      .paper-links  { margin-left: 0; }
+      .controls     { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ── Header ──────────────────────────────────────────────────────────── -->
+  <header>
+    <span class="header-eyebrow">arXiv · Daily digest</span>
+    <h1>Quantum Papers</h1>
+    <p>
+      Automated aggregation of the latest research in quantum computing,
+      condensed matter, and quantum hardware — refreshed every morning.
+    </p>
+  </header>
+
+  <!-- ── Stats bar ───────────────────────────────────────────────────────── -->
+  <div class="stats-bar" id="stats-bar">
+    <span class="stat">Loading…</span>
+  </div>
+
+  <!-- ── Controls ────────────────────────────────────────────────────────── -->
+  <div class="controls">
+    <div class="search-wrap">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="search" type="search" placeholder="Search titles, authors, abstracts…" autocomplete="off" />
+    </div>
+
+    <button class="filter-btn active" data-cat="all">All</button>
+    <button class="filter-btn" data-cat="quant-ph">quant-ph</button>
+    <button class="filter-btn" data-cat="cond-mat">cond-mat</button>
+
+    <select id="sort-select" aria-label="Sort order">
+      <option value="date-desc">Newest first</option>
+      <option value="date-asc">Oldest first</option>
+      <option value="alpha">A → Z</option>
+    </select>
+  </div>
+
+  <div id="result-count"></div>
+
+  <!-- ── Papers list ─────────────────────────────────────────────────────── -->
+  <div id="papers-list">
+    <div class="spinner" id="spinner"></div>
+  </div>
+
+  <!-- ── Footer ──────────────────────────────────────────────────────────── -->
+  <footer>
+    <span>Powered by <a href="https://arxiv.org" target="_blank" rel="noopener">arXiv</a>
+      &amp; <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></span>
+    <span id="footer-updated"></span>
+  </footer>
+
+</div><!-- /.page -->
+
+<script>
+/* ── State ──────────────────────────────────────────────────────────────────── */
+let allPapers   = [];
+let activeQuery = "";
+let activeCat   = "all";
+let activeSort  = "date-desc";
+
+/* ── DOM refs ───────────────────────────────────────────────────────────────── */
+const listEl    = document.getElementById("papers-list");
+const searchEl  = document.getElementById("search");
+const countEl   = document.getElementById("result-count");
+const statsEl   = document.getElementById("stats-bar");
+const sortEl    = document.getElementById("sort-select");
+const footerEl  = document.getElementById("footer-updated");
+
+/* ── Fetch papers.json ──────────────────────────────────────────────────────── */
+async function loadPapers() {
+  try {
+    const resp = await fetch("papers.json");
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+
+    allPapers = data.papers || [];
+
+    // Stats bar
+    const updated = data.generated_at
+      ? new Date(data.generated_at).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })
+      : "—";
+
+    statsEl.innerHTML = `
+      <span class="stat">Total <span>${data.total ?? allPapers.length}</span> papers</span>
+      <span class="dot">·</span>
+      <span class="stat">Last updated <span>${updated}</span></span>
+    `;
+    footerEl.textContent = `Updated: ${updated}`;
+
+    renderPapers();
+  } catch (err) {
+    listEl.innerHTML = `
+      <div class="state-msg">
+        <div class="icon">⚠️</div>
+        <strong>Could not load papers.json</strong>
+        <p style="margin-top:8px;font-size:.82rem;">
+          Run <code>python fetch_papers.py</code> locally, or wait for the GitHub Action to run.
+        </p>
+      </div>`;
+    statsEl.innerHTML = `<span class="stat" style="color:var(--red)">papers.json not found</span>`;
+  }
+}
+
+/* ── Filter + sort pipeline ─────────────────────────────────────────────────── */
+function applyFilters(papers) {
+  let out = papers;
+
+  // Category filter
+  if (activeCat !== "all") {
+    out = out.filter(p =>
+      (p.categories || []).some(c => c.startsWith(activeCat))
+    );
+  }
+
+  // Search query
+  if (activeQuery) {
+    const q = activeQuery.toLowerCase();
+    out = out.filter(p => {
+      const titleMatch    = (p.title    || "").toLowerCase().includes(q);
+      const authorMatch   = (p.authors  || []).join(" ").toLowerCase().includes(q);
+      const abstractMatch = (p.abstract || "").toLowerCase().includes(q);
+      return titleMatch || authorMatch || abstractMatch;
+    });
+  }
+
+  // Sort
+  if (activeSort === "date-desc") {
+    out = [...out].sort((a,b) => (b.date || "").localeCompare(a.date || ""));
+  } else if (activeSort === "date-asc") {
+    out = [...out].sort((a,b) => (a.date || "").localeCompare(b.date || ""));
+  } else if (activeSort === "alpha") {
+    out = [...out].sort((a,b) => (a.title || "").localeCompare(b.title || ""));
+  }
+
+  return out;
+}
+
+/* ── Render ─────────────────────────────────────────────────────────────────── */
+function renderPapers() {
+  const filtered = applyFilters(allPapers);
+
+  countEl.innerHTML = activeQuery
+    ? `<strong>${filtered.length}</strong> result${filtered.length !== 1 ? "s" : ""} for "<em>${escHtml(activeQuery)}</em>"`
+    : `Showing <strong>${filtered.length}</strong> of ${allPapers.length} papers`;
+
+  if (filtered.length === 0) {
+    listEl.innerHTML = `
+      <div class="state-msg">
+        <div class="icon">🔭</div>
+        <strong>No papers match your query.</strong>
+        <p style="margin-top:8px;font-size:.82rem;">Try broader search terms or a different category.</p>
+      </div>`;
+    return;
+  }
+
+  listEl.innerHTML = filtered.map((p, idx) => paperCardHTML(p, idx)).join("");
+
+  // Attach expand listeners
+  listEl.querySelectorAll(".expand-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const abs = btn.closest(".paper-card").querySelector(".paper-abstract");
+      const expanded = abs.classList.toggle("expanded");
+      btn.textContent = expanded ? "[ collapse ]" : "[ expand ]";
+    });
+  });
+
+  // Re-render KaTeX in new cards
+  if (window.renderMathInPage) renderMathInPage();
+}
+
+/* ── Card template ───────────────────────────────────────────────────────────── */
+function paperCardHTML(p, idx) {
+  const authors   = (p.authors || []).slice(0, 4).map(escHtml);
+  const moreAuth  = (p.authors || []).length > 4 ? ` <em>+${p.authors.length - 4} more</em>` : "";
+  const cats      = (p.categories || []).slice(0, 3);
+  const primaryCat = cats[0] || "";
+
+  const catTags = cats.map((c, i) =>
+    `<span class="tag${i === 0 ? " primary" : ""}">${escHtml(c)}</span>`
+  ).join("");
+
+  const animDelay = Math.min(idx * 35, 500);
+
+  return `
+  <article class="paper-card" style="animation-delay:${animDelay}ms">
+    <div class="paper-header">
+      <a class="paper-title" href="${escHtml(p.abs_url || '#')}" target="_blank" rel="noopener">
+        ${escHtml(p.title || "Untitled")}
+      </a>
+      <div class="paper-date">${escHtml(p.date || "")}</div>
+    </div>
+
+    <div class="paper-authors">
+      ${authors.join(", ")}${moreAuth}
+    </div>
+
+    <div class="paper-abstract">
+      ${escHtml(p.abstract || "")}
+    </div>
+
+    <div class="paper-footer">
+      ${catTags}
+      <button class="expand-btn">[ expand ]</button>
+      <div class="paper-links">
+        <a class="link-btn abs" href="${escHtml(p.abs_url || '#')}" target="_blank" rel="noopener">abs</a>
+        <a class="link-btn pdf" href="${escHtml(p.pdf_url || '#')}" target="_blank" rel="noopener">pdf ↗</a>
+      </div>
+    </div>
+  </article>`;
+}
+
+/* ── KaTeX auto-render ───────────────────────────────────────────────────────── */
+function renderMathInPage() {
+  if (!window.renderMathInElement) return;
+  renderMathInElement(listEl, {
+    delimiters: [
+      { left: "$$", right: "$$", display: true  },
+      { left: "$",  right: "$",  display: false },
+      { left: "\\(", right: "\\)", display: false },
+      { left: "\\[", right: "\\]", display: true  },
+    ],
+    throwOnError: false,
+  });
+}
+
+/* ── Utility ─────────────────────────────────────────────────────────────────── */
+function escHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/* ── Event listeners ─────────────────────────────────────────────────────────── */
+let debounceTimer;
+searchEl.addEventListener("input", () => {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(() => {
+    activeQuery = searchEl.value.trim();
+    renderPapers();
+  }, 200);
+});
+
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeCat = btn.dataset.cat;
+    renderPapers();
+  });
+});
+
+sortEl.addEventListener("change", () => {
+  activeSort = sortEl.value;
+  renderPapers();
+});
+
+/* ── Boot ────────────────────────────────────────────────────────────────────── */
+loadPapers();
+</script>
+</body>
+</html>
