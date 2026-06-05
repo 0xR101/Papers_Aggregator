@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T12:06:14.039010Z",
+  "generated_at": "2026-06-05T11:29:51.722897Z",
   "total": 50,
   "papers": [
     {
@@ -937,7 +937,7 @@
       ]
     },
     {
-      "id": "2512.14508v1",
+      "id": "2512.14508v2",
       "title": "Electrically tunable spin qubits in strain-engineered graphene p-n junctions",
       "authors": [
         "Myung-Chul Jung",
@@ -945,8 +945,8 @@
       ],
       "abstract": "Strain engineering enables quantum confinement in pristine graphene without degrading its intrinsic mobility and spin coherence. Here, we extend previously proposed strain-induced charge-qubit architectures by incorporating spin degrees of freedom through Rashba spin-orbit coupling (RSOC) and Zeeman fields, enabling spin-qubit operation in single-layer graphene (SLG). In a graphene p-n junction, a strain-induced nanobubble generates a pseudo-magnetic field that forms double quantum dots with gate-tunable level hybridization. Tight-binding quantum transport simulations and a four-band model reveal two distinct avoided crossings: spin-conserving gaps at zero detuning and spin-flip gaps at finite detuning, the latter increasing with SOC strength while the former decreases. Time-domain simulations confirm detuning-dependent Rabi oscillations corresponding to these two operational regimes. These results demonstrate that strain-induced confinement combined with tunable SOC provides a viable mechanism for coherent spin manipulation in pristine graphene, positioning strained SLG as a promising platform for scalable spin-based quantum technologies.",
       "date": "2025-12-16",
-      "abs_url": "https://arxiv.org/abs/2512.14508v1",
-      "pdf_url": "https://arxiv.org/pdf/2512.14508v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2512.14508v2",
+      "pdf_url": "https://arxiv.org/pdf/2512.14508v2.pdf",
       "categories": [
         "cond-mat.mes-hall",
         "cond-mat.mtrl-sci",
