@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-06-07T10:30:44.687432Z",
+  "generated_at": "2026-06-08T12:32:19.020048Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.07472v1",
+      "title": "Driving Exchange Interaction in Spin Qubits with Quasi-Zero Pulses",
+      "authors": [
+        "Julian D. Teske",
+        "Remy L. Delva",
+        "Shobhan Kulshreshtha",
+        "Yuval Baum",
+        "Florian Luthi",
+        "Fahd A. Mohiyaddin",
+        "Rostyslav Savytskyy",
+        "Thomas Watson",
+        "Pranav S. Mundada"
+      ],
+      "abstract": "The implementation of high-fidelity quantum gates for spin qubits requires accurate control of exchange interactions between electrons confined in quantum dots, but pulse distortions can limit this control accuracy. Although linear-dynamical distortions can be compensated for by appropriately convolving the control signal, determining the necessary convolution requires detailed knowledge of the distortion's transfer function, and therefore the calibration of numerous parameters. Alternatively, control pulses can be designed to have a net-zero time integral canceling out linear-dynamical pulse distortions. We generalize net-zero pulse designs to quasi-zero pulses allowing net-positive but reduced time integrals. Using these pulse designs, we systematically develop complete gate sets for exchange-only qubits, and study the resulting tradeoffs between pulse duration, fidelity, and the required number of tunable parameters, both in simulation and experiment. We benchmark the optimized gate pulses on Intel's Tunnel Falls six-dot device and show they achieve fidelities similar to those obtained with a full filtering approach, with identical pulse durations and fewer tuning parameters. This reduction in complexity opens the door to fast and easily automated calibration schemes compatible with large-scale commercial quantum devices.",
+      "date": "2026-06-05",
+      "abs_url": "https://arxiv.org/abs/2606.07472v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.07472v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2606.00824v1",
       "title": "Quantum control of spin qubits using SOT-driven nanomagnets",
@@ -934,23 +957,6 @@
       "categories": [
         "cond-mat.mes-hall",
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2512.14508v2",
-      "title": "Electrically tunable spin qubits in strain-engineered graphene p-n junctions",
-      "authors": [
-        "Myung-Chul Jung",
-        "Nojoon Myoung"
-      ],
-      "abstract": "Strain engineering enables quantum confinement in pristine graphene without degrading its intrinsic mobility and spin coherence. Here, we extend previously proposed strain-induced charge-qubit architectures by incorporating spin degrees of freedom through Rashba spin-orbit coupling (RSOC) and Zeeman fields, enabling spin-qubit operation in single-layer graphene (SLG). In a graphene p-n junction, a strain-induced nanobubble generates a pseudo-magnetic field that forms double quantum dots with gate-tunable level hybridization. Tight-binding quantum transport simulations and a four-band model reveal two distinct avoided crossings: spin-conserving gaps at zero detuning and spin-flip gaps at finite detuning, the latter increasing with SOC strength while the former decreases. Time-domain simulations confirm detuning-dependent Rabi oscillations corresponding to these two operational regimes. These results demonstrate that strain-induced confinement combined with tunable SOC provides a viable mechanism for coherent spin manipulation in pristine graphene, positioning strained SLG as a promising platform for scalable spin-based quantum technologies.",
-      "date": "2025-12-16",
-      "abs_url": "https://arxiv.org/abs/2512.14508v2",
-      "pdf_url": "https://arxiv.org/pdf/2512.14508v2.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "cond-mat.mtrl-sci",
-        "physics.comp-ph"
       ]
     }
   ]
