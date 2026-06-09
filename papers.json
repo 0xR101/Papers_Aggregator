@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-06-08T12:32:19.020048Z",
+  "generated_at": "2026-06-09T11:17:40.597813Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.08874v1",
+      "title": "Impact of gate-voltage noise on silicon spin-qubit variational quantum eigensolvers",
+      "authors": [
+        "Xinning Wang",
+        "Bohdan Khromets",
+        "Zachery Merino",
+        "Jonathan Baugh"
+      ],
+      "abstract": "Quantum computers offer a route to outperform classical methods in tasks such as molecular simulation, motivating hybrid algorithms like the Variational Quantum Eigensolver (VQE) for near-term devices. Silicon spin qubits are a promising platform for scalable quantum computation, but their performance is limited by hardware imperfections -- most notably charge-noise-induced potential fluctuations and static miscalibration of gate-electrode voltages -- which degrade quantum gate fidelities and, ultimately, algorithmic accuracy. Here we develop a hardware-algorithm co-simulation framework for silicon quantum-dot processors that links 3D electrostatics to effective $g$-factors and exchange couplings, and propagates voltage-level noise through realistic control pulses. Using VQE for $\\mathrm{H}_2$ ground-state energy estimation as a circuit-level testbed, we study both static scaling/offset errors on the gate-electrode voltages and stochastic fluctuations modeled as random-telegraph noise with tunable amplitudes and switching times. At the gate level, we show that exchange-based two-qubit gates are roughly an order of magnitude more sensitive to these types of noise than ESR-driven single-qubit rotations. Quantum process tomography and Kraus-operator analysis further distinguish coherent and incoherent contributions and quantify the fraction of error that is, in principle, correctable by a compensating unitary. Embedding these noise models into the VQE circuit, we identify regimes of miscalibration strength and noise switching time compatible with chemically accurate energy estimates, and discuss how statistical post-processing based on the full distribution of noisy energy estimates could further improve accuracy.",
+      "date": "2026-06-07",
+      "abs_url": "https://arxiv.org/abs/2606.08874v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.08874v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2606.07472v1",
       "title": "Driving Exchange Interaction in Spin Qubits with Quasi-Zero Pulses",
@@ -941,22 +959,6 @@
       "pdf_url": "https://arxiv.org/pdf/2512.20758v1.pdf",
       "categories": [
         "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2512.19785v1",
-      "title": "Micromagnet-free operation of electron spin qubits in Si/Si$_{1-x}$Ge$_x$ vertical double quantum dots",
-      "authors": [
-        "Abhikbrata Sarkar",
-        "Daniel Loss"
-      ],
-      "abstract": "We study a vertical double quantum dot (DQD) in a Si/Si$_{1-x}$Ge$_x$/Si double-well heterostructure for full electrical control of electron Loss-DiVincenzo (LD) spin qubits, using realistic device modeling and numerical simulations. Due to the emerging spin-orbit interaction in the DQD, as well as strain from the gate electrodes, small (percentage range) but finite $g$ tensor variations emerge. In addition, we find a large valley splitting, on the order of $E_v{\\sim}250\\,μ$eV. As a result, multiple avenues for fast electrical single qubit rotations emerge. An ac electric field gives rise to electric dipole spin resonance (EDSR), while electron spin resonance (ESR) in the presence of an ac magnetic field can be electrically controlled by local gates due to varying $g$ factors in DQDs. We also show that shuttling between neighboring dots, in vertical and horizontal direction, results in ultrafast single qubit gates of less than a nanosecond. Remarkably, this DQD architecture completely eliminates the need for micromagnets, significantly facilitating the scalability of LD spin qubits in semiconductor foundries.",
-      "date": "2025-12-22",
-      "abs_url": "https://arxiv.org/abs/2512.19785v1",
-      "pdf_url": "https://arxiv.org/pdf/2512.19785v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
       ]
     }
   ]
