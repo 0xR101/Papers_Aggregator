@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-06-14T10:49:41.937336Z",
+  "generated_at": "2026-06-15T13:57:10.461691Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.14683v1",
+      "title": "Quantum geometrical description of hole spin qubits far away from the $Γ$-point",
+      "authors": [
+        "Zoltán György",
+        "Dmitry Miserev",
+        "Jelena Klinovaja",
+        "Daniel Loss"
+      ],
+      "abstract": "Hole spin qubits provide one of the leading platforms for spin-based quantum computing due to their large intrinsic spin-orbit interaction (SOI), which enables fast electrical manipulation. The SOI of planar quantum dots has mostly been investigated in theoretical studies by examining the SOI already present in the two-dimensional hole gas (2DHG). Here, we study the SOI created by the in-plane confinement by deriving non-perturbative effective Hamiltonians numerically for hole spin qubits. We find that the quantum geometry of the 2DHG naturally emerges, leading to a meaningful non-perturbative definition of pseudospin valid far away from the $Γ$-point. The SOI of the 2DHG and of the in-plane confinement have different forms; therefore, they cannot be turned off simultaneously, ruining the perfect spin-orbit switch functionality of spin qubits. We construct effective Hamiltonians using the symmetry approach for various low-dimensional hole systems: (i) a heavy-hole confined in a SiGe/Ge/SiGe heterostructure, (ii) a light-hole confined in SnGe/Ge, (iii) a gate-defined nanowire in SiGe/Ge/SiGe, and (iv) a hole confined in a Ge/Si core/shell nanowire. The non-perturbative effective Hamiltonians provide results with excellent agreement with the full Hamiltonians.",
+      "date": "2026-06-12",
+      "abs_url": "https://arxiv.org/abs/2606.14683v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14683v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2606.08874v1",
       "title": "Impact of gate-voltage noise on silicon spin-qubit variational quantum eigensolvers",
@@ -926,39 +944,6 @@
       "pdf_url": "https://arxiv.org/pdf/2512.21462v3.pdf",
       "categories": [
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2512.20758v1",
-      "title": "Long coherence silicon spin qubit fabricated in a 300 mm industrial foundry",
-      "authors": [
-        "Petar Tomić",
-        "Patrick Bütler",
-        "Yuze Wu",
-        "Bart Raes",
-        "Clement Godfrin",
-        "Stefan Kubicek",
-        "Julien Jussot",
-        "Yann Canvel",
-        "Yannick Hermans",
-        "Yosuke Shimura",
-        "Roger Loo",
-        "Sofie Beyne",
-        "Gulzat Jaliel",
-        "Thomas Van Caekenberghe",
-        "Vukan Levajac",
-        "Danny Wan",
-        "Kristiaan De Greve",
-        "Wister Wei Huang",
-        "Klaus Ensslin",
-        "Thomas Ihn"
-      ],
-      "abstract": "Silicon spin qubits offer long coherence times, a compact footprint and compatibility with industrial CMOS manufacturing. Here, we investigate spin qubits hosted in quantum dots fabricated in a state-of-the-art 300 mm nanoelectronics foundry and demonstrate substantially enhanced coherence, achieving a Hahn-echo time of $T_2^{\\text{Hahn}} = 4\\,\\mathrm{ms}$ for singlet--triplet oscillations. Employing noise spectroscopy and noise correlation measurements, we identify detuning noise with an amplitude of $δ\\varepsilon_{\\mathrm{rms}} = 2.2\\,μ\\mathrm{eV}$ (integrated over 90 s) and observe strong zero-phase correlations between two spatially separated spin qubits. The singlet--triplet basis intrinsically rejects these common-mode fluctuations, yielding a pronounced suppression of dephasing. Our results suggest that exploiting the versatility of silicon quantum dots to adapt the qubit encoding to the microscopic noise landscape represents a promising strategy for advancing scalable quantum information processing.",
-      "date": "2025-12-23",
-      "abs_url": "https://arxiv.org/abs/2512.20758v1",
-      "pdf_url": "https://arxiv.org/pdf/2512.20758v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall"
       ]
     }
   ]
