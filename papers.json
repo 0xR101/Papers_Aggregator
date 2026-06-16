@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-06-15T13:57:10.461691Z",
+  "generated_at": "2026-06-16T12:54:57.655899Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.15711v1",
+      "title": "Mapping the Stability of Spin Qubits in Superconducting Pseudogap Systems",
+      "authors": [
+        "Chen-How Huang",
+        "Miguel A. Cazalilla"
+      ],
+      "abstract": "Superconducting spin qubits, realized as Yu-Shiba-Rusinov spin-doublet states in quantum-dot-superconductor systems, represent a cornerstone of current research in quantum technologies. We analyze these ground states of quantum impurities in superconducting pseudogap systems, namely systems with a pseudogap tunneling density of states $ρ(ε) \\sim |ε|^r$ for energies $|ε|\\gg Δ$ ($Δ$ being a $s$-wave pairing potential). For $r=1$, these hosts are realized as Dirac materials (graphene or 3D topological insulator surfaces) in proximity to conventional superconductors, or as $d+i s$ superconductors. Using effective field theory and numerical renormalization group, we map the phase diagram against the pseudogap exponent $r > 0$ and particle-hole symmetry-breaking perturbations. At particle-hole symmetry, increasing $r$ also increases the critical value, $J_c$, of the Kondo coupling that triggers the transition from spin doublet to singlet. Unlike the gapless pseudogap Kondo systems, numerical and analytical evidence suggest that Andreev reflection stabilizes a singlet ground state at $J$ for all $r > 0$. Breaking particle-hole symmetry -- by potential scattering or chemical potential -- eventually restores the transition at lower $J_c$. Our results indicate that coupling to superconducting hosts with large pseudogap exponents enhances the stability of spin qubits at large Kondo coupling.",
+      "date": "2026-06-14",
+      "abs_url": "https://arxiv.org/abs/2606.15711v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.15711v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.mtrl-sci",
+        "cond-mat.str-el",
+        "cond-mat.supr-con"
+      ]
+    },
     {
       "id": "2606.14683v1",
       "title": "Quantum geometrical description of hole spin qubits far away from the $Γ$-point",
@@ -921,28 +939,6 @@
       "pdf_url": "https://arxiv.org/pdf/2512.21930v1.pdf",
       "categories": [
         "cond-mat.mtrl-sci",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2512.21462v3",
-      "title": "Electrical Control of Optically Active Single Spin Qubits in ZnSe",
-      "authors": [
-        "Amirehsan Alizadehherfati",
-        "Yuxi Jiang",
-        "Nils von den Driesch",
-        "Christine Falter",
-        "Yurii Kutovyi",
-        "Jasvith Raj Basani",
-        "Amirehsan Boreiri",
-        "Alexander Pawlis",
-        "Edo Waks"
-      ],
-      "abstract": "Electrons bound to shallow donors in ZnSe quantum wells are promising candidates for optically addressable spin qubits and single-photon sources. However, their optical coherence and indistinguishability are often limited by spectral broadening arising from charge fluctuations in the local environment. Here, we report electrical control of single donor qubits in ZnSe quantum wells. The applied field induces a DC Stark shift that tunes the emission energy over a range exceeding 30 times the inhomogeneous linewidth, effectively compensating for emitter-to-emitter variations. Concurrently, the field stabilizes trap occupancy, yielding a twofold reduction in optical linewidth and the suppression of spectral wandering. A statistical model based on trap dynamics qualitatively reproduces these observations and elucidates the mechanism of field-assisted charge noise suppression. Our results identify electrical control as a versatile pathway to significantly improve optical and spin addressability.",
-      "date": "2025-12-25",
-      "abs_url": "https://arxiv.org/abs/2512.21462v3",
-      "pdf_url": "https://arxiv.org/pdf/2512.21462v3.pdf",
-      "categories": [
         "quant-ph"
       ]
     }
