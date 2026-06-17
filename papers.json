@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T12:54:57.655899Z",
+  "generated_at": "2026-06-17T12:17:55.642744Z",
   "total": 50,
   "papers": [
     {
@@ -140,7 +140,7 @@
       ]
     },
     {
-      "id": "2605.27841v1",
+      "id": "2605.27841v2",
       "title": "Coherent Dark State Formation of a Lead-Vacancy Spin Qubit in Diamond",
       "authors": [
         "Yiyang Chen",
@@ -154,10 +154,10 @@
         "Mutsuko Hatano",
         "Takayuki Iwasaki"
       ],
-      "abstract": "A lead-vacancy (PbV) center in diamond exhibits coherent emission above the liquid helium temperature, making it highly attractive for quantum network applications. Here, we report the magneto-optical and spin properties of PbV centers in diamond. We record a spin lifetime of 12 ms at 7.5 K under large off-axis magnetic field. Furthermore, we observe formation of the coherent dark state by coherent population trapping and estimate a spin dephasing time of 354 ns at 6.5 K. This work demonstrates the outstanding thermal robustness of the PbV spin compared to other group-IV centers above 4 K.",
+      "abstract": "A lead-vacancy (PbV) center in diamond exhibits coherent emission above the liquid helium temperature, making it highly attractive for quantum network applications. Here, we report the magneto-optical and spin properties of PbV centers in diamond. We record a spin lifetime of 12 ms at 7.5 K under large off-axis magnetic field. Furthermore, we observe formation of the coherent dark state by coherent population trapping and estimate a spin dephasing time of 177 ns at 6.5 K. This work demonstrates the outstanding thermal robustness of the PbV spin compared to other group-IV centers above 4 K.",
       "date": "2026-05-27",
-      "abs_url": "https://arxiv.org/abs/2605.27841v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.27841v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2605.27841v2",
+      "pdf_url": "https://arxiv.org/pdf/2605.27841v2.pdf",
       "categories": [
         "quant-ph"
       ]
