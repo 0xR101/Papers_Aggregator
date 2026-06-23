@@ -1,7 +1,52 @@
 {
-  "generated_at": "2026-06-22T13:36:28.541180Z",
+  "generated_at": "2026-06-23T11:18:43.592793Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.22067v1",
+      "title": "Detector-Grade Germanium as a Low-Disorder Host for Indium-Acceptor Spin Qubits: A Five-Qubit Materials-to-Architecture Design Study",
+      "authors": [
+        "D. -M. Mei",
+        "K. -M. Dong",
+        "S. A. Panamaldeniya",
+        "N. Budhathoki",
+        "S. Chhetri",
+        "A. Prem",
+        "S. Bhattarai"
+      ],
+      "abstract": "Acceptor-bound hole spins in germanium (Ge) offer a promising but underexplored route to semiconductor quantum information processing. We present a theory-guided design study of a detector-grade Ge acceptor-spin platform based on intentionally incorporated indium (In) acceptors in ultra-high-purity Ge. The proposed materials strategy combines a residual impurity background near $10^{10} \\mathrm{cm^{-3}}$ with a target In density of approximately $2\\times10^{14} \\mathrm{cm^{-3}}$, corresponding to an acceptor spacing of about 170 nanometer. A 1 $μ$m-long active channel with a suitable transverse mode volume can contain about five acceptors on average, enabling a statistically selected post-fabrication register rather than a deterministically placed chain. We analyze the physical basis, device architecture, strain and disorder limits, coupling hierarchy, modeling workflow, fabrication pathway, and scaling prospects. Our results indicate that detector-grade Ge can suppress uncontrolled bulk electrostatic and strain disorder to levels compatible with acceptor-hole qubits, while the spin--orbit-active valence-band manifold supports all-electrical control and dipolar or phonon-mediated coupling. Direct exchange is treated as a close-pair or gate-enhanced interaction rather than the generic mean-spacing coupling. Phononic crystal engineering is identified as a second-stage enhancement for suppressing unwanted acoustic modes and enabling selected cavity-mediated interactions after baseline control, readout, and nearest-neighbor coupling are validated. Remaining challenges include statistical acceptor placement, interface disorder, charge noise, readout integration, and experimental validation. This work identifies detector-grade Ge In-acceptor qubits as a credible intermediate architecture between donor-based impurity qubits and fully gate-defined Ge hole-spin hardware.",
+      "date": "2026-06-20",
+      "abs_url": "https://arxiv.org/abs/2606.22067v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.22067v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2606.21452v1",
+      "title": "Spin qubit operations by conveyor-mode shuttling",
+      "authors": [
+        "M. De Smet",
+        "Y. Matsumoto",
+        "D. Fernández-Fernández",
+        "L. Tryputen",
+        "S. L. de Snoo",
+        "D. J. Michalak",
+        "H. G. J. Eenink",
+        "G. Platero",
+        "S. Bosco",
+        "G. Scappucci",
+        "L. M. K. Vandersypen"
+      ],
+      "abstract": "Dynamic qubit routing is emerging as a promising architectural path for semiconductor quantum processors. Charge carriers can be rapidly moved around on a chip using traveling-wave potentials known as conveyors, preserving the spin state with high fidelity. Originally developed for spin transport, conveyor-mode shuttling may also offer opportunities for performing qubit operations directly controlled by the motion itself. Here, we demonstrate coherent single- and two-qubit control by conveyor-mode electron shuttling, using two conceptually different approaches. First, conveyor electric-dipole spin resonance (conveyor EDSR) achieves high-fidelity rotations by resonantly shuttling spins through transverse magnetic-field gradients at their mean Larmor frequency. Second, conveyor diabatic gates exploit quantization-axis tilts for tunable bang-bang control. Combining diabatic conveyor transport with exchange activation controlled by the motion directly yields a variety of effective two-qubit interactions selectable via the shuttling speed and distance. These experimental results motivate an architectural paradigm of reconfigurable and transport-driven spin qubits.",
+      "date": "2026-06-19",
+      "abs_url": "https://arxiv.org/abs/2606.21452v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.21452v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2606.15711v1",
       "title": "Mapping the Stability of Spin Qubits in Superconducting Pseudogap Systems",
@@ -903,43 +948,6 @@
       "categories": [
         "quant-ph",
         "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2601.01704v2",
-      "title": "Two-Qubit Module Based on Phonon-Coupled Ge Hole-Spin Qubits: Design, Fabrication, and Readout at 1-4 K",
-      "authors": [
-        "D. -M. Mei",
-        "S. A. Panamaldeniya",
-        "K. -M. Dong",
-        "S. Bhattarai",
-        "A. Prem"
-      ],
-      "abstract": "We present a device-level design study for a two-qubit module based on phonon-coupled germanium (Ge) hole-spin qubits targeted for operation at $1$--$4~\\mathrm{K}$. Building on prior theoretical modeling of phonon-engineered Ge qubits and phononic-crystal (PnC) cavities, we translate those modeling results into a fabrication-oriented two-qubit layout that integrates two gate-defined hole-spin qubits in a strained Ge quantum well with a GHz PnC defect mode intended to mediate a coherent phonon-based interaction. We specify the SiGe/Ge heterostructure, electrostatic gate layout, PnC cavity geometry, and a compatible nanofabrication pathway, including gate-stack formation, membrane patterning and release, RF/DC wiring, and process-risk mitigation. We further develop a readout architecture combining spin-to-charge conversion with RF reflectometry on a proximal charge sensor, and we provide a link-budget estimate that states the assumed system noise temperature, RF signal contrast, and integration-time requirements for single-shot readout at elevated cryogenic temperatures. Finally, we outline a stepwise benchmarking program for charge stability, single-qubit control, phonon-bandgap modification of relaxation, and resolvable phonon-mediated two-qubit coupling. The manuscript does not report experimental device data; rather, it provides an experimentally actionable bridge from prior modeling to future fabrication and measurement of phonon-coupled Ge hole-spin modules.",
-      "date": "2026-01-05",
-      "abs_url": "https://arxiv.org/abs/2601.01704v2",
-      "pdf_url": "https://arxiv.org/pdf/2601.01704v2.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "physics.app-ph",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2512.21930v1",
-      "title": "Zeeman-like coupling to valley degree of freedom in Si-based spin qubits",
-      "authors": [
-        "S Akbar Jafari",
-        "Hendrik J Bluhm",
-        "David P Divincenzo"
-      ],
-      "abstract": "Increasing the valley splitting in Si-based heterostructures is critical for improving the performance of semiconductor qubits. This paper demonstrates that the two low-energy conduction band valleys are not independent parabolic bands. Instead, they originate from the X-point of the Brillouin zone, where they are interconnected by a degeneracy protected by the non-symmorphic symmetry of the diamond lattice. This semi-Dirac-node degeneracy gives rise to the $Δ_1$ and $Δ_{2'}$ bands, which constitute the valley degrees of freedom. By explicitly computing the two-component Bloch functions $X_1^\\pm$, using the wave vector group at the X-point, we determine the transformation properties of the object $(X_1^+,X_1^-)$. We demonstrate that these properties are fundamentally different from those of a spinor. Consequently, we introduce the term \"valleyor\" to emphasize this fundamental distinction. The transformation properties of valleyors induce corresponding transformations of the Pauli matrices $τ_1,τ_2$ and $τ_3$ in the valley space. Determining these transformations allows us to classify possible external perturbations that couple to each valley Pauli matrix, thereby identifying candidates for valley-magnetic fields, ${\\mathsf B}$. These fields are defined by a Zeeman-like coupling ${\\mathsf B}\\cdot\\vecτ$ to the valley degree of freedom. In this way, we identify scenarios where an applied magnetic field $\\vec B$ can leverage other background fields, such as strain, to generate a valley-magnetic field ${\\mathsf B}$. This analysis suggests that beyond the well-known mechanism of potential scattering from Ge impurities, there exist additional channels (mediated by combinations of magnetic and strain-induced vector potentials) to control the valley degree of freedom",
-      "date": "2025-12-26",
-      "abs_url": "https://arxiv.org/abs/2512.21930v1",
-      "pdf_url": "https://arxiv.org/pdf/2512.21930v1.pdf",
-      "categories": [
-        "cond-mat.mtrl-sci",
-        "quant-ph"
       ]
     }
   ]
