@@ -1,7 +1,22 @@
 {
-  "generated_at": "2026-06-23T11:18:43.592793Z",
+  "generated_at": "2026-06-24T10:51:37.426887Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.24150v1",
+      "title": "Gate-Controlled Spin Qubits in Confined Altermagnets",
+      "authors": [
+        "Hamed Vakili"
+      ],
+      "abstract": "We propose gate-defined spin qubits in electrostatically confined altermagnetic quantum dots. Elliptical confinement of the $d$-wave altermagnetic structure produces a low-energy doublet with opposite spin polarization. For the range of parameters used here, the qubit states energy gap lies in the microwave range while the leakage gap remains in the meV range. Even without spin-orbit coupling, time-dependent simulations show that a phase-controlled quadrupolar gate drive about a fixed bias point implements $X_{π/2}$ and $X_π$ rotations by resonantly modulating the confinement anisotropy. We extend the study to two-qubits using a double quantum dot. We show that the double quantum dot spectrum can be cleanly projected onto isolated quantum dot product states with a nonzero nonlocal Pauli block in the effective logical two-qubit Hamiltonian. Resonant central-barrier modulation then drives the logical two-qubit component close to a maximally entangled state. These calculations show anisotropic altermagnetic quantum dots as a route to locally gate-controlled spin qubits without requiring spin-orbit coupling.",
+      "date": "2026-06-23",
+      "abs_url": "https://arxiv.org/abs/2606.24150v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24150v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2606.22067v1",
       "title": "Detector-Grade Germanium as a Low-Disorder Host for Indium-Acceptor Spin Qubits: A Five-Qubit Materials-to-Architecture Design Study",
@@ -930,24 +945,6 @@
       "pdf_url": "https://arxiv.org/pdf/2601.09516v3.pdf",
       "categories": [
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2601.06805v2",
-      "title": "Cancelling second order frequency shifts in Ge hole spin qubits via bichromatic control",
-      "authors": [
-        "Xiangjun Tan",
-        "Zhanning Wang",
-        "Wenkai Bai",
-        "Hanjie Zhu"
-      ],
-      "abstract": "Germanium quantum dot hole spin qubits are compatible with fully electrical control and are progressing toward multi-qubit operations. However, their coherence is limited by charge noise and driving field induced frequency shifts, and the resulting ensemble $1/f$ dephasing. Here we theoretically demonstrate that a bichromatic driving scheme cancels the second order frequency shift from the control field without sacrificing the electric dipole spin resonance (EDSR) rate, and without additional gate design or microwave engineering. Based on this property, we further demonstrate that bichromatic control creates a wide operating window that reduces sensitivity to quasi-static charge noise and thus enhances single qubit gate fidelity. This method provides a low-power route to a stabler frequency operation in germanium hole spin qubits and is readily transferable to other semiconductor spin qubit platforms.",
-      "date": "2026-01-11",
-      "abs_url": "https://arxiv.org/abs/2601.06805v2",
-      "pdf_url": "https://arxiv.org/pdf/2601.06805v2.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall"
       ]
     }
   ]
