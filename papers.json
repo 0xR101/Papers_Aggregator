@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-06-24T10:51:37.426887Z",
+  "generated_at": "2026-06-25T10:43:44.071044Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.26066v1",
+      "title": "All-electrical dephasing-protected spin qubits in altermagnets",
+      "authors": [
+        "José Carlos Abadillo-Uriel",
+        "Andrea Maiani",
+        "Alberto Cortijo",
+        "Ramón Aguado",
+        "Rubén Seoane Souto"
+      ],
+      "abstract": "We introduce altermagnetic semiconductors as a materials platform for scalable, all-electrical controllable spin qubits that operate without magnetic fields in gate-defined quantum dots. The altermagnet intrinsic finite-momentum spin polarization provides a field-free qubit splitting that is fully and continuously tunable through the dot ellipticity with electrostatic gates, delivering individually addressable qubit frequencies. Furthermore, the altermagnetic spin splitting is first-order insensitive to electric field fluctuations by construction and quantization-axis fluctuations produce only transverse coupling, yielding relaxation without pure dephasing, a distinct dephasing-protection yielding an advantage over conventional spin qubits. The net-zero magnetization eliminates stray-fields and renders the platform compatible with superconducting resonators thus enabling high-fidelity, non-demolition circuit-QED readout by dispersive coupling of the qubit spin-dependent electric dipole couples to a resonator. Starting from an effective quantum-dot description, supported by a microscopic lattice-model, we derive the qubit Hamiltonian and establish that it naturally supports a complete gate set: electric-dipole spin resonance controls single qubits, while tunable exchange combined with per-qubit frequency addressing directly implements the fermionic simulation (fSim) family of two-qubit gates. Crucially, within the same platform it is possible to implement a singlet-triplet qubit with fully electrical control over both exchange and splitting differences, removing the need for micromagnets or nuclear polarization gradients, while enabling baseband operation. Our results establish altermagnetic quantum dots as a novel, all-electrical route to spin qubits with enhanced protection.",
+      "date": "2026-06-24",
+      "abs_url": "https://arxiv.org/abs/2606.26066v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26066v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2606.24150v1",
       "title": "Gate-Controlled Spin Qubits in Confined Altermagnets",
@@ -928,21 +946,6 @@
       "date": "2026-01-15",
       "abs_url": "https://arxiv.org/abs/2601.10435v1",
       "pdf_url": "https://arxiv.org/pdf/2601.10435v1.pdf",
-      "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2601.09516v3",
-      "title": "Reservoir-Engineered Refrigeration of a Superconducting Cavity with Double-Quantum-Dot Spin Qubits",
-      "authors": [
-        "Daryoosh Vashaee",
-        "Jahanfar Abouie"
-      ],
-      "abstract": "We present an analytically tractable theory of reservoir-engineered refrigeration of a superconducting microwave cavity and map it onto a realistic solid-state implementation based on gate-defined double-quantum-dot (DQD) spin qubits. Treating the DQD not as a spectroscopic element but as a tunable engineered reservoir, we show how gate control of populations, coherences, linewidths, and detuning defines an effective photon birth-death process with predictable detailed balance. This framework yields closed-form expressions for the cavity steady state, identifies cooling bounds and detuning-dependent refrigeration valleys, and clarifies when refrigeration can drive the cavity below both the bath temperature and the DQD setpoint. By distinguishing refreshed (collision-like) and persistent reservoir regimes, we show how memory effects, saturation, and dark-state formation constrain cooling in realistic devices, while collective bright-mode coupling in a two-dot configuration can enhance refrigeration subject to mismatch and dephasing, as confirmed by numerical Lindblad simulations demonstrating targeted millikelvin cavity cooling relevant for cryogenic circuit-QED architectures.",
-      "date": "2026-01-14",
-      "abs_url": "https://arxiv.org/abs/2601.09516v3",
-      "pdf_url": "https://arxiv.org/pdf/2601.09516v3.pdf",
       "categories": [
         "quant-ph"
       ]
