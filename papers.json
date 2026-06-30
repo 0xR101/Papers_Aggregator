@@ -1,7 +1,34 @@
 {
-  "generated_at": "2026-06-29T12:36:28.798863Z",
+  "generated_at": "2026-06-30T10:57:41.018396Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.28695v1",
+      "title": "High-Fidelity Hole Spin Qubits Reveal Quadrupolar Nuclear-Bath Dynamics in Isotopically Purified Planar Germanium",
+      "authors": [
+        "Jian Zeng",
+        "Xiangjun Tan",
+        "Hongzhang Wang",
+        "Yulei Zhang",
+        "Wendong Bian",
+        "Lingting Wu",
+        "Chenggang Yang",
+        "Zhengshan Guo",
+        "Jiankun Li",
+        "Yongfeng Wang",
+        "Jun Lu",
+        "Jun-Wei Luo",
+        "Tian Pei"
+      ],
+      "abstract": "Planar Germanium has emerged as a promising platform to build spin-based large scale quantum computers. By exploiting the anisotropic hyperfine interaction of holes in Ge, qubits with long T2* have been recently realized. While the performance of single qubits is still more or less limited by 73Ge nuclear spin fluctuations, the site-to-site variation of qubit sweet spot becomes obstacles to maintaining high fidelity of each qubit across the whole wafer. To achieve high performance Ge-based quantum circuit, it is therefore essential to eliminate the origin source of hyperfine noise. In its Silicon counterparts, reduction of 29Si abundance enables exceptional high-fidelity operation. In contrast, hole qubits based on isotopically purified Ge have not been demonstrated. Here, we report the synthesis of high quality 2-dimensional hole gas (2DHG) with enriched 70GeH4 precursor. Due to the suppression of nonzero spin nucleus, the qubits' T2* on the sweet spot is moderately extended beyond 20 us, surpassing the previous best reported Ge hole qubits. More importantly, the qubits' T2* off the sweet spot is enhanced to above 3 us, enabling single qubit gate fidelity exceeding 99.9% in both operating regimes. Hahn-echo spectroscopy further resolves a finite-frequency nuclear-noise channel that is distinct from the conventional Larmor-linked hyperfine response. We associate this channel with quadrupole-modified dynamics of residual 73Ge nuclei sampling local electric-field gradients near the Ge/SiGe interface. Its field scaling and angle-dependent visibility are consistent with a qubit-visible quadrupolar nuclear-noise component transduced through the anisotropic hyperfine interaction of Ge holes. These results establish isotopically purified planar Ge as a high-coherence scalable platform for hole spin qubits and provide a spectroscopic probe of interfacial quadrupolar nuclear dynamics.",
+      "date": "2026-06-27",
+      "abs_url": "https://arxiv.org/abs/2606.28695v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28695v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mtrl-sci"
+      ]
+    },
     {
       "id": "2606.26066v1",
       "title": "All-electrical dephasing-protected spin qubits in altermagnets",
@@ -924,28 +951,6 @@
       "date": "2026-01-15",
       "abs_url": "https://arxiv.org/abs/2601.10461v1",
       "pdf_url": "https://arxiv.org/pdf/2601.10461v1.pdf",
-      "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2601.10435v1",
-      "title": "The SpinPulse library for transpilation and noise-accurate simulation of spin qubit quantum computers",
-      "authors": [
-        "Benoît Vermersch",
-        "Oscar Gravier",
-        "Nathan Miscopein",
-        "Julia Guignon",
-        "Carlos Ramos Marimón",
-        "Jonathan Durandau",
-        "Matthieu Dartiailh",
-        "Tristan Meunier",
-        "Valentin Savin"
-      ],
-      "abstract": "We introduce SpinPulse, an open-source python package for simulating spin qubit-based quantum computers at the pulse-level. SpinPulse models the specific physics of spin qubits, particularly through the inclusion of classical non-Markovian noise. This enables realistic simulations of native gates and quantum circuits, in order to support hardware development. In SpinPulse, a quantum circuit is first transpiled into the native gate set of our model and then converted to a pulse sequence. This pulse sequence is subsequently integrated numerically in the presence of a simulated noisy experimental environment. We showcase workflows including transpilation, pulse-level compilation, hardware benchmarking, quantum error mitigation, and large-scale simulations via integration with the tensor-network library quimb. We expect SpinPulse to be a valuable open-source tool for the quantum computing community, fostering efforts to devise high-fidelity quantum circuits and improved strategies for quantum error mitigation and correction.",
-      "date": "2026-01-15",
-      "abs_url": "https://arxiv.org/abs/2601.10435v1",
-      "pdf_url": "https://arxiv.org/pdf/2601.10435v1.pdf",
       "categories": [
         "quant-ph"
       ]
