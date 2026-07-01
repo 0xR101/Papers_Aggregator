@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-06-30T10:57:41.018396Z",
+  "generated_at": "2026-07-01T11:25:07.893229Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2606.32030v1",
+      "title": "Simulation of Two-qubit Gate Variability and Fidelity of Spin Qubits Built on Nanosheet Technology",
+      "authors": [
+        "Trung Nguyen",
+        "Sarah Dweik",
+        "Hiu Yung Wong"
+      ],
+      "abstract": "Silicon spin qubits are promising for large-scale quantum-computer integration because they can fully leverage the well-developed semiconductor infrastructure. However, the low fidelity of two-qubit entanglement gates remains a key barrier to large-scale integrations. Recent simulations of silicon spin-qubit two-qubit gates have been performed on silicon-on-insulator (SOI) platforms, while nanosheet-based charge-qubit work has been limited to single-qubit operation using a two-dimensional Schrödinger approximation. In this work, we study silicon spin-qubit double quantum dots built on nanosheet technology using the Quantum Technology Computer-Aided Design (QTCAD) simulation suite to run three-dimensional Poisson and Schroedinger solvers, followed by a many-body solver to extract exchange interactions. We evaluate the exchange energy sensitivity to process and bias variations and then use QuTiP to solve the master equation for a two-qubit gate. The results show that millivolt-level bias variations at the plunger and middle barrier gates can reduce the gate fidelity below 99%, a common threshold target for many fault-tolerant quantum-computing algorithms. Gate-referred 1/f charge-noise effects are also analyzed through the resulting coherence time.",
+      "date": "2026-06-30",
+      "abs_url": "https://arxiv.org/abs/2606.32030v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32030v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2606.30883v1",
+      "title": "Overcoming Configuration Bottleneck: Modular Pathways to Stable Semiconductor Spin-Qubit Arrays",
+      "authors": [
+        "Justyna P. Zwolak",
+        "Anthony Sigillito"
+      ],
+      "abstract": "Over the past decade, semiconductor spin qubits have progressed from few-qubit demonstrations towards larger-scale devices fabricated in increasingly reproducible academic and industrial processes. This progress marks an inflection point: the central challenge is no longer to demonstrate high-fidelity operation in carefully tuned devices, but to discover, verify, and maintain stable operating conditions reliably across many interdependent controls, varied device geometries, and disparate material platforms. In this Perspective, we frame spin-qubit operation as a modular automation problem. We decompose the workflow into five modules: bootstrapping from minimal prior information, configuration tuning, virtualization of physical gates into effective control axes, qubit-level tuning, and an operation layer with drift-aware maintenance. Using recent demonstrations from our work and the broader community, we argue that scalability will depend on explicit interfaces between modules, standardized intermediate data products, and workflow-level metrics such as throughput, success probability, stability time, recovery time, and robustness. We close by outlining the infrastructure needed to move beyond isolated tuning demonstrations toward sustained operation: qubit-performance-aware feedback, reusable software and benchmark tasks, and tight collaboration among experimental, theoretical, and software efforts.",
+      "date": "2026-06-29",
+      "abs_url": "https://arxiv.org/abs/2606.30883v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30883v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "physics.app-ph",
+        "physics.data-an"
+      ]
+    },
     {
       "id": "2606.28695v1",
       "title": "High-Fidelity Hole Spin Qubits Reveal Quadrupolar Nuclear-Bath Dynamics in Isotopically Purified Planar Germanium",
@@ -921,38 +955,6 @@
       "categories": [
         "cond-mat.supr-con",
         "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2601.16306v3",
-      "title": "A modified Lindblad equation for a Rabi driven electron-spin qubit with tunneling to a Markovian lead",
-      "authors": [
-        "Emily Townsend",
-        "Joshua Pomeroy",
-        "Garnett W. Bryant"
-      ],
-      "abstract": "We derive a modified Lindblad equation for the state of quantum dot tunnel coupled to a Markovian lead when the spin state of the dot is driven by an oscillating magnetic field. We show that the equation is a completely positive, trace-preserving map and find the jump operators. This is a driven-dissipative regime in which coherent driving is relevant to the tunneling and cannot be treated as simply a rotation modifying the system with a bath derived under a static magnetic field. This work was motivated by an experimental desire to determine the Zeeman splitting of an electron spin on a quantum dot (a spin qubit), and in a related work we show that this splitting energy can be found by measuring the charge occupancy of the dot while sweeping the frequency of the driving field \\ arXiv:2503.17481. Here we cover the full derivation of the equation and give the jump operators. These jump operators are potentially useful for describing the stochastic behavior of more complex systems with coherent driving of a spin capable of tunneling on or off of a device, such as in electron spin resonance scanning tunneling microscopy. The jump operators have the interesting feature of combining jumps of electrons onto and off of the device.",
-      "date": "2026-01-22",
-      "abs_url": "https://arxiv.org/abs/2601.16306v3",
-      "pdf_url": "https://arxiv.org/pdf/2601.16306v3.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2601.10461v1",
-      "title": "Erasure conversion for singlet-triplet spin qubits enables high-performance shuttling-based quantum error correction",
-      "authors": [
-        "Adam Siegel",
-        "Simon Benjamin"
-      ],
-      "abstract": "Fast and high fidelity shuttling of spin qubits has been demonstrated in semiconductor quantum dot devices. Several architectures based on shuttling have been proposed; it has been suggested that singlet-triplet (dual-spin) qubits could be optimal for the highest shuttling fidelities. Here we present a fault-tolerant framework for quantum error correction based on such dual-spin qubits, establishing them as a natural realisation of erasure qubits within semiconductor architectures. We introduce a hardware-efficient leakage-detection protocol that automatically projects leaked qubits back onto the computational subspace, without the need for measurement feedback or increased classical control overheads. When combined with the XZZX surface code and leakage-aware decoding, we demonstrate a twofold increase in the error correction threshold and achieve orders-of-magnitude reductions in logical error rates. This establishes the singlet-triplet encoding as a practical route toward high-fidelity shuttling and erasure-based, fault-tolerant quantum computation in semiconductor devices.",
-      "date": "2026-01-15",
-      "abs_url": "https://arxiv.org/abs/2601.10461v1",
-      "pdf_url": "https://arxiv.org/pdf/2601.10461v1.pdf",
-      "categories": [
-        "quant-ph"
       ]
     }
   ]
