@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-01T11:25:07.893229Z",
+  "generated_at": "2026-07-02T10:42:08.241213Z",
   "total": 50,
   "papers": [
     {
-      "id": "2606.32030v1",
+      "id": "2606.32030v2",
       "title": "Simulation of Two-qubit Gate Variability and Fidelity of Spin Qubits Built on Nanosheet Technology",
       "authors": [
         "Trung Nguyen",
@@ -12,8 +12,8 @@
       ],
       "abstract": "Silicon spin qubits are promising for large-scale quantum-computer integration because they can fully leverage the well-developed semiconductor infrastructure. However, the low fidelity of two-qubit entanglement gates remains a key barrier to large-scale integrations. Recent simulations of silicon spin-qubit two-qubit gates have been performed on silicon-on-insulator (SOI) platforms, while nanosheet-based charge-qubit work has been limited to single-qubit operation using a two-dimensional Schrödinger approximation. In this work, we study silicon spin-qubit double quantum dots built on nanosheet technology using the Quantum Technology Computer-Aided Design (QTCAD) simulation suite to run three-dimensional Poisson and Schroedinger solvers, followed by a many-body solver to extract exchange interactions. We evaluate the exchange energy sensitivity to process and bias variations and then use QuTiP to solve the master equation for a two-qubit gate. The results show that millivolt-level bias variations at the plunger and middle barrier gates can reduce the gate fidelity below 99%, a common threshold target for many fault-tolerant quantum-computing algorithms. Gate-referred 1/f charge-noise effects are also analyzed through the resulting coherence time.",
       "date": "2026-06-30",
-      "abs_url": "https://arxiv.org/abs/2606.32030v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.32030v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2606.32030v2",
+      "pdf_url": "https://arxiv.org/pdf/2606.32030v2.pdf",
       "categories": [
         "quant-ph"
       ]
@@ -238,22 +238,24 @@
       ]
     },
     {
-      "id": "2605.31185v1",
-      "title": "A charge qubit on solid neon in a spin-qubit compatible circuit QED platform",
+      "id": "2605.31185v2",
+      "title": "Fast coherent control of a charge qubit on solid neon with a spin-qubit-compatible resonator",
       "authors": [
-        "J. Wang",
-        "Y. Tian",
-        "I. Grytsenko",
-        "A. Jennings",
-        "X. Zhou",
-        "H. Terai",
-        "D. Jin",
-        "E. Kawakami"
+        "Jun Wang",
+        "Yiran Tian",
+        "Ivan Grytsenko",
+        "Asher Jennings",
+        "Beatriz Pérez González",
+        "Xianjing Zhou",
+        "Hirotaka Terai",
+        "Dafei Jin",
+        "Monica Benito",
+        "Erika Kawakami"
       ],
-      "abstract": "Electrons floating in vacuum provide a clean platform for quantum information processing due to their isolation from material defects; electrons on solid neon have emerged as a promising qubit platform for its long coherence times. Here, toward spin-qubit realization, we couple a single electron on solid neon to a magnetic-field-compatible superconducting NbTiN nanowire resonator. We realize a charge qubit and demonstrate microwave readout and coherent control, with Rabi frequencies up to 76 MHz, an order of magnitude larger than in previous studies. Under strong driving, we observe a qubit frequency shift from nonlinear interactions with the intense microwave field. Deterministic electron trapping at an intended position remains challenging due to solid neon surface roughness; we characterize the electron's position from its differential coupling to distinct electrodes. Although not trapped at an intended position, our estimates indicate that spin-qubit demonstrations remain feasible.",
+      "abstract": "Electrons floating in vacuum provide a clean platform for quantum information processing owing to their isolation from material defects. In particular, electrons on solid neon have emerged as a promising qubit platform because of their potentially long coherence times. Here, toward spin-qubit realization, we couple a single electron on solid neon to a magnetic-field-compatible superconducting NbTiN nanowire resonator. We realize a charge qubit and demonstrate microwave readout and coherent control, with Rabi frequencies up to 76 MHz, an order of magnitude larger than in previous studies. Under strong driving, we observe a qubit frequency shift from nonlinear interactions with the intense microwave field. Deterministic electron trapping at an intended position remains challenging due to solid neon surface roughness; we characterize the electron's position from its differential coupling to distinct electrodes. Although not trapped at an intended position, our estimates indicate that spin-qubit demonstrations remain feasible.",
       "date": "2026-05-29",
-      "abs_url": "https://arxiv.org/abs/2605.31185v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.31185v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2605.31185v2",
+      "pdf_url": "https://arxiv.org/pdf/2605.31185v2.pdf",
       "categories": [
         "cond-mat.mes-hall",
         "quant-ph"
