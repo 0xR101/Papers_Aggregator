@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:05:50.597866Z",
+  "generated_at": "2026-07-07T10:58:37.775925Z",
   "total": 50,
   "papers": [
     {
@@ -425,7 +425,7 @@
       ]
     },
     {
-      "id": "2604.23279v2",
+      "id": "2604.23279v3",
       "title": "Analytical Treatment of Noise-Suppressed Klein Tunneling in Graphene with Possible Implications for Quantum-Dot Qubits",
       "authors": [
         "Kamal Azaidaoui",
@@ -436,8 +436,8 @@
       ],
       "abstract": "We study quantum tunneling through a potential barrier whose height fluctuates in time and is modeled by Gaussian white noise. We map the stochastic dynamics onto an equivalent time-independent Lindblad equation for the density matrix, allowing fully analytical solutions. For Schrödinger particles, noise introduces dissipation that suppresses Fabry-Pérot oscillations and yields an exponentially decaying transmission. Applying the same formalism to graphene, we demonstrate that noise induces a complex longitudinal wavevector within the barrier, leading to a strong suppression of transmission and Klein tunneling, even at normal incidence. Our approach promises improved control over Klein tunneling. These results demonstrate that noisy barriers can act as tunable dissipative elements, offering a pathway to enhanced control of electron transport in graphene-based devices. We also briefly discuss how our results could guide the design of graphene quantum dots for potential use in spin qubit devices.",
       "date": "2026-04-25",
-      "abs_url": "https://arxiv.org/abs/2604.23279v2",
-      "pdf_url": "https://arxiv.org/pdf/2604.23279v2.pdf",
+      "abs_url": "https://arxiv.org/abs/2604.23279v3",
+      "pdf_url": "https://arxiv.org/pdf/2604.23279v3.pdf",
       "categories": [
         "cond-mat.mes-hall"
       ]
