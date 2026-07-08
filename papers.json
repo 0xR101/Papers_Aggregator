@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-07-07T10:58:37.775925Z",
+  "generated_at": "2026-07-08T10:19:56.746067Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.06342v1",
+      "title": "Radio frequency readout and control of Ge/SiGe hole spin qubits with a global accumulation gate",
+      "authors": [
+        "Tien-Ho Chang",
+        "Chi-Wei Lee",
+        "Jian-Chang Zeng",
+        "Chia-Hao Wei",
+        "Ching-Shiang Wang",
+        "Fu-Yuan Gu",
+        "Guan-Yu Yang",
+        "Ruei-Syuan Chiang",
+        "Ho-Chun Wu",
+        "Ming-Hao Lee",
+        "Ming-Wen Chu",
+        "Guang Li Luo",
+        "Ta-Chun Cho",
+        "Shawn S. H. Hsu",
+        "Tzu-Kan Hsiao"
+      ],
+      "abstract": "Hole spin qubits in undoped Ge/SiGe quantum well structures have advanced rapidly in performance and scalability. However, stringent multi-layer patterning and overlay requirements of conventional overlapping-gate devices create a bottleneck for academic proof-of-concept experiments involving few-qubit devices. Here we present fabrication and measurements of Ge/SiGe spin qubit devices with a global accumulation gate and single-layer depletion fine gates, which substantially reduce fabrication complexity. With careful design of the gate-2DHG capacitance, we demonstrate RF-based single-shot spin readout and coherent control of two single-spin qubits. We also characterize the spin coherence times and exchange tunability, which are similar to those reported in recent overlapping-gate Ge/SiGe spin qubit devices. By simplifying fabrication without sacrificing performance, our approach offers a more accessible device design for spin-based quantum technology research.",
+      "date": "2026-07-07",
+      "abs_url": "https://arxiv.org/abs/2607.06342v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06342v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2606.32030v2",
       "title": "Simulation of Two-qubit Gate Variability and Fidelity of Spin Qubits Built on Nanosheet Technology",
@@ -937,26 +966,6 @@
         "cond-mat.mes-hall",
         "cond-mat.supr-con",
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2601.19975v1",
-      "title": "Detecting half-quantum superconducting vortices by spin-qubit relaxometry",
-      "authors": [
-        "Gábor B. Halász",
-        "Nirjhar Sarkar",
-        "Yueh-Chun Wu",
-        "Joshua T. Damron",
-        "Chengyun Hua",
-        "Benjamin Lawrie"
-      ],
-      "abstract": "Half-quantum vortices in spin-triplet superconductors are predicted to harbor Majorana zero modes and may provide a viable avenue to topological quantum computation. Here, we introduce a novel approach for directly measuring the half-integer-quantized magnetic fluxes, $Φ= h / (4e)$, carried by such half-quantum vortices via spin-qubit relaxometry. We consider a superconducting strip with a narrow pinch point at which vortices cross quasi-periodically below a spin qubit as a result of a bias current. We demonstrate that the relaxation rate of the spin qubit exhibits a pronounced peak if the vortex-crossing frequency matches the transition frequency of the spin qubit and conclude that the magnetic flux $Φ$ of a single vortex can be obtained by dividing the corresponding voltage along the strip with the transition frequency. We discuss experimental constraints on implementing our proposed setup in spin-triplet candidate materials like UTe$_2$, UPt$_3$, and URhGe.",
-      "date": "2026-01-27",
-      "abs_url": "https://arxiv.org/abs/2601.19975v1",
-      "pdf_url": "https://arxiv.org/pdf/2601.19975v1.pdf",
-      "categories": [
-        "cond-mat.supr-con",
-        "cond-mat.mes-hall"
       ]
     }
   ]
