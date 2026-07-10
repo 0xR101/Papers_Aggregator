@@ -1,7 +1,23 @@
 {
-  "generated_at": "2026-07-09T10:55:34.580516Z",
+  "generated_at": "2026-07-10T10:56:16.912781Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.07822v1",
+      "title": "Routing Techniques for Error Corrected Silicon Spin Qubit Quantum Architectures",
+      "authors": [
+        "Julian Shen",
+        "Ludwig Schmid",
+        "Robert Wille"
+      ],
+      "abstract": "Silicon spin qubits have emerged as a promising qubit technology due to their favorable scaling and fabrication properties. However, efficiently compiling quantum circuits onto spin qubit platforms remains challenging, particularly when accounting for hardware constraints and the high sensitivity to static defects. Existing compilation approaches for spin qubits either largely ignore error correction, despite its critical role for large-scale quantum computation, or focus on low-level schedule constructions, missing a high-level compilation and routing for logical, error-corrected algorithms. To address this gap, we introduce a compilation framework for spin qubits based on the recent snakes on a plane model, which utilizes a 2D surface code and qubit teleportation to mitigate errors. Building on this model, we propose shortest-path and rotation-based algorithms as two novel classes of qubit-routing techniques, along with additional defect-handling and initial-mapping strategies. We evaluate both algorithms across diverse architectural settings and problem sizes, demonstrating that shortest-path methods excel in sparse, low-defect scenarios, while rotation-based approaches perform better in high-density environments. The implementation is publicly available on GitHub as open source.",
+      "date": "2026-07-08",
+      "abs_url": "https://arxiv.org/abs/2607.07822v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07822v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2607.06342v1",
       "title": "Radio frequency readout and control of Ge/SiGe hole spin qubits with a global accumulation gate",
@@ -947,24 +963,6 @@
       "pdf_url": "https://arxiv.org/pdf/2601.23267v1.pdf",
       "categories": [
         "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2601.22226v2",
-      "title": "Andreev spin qubits based on the helical edge states of magnetically doped two-dimensional topological insulators",
-      "authors": [
-        "Edoardo Latini",
-        "Fausto Rossi",
-        "Fabrizio Dolcini"
-      ],
-      "abstract": "We show that Andreev spin qubits can be realized in a Josephson junction based on the helical edge states of a two-dimensional topological insulator (quantum spin Hall system) proximized by superconducting films, in the presence of magnetic doping. We demonstrate that the electric dipole transitions between the Andreev spin states induced by the magnetic doping can be harnessed to manipulate the Andreev spin qubit by microwave radiation pulses, without applying an external Zeeman field or invoking ancillary states. We numerically simulate the realization of NOT and Hadamard quantum logic gates, and discuss implementations in realistic setups.",
-      "date": "2026-01-29",
-      "abs_url": "https://arxiv.org/abs/2601.22226v2",
-      "pdf_url": "https://arxiv.org/pdf/2601.22226v2.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "cond-mat.supr-con",
         "quant-ph"
       ]
     }
