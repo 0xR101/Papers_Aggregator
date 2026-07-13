@@ -1,7 +1,42 @@
 {
-  "generated_at": "2026-07-12T09:51:32.471744Z",
+  "generated_at": "2026-07-13T11:12:38.145782Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.09652v1",
+      "title": "Silicon-Germanium Heterostructures with Enhanced Valley Splitting for Spin Qubits",
+      "authors": [
+        "David W. Kanaar",
+        "Efrain Martinez",
+        "Peihong Zhang",
+        "Mark F. Gyure"
+      ],
+      "abstract": "Achieving valley splittings well in excess of the thermal energy of electrons and avoiding valley excitations is essential for the consistent initialization, operation and readout of gate-defined Si spin qubits. In this work, we present a device-level optimization strategy for pushing valley splittings to between 1 and 5 meV, well beyond values reported in nearly all previous theoretical studies. Using device-scale simulations that incorporate atomistic alloy disorder through a 1D tight-binding theory, we demonstrate that our proposed approach yields large valley splittings with a tight distribution across disorder realizations, a key requirement for reproducible qubit performance at scale. The approach rests on an unorthodox Si/SiGe heterostructure design combining a narrow quantum well, a small Ge spike, and a pure-Ge cap. We corroborate these predictions with targeted atomistic density functional theory calculations. These results offer a clear path forward for scalable Si/SiGe spin qubit devices and, if realized experimentally, effectively eliminate valley splitting as an existential problem for large scale SiGe-based quantum processors.",
+      "date": "2026-07-10",
+      "abs_url": "https://arxiv.org/abs/2607.09652v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.09652v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2607.09508v1",
+      "title": "Superconducting singlet-triplet qubits",
+      "authors": [
+        "Anatoliy Lotkov",
+        "Maria Spethmann",
+        "Daniel Loss"
+      ],
+      "abstract": "Hybrid devices integrating quantum dots with Josephson junctions are gaining interest because they combine spin-based quantum computing with circuit quantum electrodynamics (circuit QED) methods. In particular, Andreev spin qubits have shown significant experimental progress including strong two-qubit coupling, and are predicted to exhibit all-to-all connectivity. Here we propose superconducting singlet-triplet (SST) qubits that rely on parallel-aligned double quantum dots in Josephson junctions. While Andreev spin qubits require spin-orbit interaction to unlock the spin degree-of-freedom, SST qubits do not require spin-orbit interaction, making the advantages of hybrid devices available to a wider range of materials. Similar to Andreev spin qubits, the qubit states couple to the superconducting phase across the junction, which allows for control and readout using circuit QED, and supports all-to-all connectivity. Only $N$ flux lines are required to perform any single- and two-qubit gate among $N$ qubits, and thus the overhead of control lines is small. Finally, linear protection from charge or flux noise makes these qubits interesting candidates for a future quantum processor.",
+      "date": "2026-07-10",
+      "abs_url": "https://arxiv.org/abs/2607.09508v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.09508v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2607.07822v1",
       "title": "Routing Techniques for Error Corrected Silicon Spin Qubit Quantum Architectures",
@@ -917,53 +952,6 @@
       "pdf_url": "https://arxiv.org/pdf/2602.12248v2.pdf",
       "categories": [
         "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2602.09179v2",
-      "title": "Coherence Protection for Mobile Spin Qubits in Silicon",
-      "authors": [
-        "Jan A. Krzywda",
-        "Yuta Matsumoto",
-        "Maxim De Smet",
-        "Larysa Tryputen",
-        "Sander L. de Snoo",
-        "Sergey V. Amitonov",
-        "Evert van Nieuwenburg",
-        "Giordano Scappucci",
-        "Lieven M. K. Vandersypen"
-      ],
-      "abstract": "Mobile spin qubit architectures promise flexible connectivity for efficient quantum error correction and relaxed device layout constraints, but their viability rests on preserving spin coherence during transport. While shuttling transforms spatial disorder into time-dependent noise, its net impact on spin coherence remains an open question. Here we demonstrate systematic noise mitigation during spin shuttling in a linear $^{28}$Si/SiGe quantum dot device. First, by passively reducing magnetic field gradients, we minimize charge-noise coupling to the spin and double the spatially averaged dephasing time $T_2^*(x_n)$ from $4.4$ to $8.5\\,μ\\text{s}$. Next, we exploit motional narrowing by periodically shuttling the qubit, achieving a further enhancement in coherence time up to $T_{2}^{*,sh} = 11.5\\,μ\\text{s}$. Finally, we incorporate dynamical decoupling techniques while periodically shuttling over distances exceeding $200\\,\\text{nm}$, reaching $T_\\text{2}^{H,sh}= 32\\,μ\\text{s}$. For the same setup, we demonstrate that dressed-state shuttling provides robust protection against low-frequency noise with a decay time $T_R^{\\text{sh}} = 21\\,μ\\text{s}$, without the overhead of pulsed control and allowing protection during one-way spin transport. By preserving coherence over timescales exceeding typical gate and readout operations, the demonstrated strategies establish mobile spin qubits as a viable solution for scalable silicon quantum processors.",
-      "date": "2026-02-09",
-      "abs_url": "https://arxiv.org/abs/2602.09179v2",
-      "pdf_url": "https://arxiv.org/pdf/2602.09179v2.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2601.23267v1",
-      "title": "Weight-four parity checks with silicon spin qubits",
-      "authors": [
-        "Brennan Undseth",
-        "Nicola Meggiato",
-        "Yi-Hsien Wu",
-        "Sam R. Katiraee-Far",
-        "Larysa Tryputen",
-        "Sander L. de Snoo",
-        "Davide Degli Esposti",
-        "Giordano Scappucci",
-        "Eliška Greplová",
-        "Lieven M. K. Vandersypen"
-      ],
-      "abstract": "Recent advances in coherent spin shuttling have made sparse semiconductor spin qubit arrays an appealing solid-state platform to realize quantum processors. The dynamic and long-range connectivity enabled by shuttling is also essential for many quantum error-correction (QEC) schemes. Here, we demonstrate a silicon spin-qubit device that comprises a shuttling bus for coherently transporting qubits that can interact at four isolated locations we call bus stops. We dynamically populate the array and tune all single- and two-qubit operations using shuttling and quantum non-demolition (QND) spin measurements, without access to charge sensing in most of the device. We achieve universal control of the effective five-qubit processor and select the connectivity required to form a surface-code stabilizer plaquette that supports X- and Z-type parity checks up to weight-four. We use the parity checks to generate multi-qubit entanglement between all qubit combinations in the array and report the genuine entanglement of a five-qubit Greenberger-Horne-Zeilinger (GHZ) state, constituting the largest such state ever constructed with gate-defined semiconductor spins. This work opens immediate opportunities to pursue QEC experiments with spin qubits, and the protocols developed here lay the groundwork for the modular calibration and operation of sparse spin qubit arrays.",
-      "date": "2026-01-30",
-      "abs_url": "https://arxiv.org/abs/2601.23267v1",
-      "pdf_url": "https://arxiv.org/pdf/2601.23267v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
       ]
     }
   ]
