@@ -1,7 +1,23 @@
 {
-  "generated_at": "2026-07-13T11:12:38.145782Z",
+  "generated_at": "2026-07-14T09:59:22.227845Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.11554v1",
+      "title": "Robust Spin Qubit Coupler via Minimal Kitaev Chain",
+      "authors": [
+        "Jiaan Qi",
+        "Hongqi Xu"
+      ],
+      "abstract": "While a minimal Kitaev chain is promised to host unprotected Majorana zero modes, its role for spin qubits is relatively underappreciated. Following recent breakthroughs in the fine control of transport behaviors, we propose to use minimal Kitaev chain as a robust coupling module between spin qubits. Long-distance, anisotropic exchange coupling can be mediated by the Andreev bound states (ABSs) in the hybrid segment. The chemical potential of ABS gives a simple way to selectively control the coupling strength and its response to local perturbations. Moreover, this additional control degree of freedom creates a unique sweet spot, allowing both strong coupling and first-order immunity against charge noise. The protected qubit encoded on the minimal Kitaev chain at the sweet spot is shown to boast over 200 fold improvement in decoherence time.",
+      "date": "2026-07-13",
+      "abs_url": "https://arxiv.org/abs/2607.11554v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11554v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2607.09652v1",
       "title": "Silicon-Germanium Heterostructures with Enhanced Valley Splitting for Spin Qubits",
@@ -928,29 +944,6 @@
       "pdf_url": "https://arxiv.org/pdf/2602.14426v1.pdf",
       "categories": [
         "quant-ph",
-        "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2602.12248v2",
-      "title": "Simultaneous High-Fidelity Readout and Strong Coupling for a Donor-Based Spin Qubit",
-      "authors": [
-        "Si Yan Koh",
-        "Weifan Wu",
-        "Kelvin Onggadinata",
-        "Arghya Maity",
-        "Mark Chiyuan Ma",
-        "Calvin Pei Yu Wong",
-        "Kuan Eng Johnson Goh",
-        "Bent Weber",
-        "Hui Khoon Ng",
-        "Teck Seng Koh"
-      ],
-      "abstract": "Superconducting resonators coupled to solid-state qubits offer a scalable architecture for long-range entangling operations and fast, high-fidelity readout. Realizing this requires low photon-loss rates and qubits with tunable electric dipole moments that couple strongly to the resonator's electric field while maintaining long coherence times. For spin qubits, spin-photon coupling is typically achieved via spin-charge hybridization. However, this introduces a fundamental trade-off: a large spin-charge admixture enhances the coupling strength, which boosts readout and resonator-mediated gate speeds, but exposes the qubit to increased decoherence, thereby increasing the threshold required for strong coupling and limiting the time available for accurate state measurement. This makes it essential to identify optimal operating points for each qubit platform. We address this for the donor-based flip-flop qubit, whose microwave-controllable electron-nuclear spin states make it suitable for coupling to microwave resonators. We demonstrate that, by choosing intermediate tunnel couplings that balance strong interaction with long qubit lifetimes, high-fidelity readout and strong coupling are simultaneously achievable. We also map out the respective charge-photon couplings and photon-loss rates required. Furthermore, we show that experimental constraints on charge-photon coupling and photon loss can be mitigated using squeezed input fields. As similar trade-offs appear in quantum-dot-based qubits, our methods and insights extend naturally to these platforms, offering a potential route toward scalable architectures.",
-      "date": "2026-02-12",
-      "abs_url": "https://arxiv.org/abs/2602.12248v2",
-      "pdf_url": "https://arxiv.org/pdf/2602.12248v2.pdf",
-      "categories": [
         "cond-mat.mes-hall"
       ]
     }
