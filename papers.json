@@ -1,7 +1,56 @@
 {
-  "generated_at": "2026-07-14T09:59:22.227845Z",
+  "generated_at": "2026-07-15T10:03:59.417527Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.12565v1",
+      "title": "Fast measurement-based generation of large-scale Greenberger-Horne-Zeilinger state with atomic nuclear-spin qubits",
+      "authors": [
+        "Yan Lu",
+        "Xiao-Feng Shi"
+      ],
+      "abstract": "Large-scale Greenberger-Horne-Zeilinger~(GHZ) state is useful for quantum technologies but difficult to be prepared. Here, we propose fast measurement-based preparation of large-scale GHZ states by a four-qubit quantum phase gate with nuclear-spin qubits of alkaline-earth-like atoms, which is named as quantum ferromagnetic gate~(QFG) due to its analogy to the alignment of molecular magnetic moments in a classical magnet. A high-fidelity Rydberg-mediated QFG can be realized in a time of $6π/Ω_{\\text{m}}$ with $Ω_{\\text{m}}$ the maximal Rydberg Rabi frequency. From a product state of three data atom and one ancilla atom, a gluing circuit with one QFG, two single-qubit gates, and a projective measurement of the ancilla can generate a 3-qubit GHZ state, and repetition of this gluing circuit can lead to 9, 27, 81, 243, $\\cdots$-qubit GHZ states. Analyses based on currently available techniques show that a 243-qubit GHZ state is realizable, and more qubits can be entangled with higher detection fidelity.",
+      "date": "2026-07-14",
+      "abs_url": "https://arxiv.org/abs/2607.12565v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12565v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2607.12002v1",
+      "title": "Remote Entanglement of Solid-State Spin Qubits Integrated in Broadband Waveguides",
+      "authors": [
+        "Christopher Waas",
+        "Timo Dolné",
+        "Hans K. C. Beukers",
+        "Alexander M. Stramma",
+        "Nina Codreanu",
+        "Noé Mathieu",
+        "Ronald Hanson"
+      ],
+      "abstract": "Solid-state spin-photon interfaces promise to scale quantum networks through on-chip photonic integration and multiplexed entanglement generation. To date, remote entanglement between integrated emitters has been realized only in cavity-enhanced systems, where fabrication yield and spectral matching remain major obstacles. Here we demonstrate heralded remote entanglement between diamond tin-vacancy spin qubits embedded in separate on-chip waveguides. Combining intrinsically efficient photon emission with a broadband waveguide architecture provides high device yield and obviates the need for spectral matching to cavity modes. We realize coherent optical and spin control and achieve high-visibility two-photon interference. By combining photon-mediated entanglement generation with real-time feedforward, we produce a consistent entangled state independent of the heralding pattern. These results establish waveguide-integrated tin-vacancy centers as a compelling platform for scalable quantum network nodes.",
+      "date": "2026-07-13",
+      "abs_url": "https://arxiv.org/abs/2607.12002v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12002v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2607.11992v1",
+      "title": "Quantum-classical neurons upgraded with optical spin qubits for advanced computing and networking architectures",
+      "authors": [
+        "Osama M. Nayfeh"
+      ],
+      "abstract": "Hardware neurons incorporating built-in memory components are critical technologies for implementing large scale neural networks that exhibit adaptive-itinerant behavior and produce biological-inspired spiking patterns that match neuroscience known operations (1). Moreover, neurons capable of full quantum information processing through their qubit states and quantum trajectory provides capability for hybrid quantum-classical operations through the level of coherence/entanglement and non-Markovianity (2,3). These attributes further contribute to solving complex quantum mechanical problems by providing a rich and diverse group for expressing quantum neural states. Upgrading these hardware neurons now with optical spin qubits excitable with pulsed laser excitation in the near infrared and designed from negatively charged silicon vacancies in semiconductor silicon carbide (4) and Neodymium rare earth ions in the superconducting Niobium/Niobium oxide film (5) that form the memory provides access to the unique spin Hamiltonian that considers electronic and nuclear interactions. In this manuscript, we experimentally measure opto-electronic quantum-classical neurons integrated with a optical spin qubit and examine how tailored neuronal spiking sequences drive the photoluminescence oscillations and modulate the quantum spin transitions. We derive a quantum model for the system that considers the interaction between the neuron and optical qubit spin and perform calculations to project how quantum computing operations are expandable across the state space in the quantum-classical neuron and spin qubit system. For example, the resulting impact on the neuron quantum states where the strength is adjustable due to dynamical memory changes. These results are critical for realizing hardware neurons with quantum optical capabilities and inspired by the existence in biology of biophotons.",
+      "date": "2026-07-13",
+      "abs_url": "https://arxiv.org/abs/2607.11992v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11992v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2607.11554v1",
       "title": "Robust Spin Qubit Coupler via Minimal Kitaev Chain",
@@ -885,66 +934,6 @@
       "pdf_url": "https://arxiv.org/pdf/2602.19701v1.pdf",
       "categories": [
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2602.17899v1",
-      "title": "Measuring and correcting nanosecond pulse distortions in quantum-dot spin qubits",
-      "authors": [
-        "Jiheng Duan",
-        "Fernando Torres-Leal",
-        "John M. Nichol"
-      ],
-      "abstract": "Gate-defined semiconductor quantum dots utilize fast electrical control to manipulate spin and charge states of individual electrons. Electrical pulse distortions can limit control fidelities but are difficult to measure at the device level. Here, we use detuning-axis pulsed spectroscopy to characterize baseband pulse distortions in a silicon double quantum-dot. We extract the gate-voltage impulse response and apply a digital pre-distortion filter to eliminate pulse distortions on timescales longer than 1~ns. With the pre-distortion, we reduce the frequency chirp of coherent exchange oscillations in a singlet-triplet qubit. Our results suggest a scalable and tuning-efficient method for characterizing pulse distortions in quantum-dot spin qubits.",
-      "date": "2026-02-19",
-      "abs_url": "https://arxiv.org/abs/2602.17899v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.17899v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2602.14782v1",
-      "title": "Spin qubit shuttling between coupled quantum dots with inhomogeneous Landé g-tensors",
-      "authors": [
-        "Zhi-Hai Liu",
-        "Xiao-Fei Liu",
-        "H. Q. Xu"
-      ],
-      "abstract": "By utilizing the site-dependent spin quantization axis in semiconductor quantum dot (QD) arrays, shuttling-based spin qubit gates have become an appealing approach to realize scalable quantum computing due to the circumvention of using high-frequency driving fields. The emergence of a spin deviation from the local quantization axis of one residing QD is the prerequisite to implement the qubit gates. In this work, we study the non-adiabatic dynamics of a spin qubit shuttling between coupled QDs with inhomogeneous Landé g-tensors and a small magnetic field. The spin dynamics is analyzed through solving the time-dependent Schrödinger equation of the qubit under the effects of spin-orbit interaction and rapid ramping inter-dot detuning. The precondition, imposed on the ramping time and the tunnel-coupling strength, to ensure a high-fidelity inter-dot transfer is estimated. We then calculate the change in the spin orientation of a transferred qubit, and study the dependences of the spin deviation on the difference in the quantization axes of the two QDs, the tunnel-coupling strength, and the ramping time. We also demonstrate that the effect of multiple rounds of inter-dot bidirectional shuttling can be captured by an operator matrix, and evaluate the idling times required for realizing the single-qubit Pauli-X and Pauli-Y gates. Intriguingly, it is confirmed that a generalized Hadamard gate can be achieved through tuning the idling times.",
-      "date": "2026-02-16",
-      "abs_url": "https://arxiv.org/abs/2602.14782v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.14782v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2602.14426v1",
-      "title": "Electron readout contrast enhancement in the parallel nuclear regime of an exchange-coupled donor spin qubit system",
-      "authors": [
-        "Holly G. Stemp",
-        "Mark R. van Blankenstein",
-        "Benjamin Wilhelm",
-        "Serwan Asaad",
-        "Mateusz T. Mądzik",
-        "Arne Laucht",
-        "Fay E. Hudson",
-        "Andrew S. Dzurak",
-        "Kohei M. Itoh",
-        "Alexander M. Jakob",
-        "Brett C. Johnson",
-        "David N. Jamieson",
-        "Andrea Morello"
-      ],
-      "abstract": "Recent experiments on donor-based spin qubits in silicon have leveraged the exchange interaction between electrons bound to separate donor nuclei to perform two-qubit operations. A consistently observed yet unexplained phenomenon in such systems is the significant increase in electron readout contrast, measured via Elzerman-style readout to a single-electron transistor (SET) island, when the donor nuclei are initialized in a parallel spin orientation compared to an anti-parallel orientation. In this work, we present a detailed analysis of the exchange-coupled donor system in the parallel nuclear regime and propose a physical mechanism for this effect. We attribute the enhanced readout contrast to an additional electron tunneling event to the SET during a single read period, when the donor nuclei are aligned in a parallel spin configuration. These insights inform strategies for improving electron readout fidelity in these systems and contribute to a more complete understanding of spin-dependent tunnelling processes in donor-based qubit architectures.",
-      "date": "2026-02-16",
-      "abs_url": "https://arxiv.org/abs/2602.14426v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.14426v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall"
       ]
     }
   ]
