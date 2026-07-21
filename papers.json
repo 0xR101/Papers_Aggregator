@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-20T10:53:13.808895Z",
+  "generated_at": "2026-07-21T10:25:57.481262Z",
   "total": 50,
   "papers": [
     {
-      "id": "2607.15333v1",
+      "id": "2607.15333v2",
       "title": "Nanoscale stray fields from micromagnets for optimal spin qubit architecture",
       "authors": [
         "Sandrine Lopes",
@@ -15,8 +15,8 @@
       ],
       "abstract": "On-chip micromagnets generate local magnetic-field asymmetries, enabling electrical control of spin qubits via electric dipole spin resonance and their integration into circuit quantum electrodynamics (QED) architectures. Accurate prediction of spin-qubit performance requires modeling micromagnet stray fields beyond the saturated-magnet approximation, accounting for nonuniform magnetization. Here, we combine thin-film characterization of Co, Co/Ta multilayers, and CoFe films with nanoscale stray-field measurements using NV-center magnetometry in the unsaturated regime to establish a reliable micromagnetic simulation framework. We show that CoFe micromagnets generate antisymmetric fields in double quantum-dot geometries exceeding +/- 100mT, owing to their high saturation magnetization and favorable magnetocrystalline anisotropy. For spin qubits coupled to microwave resonators, the predicted spin-photon coupling reaches $\\left| g_s/g_c \\right| \\approx 0.5$, where $g_c$ denotes the charge-photon coupling strength of the underlying charge qubit, highlighting the potential for high-fidelity operations in circuit QED architectures.",
       "date": "2026-07-16",
-      "abs_url": "https://arxiv.org/abs/2607.15333v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.15333v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2607.15333v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.15333v2.pdf",
       "categories": [
         "cond-mat.mes-hall"
       ]
@@ -276,7 +276,7 @@
       ]
     },
     {
-      "id": "2606.26066v1",
+      "id": "2606.26066v2",
       "title": "All-electrical dephasing-protected spin qubits in altermagnets",
       "authors": [
         "José Carlos Abadillo-Uriel",
@@ -285,10 +285,10 @@
         "Ramón Aguado",
         "Rubén Seoane Souto"
       ],
-      "abstract": "We introduce altermagnetic semiconductors as a materials platform for scalable, all-electrical controllable spin qubits that operate without magnetic fields in gate-defined quantum dots. The altermagnet intrinsic finite-momentum spin polarization provides a field-free qubit splitting that is fully and continuously tunable through the dot ellipticity with electrostatic gates, delivering individually addressable qubit frequencies. Furthermore, the altermagnetic spin splitting is first-order insensitive to electric field fluctuations by construction and quantization-axis fluctuations produce only transverse coupling, yielding relaxation without pure dephasing, a distinct dephasing-protection yielding an advantage over conventional spin qubits. The net-zero magnetization eliminates stray-fields and renders the platform compatible with superconducting resonators thus enabling high-fidelity, non-demolition circuit-QED readout by dispersive coupling of the qubit spin-dependent electric dipole couples to a resonator. Starting from an effective quantum-dot description, supported by a microscopic lattice-model, we derive the qubit Hamiltonian and establish that it naturally supports a complete gate set: electric-dipole spin resonance controls single qubits, while tunable exchange combined with per-qubit frequency addressing directly implements the fermionic simulation (fSim) family of two-qubit gates. Crucially, within the same platform it is possible to implement a singlet-triplet qubit with fully electrical control over both exchange and splitting differences, removing the need for micromagnets or nuclear polarization gradients, while enabling baseband operation. Our results establish altermagnetic quantum dots as a novel, all-electrical route to spin qubits with enhanced protection.",
+      "abstract": "We propose altermagnetic semiconductors as a platform for field-free, all-electrically controlled spin qubits in gate-defined quantum dots. The momentum-dependent spin splitting of an altermagnet produces a Zeeman-like qubit splitting whose magnitude and sign are set by the dot ellipticity, enabling local frequency tunability without external magnetic fields or micromagnets. Because the splitting is tied to a fixed altermagnetic quantization axis, electric-field noise is longitudinally suppressed at leading order, while quantization-axis fluctuations couple transversely and therefore cause relaxation rather than pure dephasing. The compensated magnetic order also avoids stray fields, making the platform naturally compatible with superconducting resonators and dispersive circuit-QED readout through the qubit's spin-dependent electric dipole. Starting from an effective quantum-dot model, supported by a microscopic lattice model, we derive the single- and two-dot Hamiltonian models. We show that electric-dipole spin resonance enables single-qubit control, while tunable exchange and electrically addressable qubit frequencies realize fSim two-qubit gates. The same double-dot architecture also supports singlet-triplet qubits with electrical control of both exchange and splitting gradients, removing the need for micromagnets or nuclear-polarization gradients. These results establish altermagnetic quantum dots as a route to field-free spin qubits with intrinsic electrical tunability and enhanced dephasing protection.",
       "date": "2026-06-24",
-      "abs_url": "https://arxiv.org/abs/2606.26066v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.26066v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2606.26066v2",
+      "pdf_url": "https://arxiv.org/pdf/2606.26066v2.pdf",
       "categories": [
         "cond-mat.mes-hall"
       ]
@@ -533,7 +533,7 @@
       ]
     },
     {
-      "id": "2605.13680v1",
+      "id": "2605.13680v2",
       "title": "Comparative assessment of germanium-based spin-qubit modalities: donor, acceptor, gate-defined hole, and gate-defined electron platforms",
       "authors": [
         "D. -M. Mei",
@@ -546,8 +546,8 @@
       ],
       "abstract": "High-purity germanium (Ge) has re-emerged as a versatile semiconductor platform for spin-based quantum information processing because it combines mature materials processing, access to spin-free isotopes, high mobilities, small effective masses, and strong but engineerable spin--orbit coupling. However, ``Ge qubits'' are not a single technology. Donor spin qubits, acceptor spin qubits, gate-defined hole spin qubits, and gate-defined electron spin qubits exploit different parts of the Ge band structure and therefore make distinct trade-offs among coherence, controllability, fabrication complexity, and scalability. Here we compare these four Ge-based spin-qubit modalities on a common physical and architectural footing. We review the shared Ge materials physics, including isotopic purification, the multivalley \\(L\\)-point conduction band, the spin-\\(3/2\\) valence band, heavy-hole/light-hole mixing, strain, interfaces, disorder, and phonons. We also introduce a common framework for estimating phononic-crystal-modified \\(T_1\\) using a calibrated reference relaxation rate, a geometry-dependent strain-density-of-states suppression factor, and parasitic relaxation channels. The comparison shows that gate-defined Ge hole-spin qubits currently offer the strongest combination of all-electrical control, demonstrated multiqubit operation, and scalability. Donor, acceptor, and gate-defined electron qubits remain important complementary directions for memory, hybrid, and exploratory architectures. Overall, Ge supports a diverse qubit ecosystem, with gate-defined hole-spin qubits presently providing the clearest path toward scalable Ge-based quantum processors.",
       "date": "2026-05-13",
-      "abs_url": "https://arxiv.org/abs/2605.13680v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.13680v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2605.13680v2",
+      "pdf_url": "https://arxiv.org/pdf/2605.13680v2.pdf",
       "categories": [
         "quant-ph"
       ]
@@ -856,7 +856,7 @@
       ]
     },
     {
-      "id": "2603.07806v1",
+      "id": "2603.07806v2",
       "title": "Four-state discrimination for a pair of spin qubits via gate reflectometry",
       "authors": [
         "Aritra Sen",
@@ -864,8 +864,8 @@
       ],
       "abstract": "Single-electron spin qubits defined in quantum dots are used as building blocks of a semiconductor-based quantum computer. Readout in a scaled-up version of such a quantum computer is expected to rely on the Pauli Spin Blockade (PSB) mechanism. A desired functionality of PSB readout is that it reveals two bits of information on the two spin qubits that are involved in the process, such that the four computational basis states can be discriminated. In this work, we propose and quantitatively analyze an experimental procedure, based on gate reflectometry, which enables this four-state discrimination in a single measurement. We provide an intuitive recipe to maximize the contrast between the quantum capacitances of the four basis states. Focusing on silicon double quantum dots equipped with a micromagnet, we quantify how amplifier noise and phonon-mediated relaxation influence readout fidelity. Our results highlight a realistic opportunity to mitigate the overhead of readout ancilla qubits in a spin-based quantum computer.",
       "date": "2026-03-08",
-      "abs_url": "https://arxiv.org/abs/2603.07806v1",
-      "pdf_url": "https://arxiv.org/pdf/2603.07806v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2603.07806v2",
+      "pdf_url": "https://arxiv.org/pdf/2603.07806v2.pdf",
       "categories": [
         "cond-mat.mes-hall",
         "quant-ph"
