@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T10:25:54.512602Z",
+  "generated_at": "2026-07-23T10:24:06.912412Z",
   "total": 50,
   "papers": [
     {
@@ -290,7 +290,8 @@
       "abs_url": "https://arxiv.org/abs/2606.26066v2",
       "pdf_url": "https://arxiv.org/pdf/2606.26066v2.pdf",
       "categories": [
-        "cond-mat.mes-hall"
+        "cond-mat.mes-hall",
+        "quant-ph"
       ]
     },
     {
