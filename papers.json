@@ -1,7 +1,32 @@
 {
-  "generated_at": "2026-07-26T10:02:10.270194Z",
+  "generated_at": "2026-07-27T11:23:41.367341Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.22439v1",
+      "title": "Highly indistinguishable photons from a tin-vacancy spin qubit in diamond",
+      "authors": [
+        "Dennis Herrmann",
+        "Robert Morsch-Golsong",
+        "Tobias Bauer",
+        "Marlon Schäfer",
+        "David Lindler",
+        "Linus Ehre",
+        "Peter van Loock",
+        "Matthew Markham",
+        "Nicola Palmer",
+        "Soumen Mandal",
+        "Oliver Williams",
+        "Christoph Becher"
+      ],
+      "abstract": "Quantum networks promise secure communication, distributed sensing and modular quantum computing by interconnecting distant quantum nodes through photonic links. Extending such networks beyond metropolitan distances requires quantum repeaters to overcome the exponential attenuation of photons in optical fiber. Across all architectures, a key requirement is the indistinguishability of single photons, which directly impacts the fidelity of photonic operations based on two-photon interference, such as Bell-state measurements and fusion gates. Here, we demonstrate generation of highly indistinguishable single photons from a coherently excited tin-vacancy center in diamond, achieving raw Hong-Ou-Mandel interference visibilities exceeding 0.95. By separating intrinsic emitter properties from technical imperfections, we show that decoherence plays a negligible role and that the remaining limitations are predominantly technical in nature, arriving at an intrinsic indistinguishability of up to 0.999. We further show that quantum frequency conversion to the telecom C-band preserves the photon indistinguishability. In combination with the long-lived electron and nuclear spin coherence times, these results establish tin-vacancy centers in diamond as a competitive platform for long-distance quantum networks and photonic quantum information processing. We further substantiate this potential through Monte Carlo simulations of a quantum-repeater link, demonstrating that the SnV-center platform surpasses the bound set by direct transmission.",
+      "date": "2026-07-24",
+      "abs_url": "https://arxiv.org/abs/2607.22439v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.22439v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2607.15333v2",
       "title": "Nanoscale stray fields from micromagnets for optimal spin qubit architecture",
@@ -948,25 +973,6 @@
       "abs_url": "https://arxiv.org/abs/2603.01987v1",
       "pdf_url": "https://arxiv.org/pdf/2603.01987v1.pdf",
       "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2602.21322v1",
-      "title": "Using near-flat-band electrons for read-out of molecular spin qubit entangled states",
-      "authors": [
-        "Christian Bunker",
-        "Silas Hoffman",
-        "Shuanglong Liu",
-        "Xiao-Guang Zhang",
-        "Hai-Ping Cheng"
-      ],
-      "abstract": "While molecular spin qubits (MSQs) are a promising platform for quantum computing, read-out has been largely limited to electron paramagnetic resonance which is often slow and requires a global system drive. Moreover, because one prerequisite for the Elzerman and Pauli spin blockade readout mechanisms typical of semiconductor spin qubits is tunneling of electrons between sites, these read-out modalities are unavailable in MSQs. Here, we theoretically demonstrate electrical read-out of entangled MSQs via driven many-electron spin unpolarized currents. In particular, using a time-dependent density matrix renormalization group approach we simulate a maximally entangled MSQ pair between two electronic leads. Driving itinerant electrons between the two leads, we find that the conductance is greater when the MSQs are in the entangled singlet state as compared to the entangled triplet state. This contrast in conductance is enhanced when the electronic density of states at the Fermi energy is large and for narrow bandwidth. Our results are readily applicable to molecules supramolecularly functionalizing semiconductors with relatively flat bands such as single-wall carbon nanotubes under a magnetic field.",
-      "date": "2026-02-24",
-      "abs_url": "https://arxiv.org/abs/2602.21322v1",
-      "pdf_url": "https://arxiv.org/pdf/2602.21322v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
         "quant-ph"
       ]
     }
