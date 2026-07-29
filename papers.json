@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-07-28T10:36:24.514700Z",
+  "generated_at": "2026-07-29T10:40:21.165430Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.26019v1",
+      "title": "Predicting the Slow Drift of Nuclear Spin Noise in Semiconductor Spin Qubits",
+      "authors": [
+        "Wayne M. Witzel",
+        "Jesse J. Lutz",
+        "Matthew D. Grace",
+        "Natalie D. Foster",
+        "Ryan M. Jock",
+        "Dwight R. Luhman"
+      ],
+      "abstract": "The dynamics of a nuclear spin bath generates magnetic noise that is a key contributor to the decoherence of electron spin qubits in electrostatically-defined quantum dots. In this paper, we extend the cluster correlation expansion (CCE) technique, which has proven useful for predicting solid-state qubit coherence times across various settings but is limited to shorter time scales, to incorporate stochastic treatments of cluster dynamics in order to efficiently predict slow drifting Overhauser fields over longer time scales. This approach combines quantum evolution with classical rate matrices to enable simulation across a wide range of temporal regimes required to simulate, for example, the long-time convergence of the ergodic $T_2^*$ from Ramsey experiments. Our methodology is validated against experimental data from various silicon spin qubit systems, demonstrating a strong agreement between simulation and measurement of Ramsey experiments presented in the form of $T_2^*$ versus averaging time, autocorrelation functions, as well as power spectral densities. Furthermore, we demonstrate significant back-action effects through modeling and experiment; specifically, the dynamics of the nuclear spin bath depends upon the electron spin occupation schedule. Finally, our modeling quantitatively predicts the benefits from compensating for the slow drift of Overhauser fields in qubit operations. Our findings indicate that compensating for an Overhauser rotation measured $Δt$ in the past results in an effective $T_2^*$, which we denote $\\tilde{T}_2^*(Δt)$ for clarity, under certain scenarios of interest, can be one or two orders of magnitude larger than the ergodic $T_2^*$ if the Overhauser rotation is re-characterized every 100 milliseconds; that is, $\\tilde{T}_2^*(Δt = 100~{\\rm ms})$ can be $10$ to $100$ times larger than $T_2^*$.",
+      "date": "2026-07-28",
+      "abs_url": "https://arxiv.org/abs/2607.26019v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26019v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2607.24967v1",
+      "title": "Spin-cQED with bulk germanium spin qubits",
+      "authors": [
+        "A. -F. Kalo",
+        "E. A. Rodríguez-Mena",
+        "J. C. Abadillo-Uriel",
+        "M. Filippone",
+        "Y. -M. Niquet"
+      ],
+      "abstract": "Unstrained bulk germanium is a particularly attractive material for circuit quantum electrodynamics with spins (spin-cQED). We show, through systematic modeling and comparison with state-of-the-art strained germanium heterostructures, that hole spins in bulk germanium double quantum dots readily reach the strong-coupling regime with superconducting microwave resonators, achieving spin-photon coupling strengths $g_s/2π\\gtrsim100$\\,MHz. This enhancement originates from large spin-orbit interactions beyond the perturbative regime. In addition, the coupling is much less sensitive to the orientation of the applied magnetic field, which shall ease operation and limit the impact of device-to-device variability. Our results establish bulk germanium as a compelling platform for scalable spin-cQED.",
+      "date": "2026-07-27",
+      "abs_url": "https://arxiv.org/abs/2607.24967v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24967v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2607.24521v1",
       "title": "Thermal Quantum Correlations in Coupled Andreev Spin Qubits: Interplay of Superconducting Phase and Spin-Orbit Interaction",
@@ -224,7 +263,8 @@
       "abs_url": "https://arxiv.org/abs/2607.07822v2",
       "pdf_url": "https://arxiv.org/pdf/2607.07822v2.pdf",
       "categories": [
-        "quant-ph"
+        "quant-ph",
+        "cs.ET"
       ]
     },
     {
@@ -928,50 +968,6 @@
       "abs_url": "https://arxiv.org/abs/2603.06320v1",
       "pdf_url": "https://arxiv.org/pdf/2603.06320v1.pdf",
       "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2603.04773v1",
-      "title": "Robust composite two-qubit gates for silicon-based spin qubits",
-      "authors": [
-        "Yang-Yang Yu",
-        "Guang-Hui Zhang",
-        "Yan-Jie He",
-        "Jun Wu",
-        "Xue-Ke Song",
-        "Dong Wang"
-      ],
-      "abstract": "We propose a universal approach based on Hamiltonian inverse engineering to realize a set of parameterized two-qubit gates. This method possesses unique advantages to simultaneous control of transitions among four energy levels, providing a simpler and effective way to construct composite two-qubit gates with fewer operations than traditional methods. Applied to silicon double quantum dots (DQDs), one can realize a one-step fSim gate and a B gate with only one pulse switch. Of note, the method can be further integrated with various optimization theories to enhance gate performance. Based on quantum optimal control theory, we develop a high-fidelity fSim gate scheme with experimentally feasible pulse shapes, featuring an average gate time of 50 ns and a theoretical fidelity of 99.95% in the presence of decoherence and approximation error. By incorporating geometric quantum gate principles, we propose a combined geometric and dynamic fSim gate scheme. Numerical simulations demonstrate that this hybrid scheme exhibits stronger robustness against systematic errors compared to the purely dynamic approach. Our method is generalizable to arbitrary two-qubit physical systems, offering a feasible pathway for rapidly and robustly constructing composite two-qubit gates.",
-      "date": "2026-03-05",
-      "abs_url": "https://arxiv.org/abs/2603.04773v1",
-      "pdf_url": "https://arxiv.org/pdf/2603.04773v1.pdf",
-      "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2603.03051v1",
-      "title": "Scaling of silicon spin qubits under correlated noise",
-      "authors": [
-        "Juan S. Rojas-Arias",
-        "Leon C. Camenzind",
-        "Yi-Hsien Wu",
-        "Peter Stano",
-        "Akito Noiri",
-        "Kenta Takeda",
-        "Takashi Nakajima",
-        "Takashi Kobayashi",
-        "Giordano Scappucci",
-        "Daniel Loss",
-        "Seigo Tarucha"
-      ],
-      "abstract": "The path to fault-tolerant quantum computing hinges on hardware that scales while remaining compatible with quantum error correction (QEC). Silicon spin qubits are a leading hardware candidate because they combine industrial fabrication compatibility with a nanoscale footprint that could accommodate millions of qubits on a chip. However, their suitability for QEC remains uncertain since spatially correlated noise naturally emerges from the resulting close proximity of qubits. These correlations increase the likelihood of simultaneous errors and erode the redundancy that QEC depends on. Here we quantify the spatial extent of noise correlations in a five-qubit silicon array and assess their impact on QEC. We identify two distinct sources of correlated noise: global magnetic field drifts that generate perfectly correlated fluctuations, and charge noise from two-level fluctuators that produces short-range correlations decaying within neighboring qubits. While magnetic drifts represent a critical correlated noise source that can compromise QEC, they can be mitigated. In contrast, the measured charge noise correlations are moderate, electrically tunable, and compatible with fault-tolerant operation with minimal qubit overhead. Our results establish quantitative benchmarks for correlated noise and clarify how such correlations impact the viability of quantum error correction in scalable qubit arrays.",
-      "date": "2026-03-03",
-      "abs_url": "https://arxiv.org/abs/2603.03051v1",
-      "pdf_url": "https://arxiv.org/pdf/2603.03051v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
         "quant-ph"
       ]
     }
