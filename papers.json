@@ -1,7 +1,32 @@
 {
-  "generated_at": "2026-07-29T10:40:21.165430Z",
+  "generated_at": "2026-07-30T10:25:19.348365Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.27067v1",
+      "title": "A Degenerate Singlet-Triplet Qubit with All-Electrical Orthogonal Control",
+      "authors": [
+        "Phuong X. Nguyen",
+        "Konstantinos Tsoukalas",
+        "Jann H. Ungerer",
+        "Julian Santen",
+        "Valentin John",
+        "Stefan D. Oosterhout",
+        "Lucas Stehouwer",
+        "Stefano Bosco",
+        "Giordano Scappucci",
+        "Menno Veldhorst",
+        "Amir Yacoby"
+      ],
+      "abstract": "Singlet-triplet qubits offer an attractive encoding for semiconductor quantum computing, combining ancilla-free readout, reduced sensitivity to common-mode noise, and baseband voltage control. However, the Zeeman energy difference $ΔE_\\mathrm{Z}$ is typically fixed by local magnetic field gradients or $g$-factor inhomogeneities, leaving the exchange interaction $J$ as the only dynamically tunable parameter. This always-on $ΔE_\\mathrm{Z}$ precludes orthogonal control of the qubit's rotation axes and introduces unwanted state rotations during idling. Here we demonstrate all-electrical orthogonal control of a degenerate singlet-triplet (DST) qubit formed by two hole spins in a germanium double quantum dot. Exploiting the electrically tunable anisotropic $g$-factors of the two spins, we identify a regime where both $ΔE_\\mathrm{Z}$ and $J$ vanish, making the $S$ and $T_0$ states degenerate at the idle point. By applying only baseband voltage pulses, we independently control both $J$ and $ΔE_\\mathrm{Z}$, enabling fully orthogonal $Z$- and $X$-axis rotations. Randomized benchmarking yields an average physical single-qubit gate fidelity of 99.53\\% for a gate duration of approximately 100 ns. Finally, we electrically tune the degenerate point across a wide range of magnetic field orientations, enabling operation in a regime of enhanced coherence time and offering a route towards multi-qubit scaling under a shared global magnetic field.",
+      "date": "2026-07-29",
+      "abs_url": "https://arxiv.org/abs/2607.27067v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27067v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2607.26019v1",
       "title": "Predicting the Slow Drift of Nuclear Spin Noise in Semiconductor Spin Qubits",
@@ -951,23 +976,6 @@
       "pdf_url": "https://arxiv.org/pdf/2603.07806v2.pdf",
       "categories": [
         "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2603.06320v1",
-      "title": "Leakage-protected idle operation of a triangular exchange-only spin qubit",
-      "authors": [
-        "Joseph D. Broz",
-        "Jesse C. Hoke",
-        "Edwin Acuna",
-        "Jason R. Petta"
-      ],
-      "abstract": "We characterize the coherence of a triangular exchange-only (EO) spin qubit operated at a leakage-protected idle (LPI) point. The triangular geometry enables independent control of all three pairwise exchange interactions, and the LPI condition occurs when these couplings are turned on simultaneously and tuned to equal strength. In this configuration, the exchange interaction induces an energy gap $E_g = 3J/2$ that suppresses leakage from the computational subspace while leaving the qubit state unaffected. We develop procedures to calibrate the LPI point and measure $E_g$, and use these to characterize the qubit dephasing time over a broad range of gap energies. While operating with large always-on exchange couplings exposes the qubit to charge noise, we find that $\\tilde{T}_2^*$ still exceeds that of conventional exchange-only spin qubits for $E_g/h < 60$ MHz. The precise control of simultaneous, all-to-all connected exchange demonstrated here presents a natural path towards improving the performance of EO qubits and also enables novel qubit encodings.",
-      "date": "2026-03-06",
-      "abs_url": "https://arxiv.org/abs/2603.06320v1",
-      "pdf_url": "https://arxiv.org/pdf/2603.06320v1.pdf",
-      "categories": [
         "quant-ph"
       ]
     }
