@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-07-30T10:25:19.348365Z",
+  "generated_at": "2026-07-31T10:40:15.721185Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.27527v1",
+      "title": "Noise-resilient and Scalable Quantum Error Correction for Nuclear Spin Qubits in Silicon with Electron Shuttling",
+      "authors": [
+        "Wayne M. Witzel",
+        "Matthew D. Grace",
+        "Dwight R. Luhman"
+      ],
+      "abstract": "Nuclear spin qubits in silicon are well-isolated from their environment. Consequently, they have very long lifetimes and low sensitivity to noise, but this also suggests that control and measurement is challenging. We introduce electron pair interferometry (EPI), a protocol to overcome this challenge and maintain robustness to noise. EPI is implemented using an array of quantum dots with isoelectronic nuclear spin qubits located in the dots. A pair of electrons are initialized into a singlet ground state, split apart, and shuttled to the dots containing nuclear spin qubits. We show it is possible to coherently transfer the parity of the nuclei onto the measurable state of singlet/triplet-encoded electrons. Global nuclear magnetic resonance (NMR) can be used to change bases and implement dynamical decoupling (DD). Combined with selective hyperfine-induced $Z_π$ rotations, our gate set is complete for universal quantum computation, tailored to Calderbank-Shor-Steane (CSS) quantum error correction, and robust to noise. We discuss very low sensitivity to charge noise and study the sensitivity to both DC and AC magnetic field inhomogeneity which depends strongly on their relative strengths.",
+      "date": "2026-07-29",
+      "abs_url": "https://arxiv.org/abs/2607.27527v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27527v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2607.27067v1",
       "title": "A Degenerate Singlet-Triplet Qubit with All-Electrical Orthogonal Control",
@@ -958,22 +975,6 @@
       "date": "2026-03-13",
       "abs_url": "https://arxiv.org/abs/2603.13519v1",
       "pdf_url": "https://arxiv.org/pdf/2603.13519v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2603.07806v2",
-      "title": "Four-state discrimination for a pair of spin qubits via gate reflectometry",
-      "authors": [
-        "Aritra Sen",
-        "András Pályi"
-      ],
-      "abstract": "Single-electron spin qubits defined in quantum dots are used as building blocks of a semiconductor-based quantum computer. Readout in a scaled-up version of such a quantum computer is expected to rely on the Pauli Spin Blockade (PSB) mechanism. A desired functionality of PSB readout is that it reveals two bits of information on the two spin qubits that are involved in the process, such that the four computational basis states can be discriminated. In this work, we propose and quantitatively analyze an experimental procedure, based on gate reflectometry, which enables this four-state discrimination in a single measurement. We provide an intuitive recipe to maximize the contrast between the quantum capacitances of the four basis states. Focusing on silicon double quantum dots equipped with a micromagnet, we quantify how amplifier noise and phonon-mediated relaxation influence readout fidelity. Our results highlight a realistic opportunity to mitigate the overhead of readout ancilla qubits in a spin-based quantum computer.",
-      "date": "2026-03-08",
-      "abs_url": "https://arxiv.org/abs/2603.07806v2",
-      "pdf_url": "https://arxiv.org/pdf/2603.07806v2.pdf",
       "categories": [
         "cond-mat.mes-hall",
         "quant-ph"
