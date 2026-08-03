@@ -1,7 +1,26 @@
 {
-  "generated_at": "2026-08-02T09:57:51.966814Z",
+  "generated_at": "2026-08-03T11:24:22.997268Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2607.29206v1",
+      "title": "Chiral magnons for spin-qubit state transfer",
+      "authors": [
+        "Martijn Dols",
+        "Carlos Gonzalez-Ballestero",
+        "Mikhail Cherkasskii",
+        "Christian L. Degen",
+        "Victor A. S. V. Bittencourt",
+        "Silvia Viola Kusminskiy"
+      ],
+      "abstract": "We propose a protocol where chiral magnons mediate a state transfer between two distant spin qubits. The protocol is implemented by varying the coupling between the spin qubits and the magnons in time, such that an arbitrary state is transferred from one qubit to the other. The modulation of the coupling is performed such that the two-spin-qubit state is kept as a dark state of the magnon bath, bypassing the associated losses. We show that the protocol can be realized on a hybrid system composed of two nitrogen-vacancy (NV) centers coupled to the nonreciprocal and chiral magnon modes of an yttrium iron garnet (YIG) stripe. We propose two methods to achieve the time modulation of the NV-magnon coupling: i) the NV-magnet distance of both NV centers is varied; ii) the external magnetic field and the NV-magnet distance of one NV center are varied. We evaluate the implementability of both methods numerically, including the constraints on the temperature, and the dephasing time and minimal lifetime of the spin qubits required for high-fidelity state transfer. We find that using realistic experimental parameters, a state transfer between NV centers at a distance of several microns can be achieved with a fidelity $\\gtrsim 0.95$. Our findings expand the toolbox of magnonics for quantum information purposes.",
+      "date": "2026-07-31",
+      "abs_url": "https://arxiv.org/abs/2607.29206v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.29206v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2607.27527v1",
       "title": "Noise-resilient and Scalable Quantum Error Correction for Nuclear Spin Qubits in Silicon with Electron Shuttling",
@@ -658,7 +677,7 @@
       ]
     },
     {
-      "id": "2605.13680v2",
+      "id": "2605.13680v3",
       "title": "Comparative assessment of germanium-based spin-qubit modalities: donor, acceptor, gate-defined hole, and gate-defined electron platforms",
       "authors": [
         "D. -M. Mei",
@@ -671,8 +690,8 @@
       ],
       "abstract": "High-purity germanium (Ge) has re-emerged as a versatile semiconductor platform for spin-based quantum information processing because it combines mature materials processing, access to spin-free isotopes, high mobilities, small effective masses, and strong but engineerable spin--orbit coupling. However, ``Ge qubits'' are not a single technology. Donor spin qubits, acceptor spin qubits, gate-defined hole spin qubits, and gate-defined electron spin qubits exploit different parts of the Ge band structure and therefore make distinct trade-offs among coherence, controllability, fabrication complexity, and scalability. Here we compare these four Ge-based spin-qubit modalities on a common physical and architectural footing. We review the shared Ge materials physics, including isotopic purification, the multivalley \\(L\\)-point conduction band, the spin-\\(3/2\\) valence band, heavy-hole/light-hole mixing, strain, interfaces, disorder, and phonons. We also introduce a common framework for estimating phononic-crystal-modified \\(T_1\\) using a calibrated reference relaxation rate, a geometry-dependent strain-density-of-states suppression factor, and parasitic relaxation channels. The comparison shows that gate-defined Ge hole-spin qubits currently offer the strongest combination of all-electrical control, demonstrated multiqubit operation, and scalability. Donor, acceptor, and gate-defined electron qubits remain important complementary directions for memory, hybrid, and exploratory architectures. Overall, Ge supports a diverse qubit ecosystem, with gate-defined hole-spin qubits presently providing the clearest path toward scalable Ge-based quantum processors.",
       "date": "2026-05-13",
-      "abs_url": "https://arxiv.org/abs/2605.13680v2",
-      "pdf_url": "https://arxiv.org/pdf/2605.13680v2.pdf",
+      "abs_url": "https://arxiv.org/abs/2605.13680v3",
+      "pdf_url": "https://arxiv.org/pdf/2605.13680v3.pdf",
       "categories": [
         "quant-ph"
       ]
@@ -956,27 +975,6 @@
       "abs_url": "https://arxiv.org/abs/2603.29229v1",
       "pdf_url": "https://arxiv.org/pdf/2603.29229v1.pdf",
       "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2603.13519v1",
-      "title": "Spin qubit gates via phonon buses in electron nanowires",
-      "authors": [
-        "Dylan Lewis",
-        "Roopayan Ghosh",
-        "Sanjeev Kumar",
-        "Michael Pepper",
-        "Charles Smith",
-        "Karyn Le Hur",
-        "Sougato Bose"
-      ],
-      "abstract": "Scalable architectures for quantum computing using semiconductor quantum dots require interactions between qubits beyond adjacent quantum dots. Here, we propose using nanowires of electrons to mediate the interaction between two quantum dots. Virtual phonons in the linear chain of electrons can mediate an interaction that gives rise to effective spin-spin coupling of the electrons in distant quantum dots. We find coupling strengths of more than 30 MHz for experimentally realisable parameters in GaAs quantum dots.",
-      "date": "2026-03-13",
-      "abs_url": "https://arxiv.org/abs/2603.13519v1",
-      "pdf_url": "https://arxiv.org/pdf/2603.13519v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
         "quant-ph"
       ]
     }
