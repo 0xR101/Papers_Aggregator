@@ -1,7 +1,23 @@
 {
-  "generated_at": "2026-08-09T08:43:56.449531Z",
+  "generated_at": "2026-08-10T09:23:20.557359Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2608.06859v1",
+      "title": "Spin Qubits in Photon-Coupled Microwave Cavities",
+      "authors": [
+        "Samuel Johnson",
+        "Nancy Sandler"
+      ],
+      "abstract": "Electron spin qubits in microwave cavities provide a promising platform for scalable quantum computing hardware, leveraging long coherence times, charge-noise robustness and cavity mediated qubit-qubit interactions. While the strong spin-photon coupling regime is accessible via on-chip micromagnets, scaling conventional architectures by placing multiple qubits within a single shared resonator degrades transmission amplitudes, hence limiting large-scale efficiency. To overcome this limitation, we analyze a modular architecture where individual cavities containing a limited number of qubits are coupled via single-photon-exchange waveguides. Using input/output theory, we compute the transmission amplitudes for networks of two and three coupled cavities in various configurations. We map out the distinct physical regimes accessible by tuning key system parameters, offering a viable pathway for scalable cavity-based quantum spin qubit networks.",
+      "date": "2026-08-07",
+      "abs_url": "https://arxiv.org/abs/2608.06859v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.06859v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2607.29206v1",
       "title": "Chiral magnons for spin-qubit state transfer",
@@ -952,30 +968,6 @@
       "categories": [
         "quant-ph",
         "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2603.29229v1",
-      "title": "Direct measurement of the energy spectrum of a quantum dot qubit",
-      "authors": [
-        "J. Reily",
-        "Daniel J. King",
-        "Jonathan C. Marcks",
-        "M. A. Wolfe",
-        "Piotr Marciniec",
-        "E. S. Joseph",
-        "Tyler J. Kovach",
-        "Brighton X. Coe",
-        "Mark Friesen",
-        "Benjamin D. Woods",
-        "M. A. Eriksson"
-      ],
-      "abstract": "The mapping between gate voltages applied to a double quantum dot, and the parameters of a Hubbard-like Hamiltonian, is of utmost importance for understanding and operating spin qubits. State-of-the-art techniques for measuring Hamiltonian parameters (e.g., detuning axis pulsed spectroscopy, DAPS) provide details about energy levels; however, tunnel coupling estimates typically reveal only a small portion of the full Hamiltonian. Here, we demonstrate a Hamiltonian-agnostic technique for measuring the double dot energy spectrum over a wide energy range, at every value of the detuning, called delta-axis spectroscopy (DAXS). We apply the DAXS method to obtain the energy spectrum of a Si/SiGe double quantum dot and use this data to extract the diagonal and off-diagonal couplings of a 15-level Hubbard-like Hamiltonian, demonstrating very good agreement with the experimental measurements.",
-      "date": "2026-03-31",
-      "abs_url": "https://arxiv.org/abs/2603.29229v1",
-      "pdf_url": "https://arxiv.org/pdf/2603.29229v1.pdf",
-      "categories": [
-        "quant-ph"
       ]
     }
   ]
