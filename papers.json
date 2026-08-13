@@ -1,7 +1,28 @@
 {
-  "generated_at": "2026-08-11T08:57:41.786768Z",
+  "generated_at": "2026-08-13T09:12:55.113042Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2608.11072v1",
+      "title": "Assessing fidelity-limiting factors and achieving single-qubit gate fidelity beyond 99.999% in driven silicon spin qubits",
+      "authors": [
+        "Kenta Takeda",
+        "Akito Noiri",
+        "Takashi Nakajima",
+        "Leon C. Camenzind",
+        "Takashi Kobayashi",
+        "Giordano Scappucci",
+        "Seigo Tarucha"
+      ],
+      "abstract": "In semiconductor single-spin qubits, high-fidelity quantum gates have been demonstrated; however, achieving consistent performance remains challenging due to variations in driven qubit coherence, which is less explored than free-evolution coherence such as $T_2^*$. Here, we report single-qubit gate fidelities above 99.999%, achieved by dramatically extending the driven-spin coherence time and suppressing off-resonant driving effects that are detrimental to accurate fidelity benchmarking. We demonstrate that removing proximal reservoirs significantly enhances the spin-locking coherence time ($T_{1ρ}$), a critical metric for qubits under microwave driving. Furthermore, we reveal that in typical spin qubit setups using parity readout and rectangular pulses, off-resonant excitation of neighboring qubits causes substantial benchmarking artifacts. By optimizing device conditions to mitigate microwave-induced degradation and implementing spectrally tailored pulse shaping, we achieve a $π/2$ gate fidelity of 99.99920(2)%, with remaining errors primarily limited by incoherent noise. These results showcase the mechanisms that bound fidelity benchmarking in state-of-the-art silicon spin qubits and provide practical guidelines for achieving and verifying high fidelities in these systems.",
+      "date": "2026-08-11",
+      "abs_url": "https://arxiv.org/abs/2608.11072v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11072v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2608.08475v1",
       "title": "Quantum-Device Simulation of Optical Decoherence of Hole-Spin Qubits in Self-Assembled Quantum Dots",
@@ -960,25 +981,6 @@
       "pdf_url": "https://arxiv.org/pdf/2604.13435v1.pdf",
       "categories": [
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2604.07074v1",
-      "title": "Complete coherent control of spin qubits in self-assembled InAs quantum dots under oblique magnetic fields",
-      "authors": [
-        "I. Samaras",
-        "K. Barr",
-        "C. Schneider",
-        "S. Höfling",
-        "K. G. Lagoudakis"
-      ],
-      "abstract": "We demonstrate complete coherent control of a single spin qubit confined in a self-assembled InAs negatively charged quantum dot subjected to an Oblique magnetic field, and directly compare this regime with the conventional Voigt geometry. In the Oblique-field configuration, the groundstate spin eigenstates are found to be unequal superpositions of the bare electron spin, with their composition tunable via the orientation of the applied field. This tunable spin mixing provides an additional degree of freedom to engineer the spin basis and associated optical couplings in the charged quantum dot system. Although this geometry has a distinct structure with important implications, it provides a regime in which we can fully and coherently control the tailored spin qubit. We observe Rabi oscillations and Ramsey fringes, and demonstrate arbitrary single-qubit rotations, enabling a direct comparison with the Voigt case. Our results establish that spin-qubit control does not necessarily require a pure Voigt geometry and can instead be achieved under Oblique magnetic fields. This relaxes constraints on device and field alignment and offers a versatile route to design and optimize quantum information processing architectures in semiconductor quantum dots.",
-      "date": "2026-04-08",
-      "abs_url": "https://arxiv.org/abs/2604.07074v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.07074v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall"
       ]
     }
   ]
