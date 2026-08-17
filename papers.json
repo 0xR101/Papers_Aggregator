@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-08-16T08:30:01.648801Z",
+  "generated_at": "2026-08-17T08:44:03.043891Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2608.14214v1",
+      "title": "Exchange-only qubit stabilized by a single-spin qubit",
+      "authors": [
+        "Irina Heinz",
+        "Mira Sharma",
+        "Joris Kattemölle"
+      ],
+      "abstract": "Hybrid approaches that combine different spin qubit encodings offer promising advantages. In particular, the additional degrees of freedom available in exchange-only qubits and their extensions enable enhanced spin lifetimes and facilitate error detection through the use of auxiliary spins. We show that integrating Loss-DiVincenzo with exchange-only qubits provides a practical route to realizing these benefits while remaining compatible with spin-shuttling architectures. We further demonstrate how the singlet-only exchange-only qubit can be employed for error detection, and we present a fault-tolerant $π$-rotation about each of the three control axes of the (singlet-only) exchange-only qubit. By enabling error detection at the lowest encoding level, our approach effectively converts charge and nuclear noise into erasures, thereby suppressing error propagation and potentially enhancing the performance of quantum error-correction schemes. More broadly, our work establishes a new perspective on the singlet-only exchange-only qubit as a logical encoding, opening the door to fault-tolerant gate constructions and spin-tailored quantum error-correction protocols for semiconductor-based quantum computing.",
+      "date": "2026-08-14",
+      "abs_url": "https://arxiv.org/abs/2608.14214v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14214v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2608.13530v1",
       "title": "Inductively-protected Andreev (IPA) spin qubit",
@@ -777,7 +794,7 @@
       ]
     },
     {
-      "id": "2605.13680v3",
+      "id": "2605.13680v4",
       "title": "Comparative assessment of germanium-based spin-qubit modalities: donor, acceptor, gate-defined hole, and gate-defined electron platforms",
       "authors": [
         "D. -M. Mei",
@@ -790,8 +807,8 @@
       ],
       "abstract": "High-purity germanium (Ge) has re-emerged as a versatile semiconductor platform for spin-based quantum information processing because it combines mature materials processing, access to spin-free isotopes, high mobilities, small effective masses, and strong but engineerable spin--orbit coupling. However, ``Ge qubits'' are not a single technology. Donor spin qubits, acceptor spin qubits, gate-defined hole spin qubits, and gate-defined electron spin qubits exploit different parts of the Ge band structure and therefore make distinct trade-offs among coherence, controllability, fabrication complexity, and scalability. Here we compare these four Ge-based spin-qubit modalities on a common physical and architectural footing. We review the shared Ge materials physics, including isotopic purification, the multivalley \\(L\\)-point conduction band, the spin-\\(3/2\\) valence band, heavy-hole/light-hole mixing, strain, interfaces, disorder, and phonons. We also introduce a common framework for estimating phononic-crystal-modified \\(T_1\\) using a calibrated reference relaxation rate, a geometry-dependent strain-density-of-states suppression factor, and parasitic relaxation channels. The comparison shows that gate-defined Ge hole-spin qubits currently offer the strongest combination of all-electrical control, demonstrated multiqubit operation, and scalability. Donor, acceptor, and gate-defined electron qubits remain important complementary directions for memory, hybrid, and exploratory architectures. Overall, Ge supports a diverse qubit ecosystem, with gate-defined hole-spin qubits presently providing the clearest path toward scalable Ge-based quantum processors.",
       "date": "2026-05-13",
-      "abs_url": "https://arxiv.org/abs/2605.13680v3",
-      "pdf_url": "https://arxiv.org/pdf/2605.13680v3.pdf",
+      "abs_url": "https://arxiv.org/abs/2605.13680v4",
+      "pdf_url": "https://arxiv.org/pdf/2605.13680v4.pdf",
       "categories": [
         "quant-ph"
       ]
@@ -969,23 +986,6 @@
       "categories": [
         "cond-mat.mes-hall",
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2604.13644v1",
-      "title": "Theory of spin qubits and the path to scalability",
-      "authors": [
-        "Z. M. McIntyre",
-        "Abhikbrata Sarkar",
-        "Daniel Loss"
-      ],
-      "abstract": "Spin qubits have emerged as a leading platform for quantum information processing due to their long coherence times, small footprint, and compatibility with the existing semiconductor industry. We first provide an introduction to the different qubit implementations currently being investigated, including single electron-spin qubits, hole-spin qubits, donor qubits, and multispin encodings. We discuss how the confinement and strain present in semiconductor heterostructures produce addressable levels whose spin degree of freedom can be used to encode a qubit. A large emphasis is placed on reviewing the theoretical foundations and recent experimental demonstrations of proposed mechanisms for long-range coupling, including hybrid approaches based on circuit QED and Andreev qubits, as well as spin shuttling. Finally, we review a recent proposal for linking spin qubits using topological spin textures.",
-      "date": "2026-04-15",
-      "abs_url": "https://arxiv.org/abs/2604.13644v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.13644v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall"
       ]
     }
   ]
