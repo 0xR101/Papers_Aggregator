@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-08-20T08:39:05.480266Z",
+  "generated_at": "2026-08-21T08:40:39.121610Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2608.19696v1",
+      "title": "Coherence protection of a silicon hole spin qubit with phase-modulated microwave driving",
+      "authors": [
+        "Sayyid I. Ibad",
+        "Yusuke Sato",
+        "Takuma Kuno",
+        "Itaru Yanagi",
+        "Toshiyuki Mine",
+        "Ryuta Tsuchiya",
+        "Digh Hisamoto",
+        "Hiroyuki Mizuno",
+        "Raisei Mizokuchi",
+        "Jun Yoneda",
+        "Tetsuo Kodera"
+      ],
+      "abstract": "Hole spins in silicon quantum dots are a promising platform for quantum computing due to their strong intrinsic spin-orbit coupling (SOC), which enables fast, all-electrical control. However, this coupling also increases their susceptibility to charge noise, thereby limiting coherence times. Moreover, holes in silicon are also affected by hyperfine interactions with residual nuclear spins in the silicon substrate, introducing a non-negligible source of low-frequency noise. Here, we implement a phase-modulated concatenated continuous driving (CCD) technique for hole spin qubits to suppress low-frequency noise through microwave phase modulation. This approach stabilizes Rabi oscillations and extends the oscillation decay time compared to the conventional method. Furthermore, by defining a qubit in the CCD frame, we achieve coherent control while simultaneously protecting the qubit from noise, confirming coherence protection during gate operations. These results demonstrate a viable route toward noise-robust hole spin qubits.",
+      "date": "2026-08-20",
+      "abs_url": "https://arxiv.org/abs/2608.19696v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19696v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2608.18483v1",
       "title": "Superfast hole spin qubits enabled by uniaxial strain-boosted spin-orbit coupling",
@@ -981,25 +1005,6 @@
       "date": "2026-04-24",
       "abs_url": "https://arxiv.org/abs/2604.22650v2",
       "pdf_url": "https://arxiv.org/pdf/2604.22650v2.pdf",
-      "categories": [
-        "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2604.20510v2",
-      "title": "Microscopic modeling of flopping-mode quantum dot spin qubits",
-      "authors": [
-        "Ashutosh Kinikar",
-        "Vukan Levajac",
-        "Kristof Moors",
-        "George Simion",
-        "Monica Benito",
-        "Bart Soree"
-      ],
-      "abstract": "We present a flexible microscopic modeling framework for flopping-mode spin qubits that captures the spatial structure of the double-well confinement and magnetic-field-gradient profile beyond conventional low-energy approximations. Our model enables a direct mapping from the device geometry to qubit parameters and metrics. By using this approach, we simulate electric dipole spin resonance-based single-qubit control and evaluate the frequency and spectral purity of the Rabi oscillations across different parameter regimes. Our analysis reveals a fundamental tradeoff between fast electrical driving and clean single-mode Rabi oscillations. We also investigate two-qubit control by considering two capacitively coupled flopping-mode qubits and derive the corresponding exchange interaction with an appropriately restricted configuration interaction treatment. Our approach reveals the interplay between the spatial profile of the double-well confinement, magnetic field gradient, and Coulomb interaction, which together govern the effective exchange coupling strength. Our microscopic modeling framework enables efficient exploration of device geometries and provides design guidelines for optimizing flopping-mode spin qubits in realistic architectures.",
-      "date": "2026-04-22",
-      "abs_url": "https://arxiv.org/abs/2604.20510v2",
-      "pdf_url": "https://arxiv.org/pdf/2604.20510v2.pdf",
       "categories": [
         "cond-mat.mes-hall"
       ]
