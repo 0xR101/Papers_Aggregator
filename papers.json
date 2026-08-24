@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-08-23T08:30:52.588931Z",
+  "generated_at": "2026-08-24T08:49:20.249808Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2608.20833v1",
+      "title": "Coherence-Based Identification of Carbon-Based Spin Qubits in Hexagonal Boron Nitride from First Principles",
+      "authors": [
+        "Hyeonsu Kim",
+        "Jaewook Lee",
+        "Huijin Park",
+        "Hosung Seo"
+      ],
+      "abstract": "Carbon-related defects in hexagonal boron nitride are promising room-temperature single-spin qubits and quantum sensors, but their atomic structures remain largely unidentified. Here we show, using first-principles calculations of electron-spin decoherence, that the atomic structure of each defect is imprinted in its spin coherence. Mapping the Hahn-echo dynamics of seven candidate carbon defects across magnetic field and four isotope-engineered nuclear-spin baths, we find that electron-spin-echo envelope modulation emerges at defect-specific magnetic fields, at which the nearest-neighbor nuclear spins satisfy a cancellation condition set by their hyperfine and quadrupole couplings. Both the fields and the modulation frequencies follow from an analytical model using computed hyperfine and quadrupole tensors alone, and they shift or vanish upon isotope substitution. At low fields, the field dependence of the coherence time separates the defects into two classes according to the sublattice occupied by carbon. These decoherence fingerprints, directly testable in isotope-engineered samples, establish a structural identification route complementary to optical spectroscopy.",
+      "date": "2026-08-21",
+      "abs_url": "https://arxiv.org/abs/2608.20833v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20833v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2608.19696v1",
       "title": "Coherence protection of a silicon hole spin qubit with phase-modulated microwave driving",
@@ -985,26 +1003,6 @@
       "date": "2026-04-25",
       "abs_url": "https://arxiv.org/abs/2604.23279v3",
       "pdf_url": "https://arxiv.org/pdf/2604.23279v3.pdf",
-      "categories": [
-        "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2604.22650v2",
-      "title": "Strain engineering of Andreev spin qubits in Germanium",
-      "authors": [
-        "Vittorio Coppini",
-        "Patrick Del Vecchio",
-        "Antonio L. R. Manesco",
-        "Anton Akhmerov",
-        "Valla Fatemi",
-        "Bernard van Heck",
-        "Stefano Bosco"
-      ],
-      "abstract": "Planar germanium heterostructures are promising hosts for hybrid quantum devices due to their compatibility with superconductors, low material disorder, and relaxed fabrication constraints. Also, the potentially low density of nuclear spins and strong spin-orbit interaction make germanium attractive for coherent spin physics. However, recent microwave spectroscopy experiments were unable to resolve a spin-splitting of bound states in germanium Josephson junctions, the prerequisite for defining and controlling Andreev spin qubits. Here, we argue that compressive strain is the key mechanism suppressing spin splitting in current devices. Furthermore, we propose unstrained and tensile-strained heterostructures, fully compatible with state-of-the-art growth technology, that significantly enhance the relevant spin-orbit effect. By numerically simulating ballistic Josephson junctions, we predict spin splittings comfortably in the GHz range, more than 2 orders of magnitude larger than compressively strained cases, and all-electric quantum gates in a hundred nanoseconds. Our results establish strain engineering as a key design principle for realizing Andreev spin qubits in germanium-based devices.",
-      "date": "2026-04-24",
-      "abs_url": "https://arxiv.org/abs/2604.22650v2",
-      "pdf_url": "https://arxiv.org/pdf/2604.22650v2.pdf",
       "categories": [
         "cond-mat.mes-hall"
       ]
