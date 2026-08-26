@@ -1,7 +1,22 @@
 {
-  "generated_at": "2026-08-24T08:49:20.249808Z",
+  "generated_at": "2026-08-26T08:43:58.423447Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2608.21542v1",
+      "title": "Noise-Robust Spin-Orbit Qubit in Germanium Holes via p-Orbital Encoding",
+      "authors": [
+        "Yasuo Oda",
+        "Jason P. Kestner"
+      ],
+      "abstract": "Germanium hole spin qubits are a leading platform for semiconductor quantum computation due to their strong spin-orbit coupling, all-electrical operability, and absence of valley degeneracy. A central obstacle is charge noise, which couples to the qubit through the same spin-orbit interaction that enables fast electrical control. In this work, we propose a new operational mode of a three-hole quantum dot in a planar Ge/SiGe heterostructure, modeled within a four-band Luttinger-Kohn--Bir-Pikus framework: a spin-$p$-orbital (SpO) qubit encoded in the $p$-shell of the topmost hole. We characterize charge noise sweet spots in the parameter space of electrostatic confinement and magnetic field, and estimate that relaxation rates of the SpO qubit are comparable to those of spin qubits hosted in single holes. We then design and optimize an all-electrical Landau-Zener state-transfer protocol that induces logical qubit state transitions without microwave driving, and we show that the quadrupole-quadrupole Coulomb interaction between neighboring dots enables fast two-qubit entangling gates operated by adiabatic shuttling.",
+      "date": "2026-08-21",
+      "abs_url": "https://arxiv.org/abs/2608.21542v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21542v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2608.20833v1",
       "title": "Coherence-Based Identification of Carbon-Based Spin Qubits in Hexagonal Boron Nitride from First Principles",
@@ -987,24 +1002,6 @@
       "categories": [
         "quant-ph",
         "cs.ET"
-      ]
-    },
-    {
-      "id": "2604.23279v3",
-      "title": "Analytical Treatment of Noise-Suppressed Klein Tunneling in Graphene with Possible Implications for Quantum-Dot Qubits",
-      "authors": [
-        "Kamal Azaidaoui",
-        "Ahmed Jellal",
-        "Hocine Bahlouli",
-        "A. Al Luhaibi",
-        "Michael Vogl"
-      ],
-      "abstract": "We study quantum tunneling through a potential barrier whose height fluctuates in time and is modeled by Gaussian white noise. We map the stochastic dynamics onto an equivalent time-independent Lindblad equation for the density matrix, allowing fully analytical solutions. For Schrödinger particles, noise introduces dissipation that suppresses Fabry-Pérot oscillations and yields an exponentially decaying transmission. Applying the same formalism to graphene, we demonstrate that noise induces a complex longitudinal wavevector within the barrier, leading to a strong suppression of transmission and Klein tunneling, even at normal incidence. Our approach promises improved control over Klein tunneling. These results demonstrate that noisy barriers can act as tunable dissipative elements, offering a pathway to enhanced control of electron transport in graphene-based devices. We also briefly discuss how our results could guide the design of graphene quantum dots for potential use in spin qubit devices.",
-      "date": "2026-04-25",
-      "abs_url": "https://arxiv.org/abs/2604.23279v3",
-      "pdf_url": "https://arxiv.org/pdf/2604.23279v3.pdf",
-      "categories": [
-        "cond-mat.mes-hall"
       ]
     }
   ]
