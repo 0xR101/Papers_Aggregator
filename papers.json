@@ -1,7 +1,45 @@
 {
-  "generated_at": "2026-08-26T08:43:58.423447Z",
+  "generated_at": "2026-08-27T18:55:23.145325Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2608.25914v1",
+      "title": "Switchable heavy-hole/light-hole spin qubit",
+      "authors": [
+        "Zoltán György",
+        "Dmitry Miserev",
+        "Jelena Klinovaja",
+        "Daniel Loss"
+      ],
+      "abstract": "Compressively strained Ge quantum wells in planar SiGe/Ge heterostructures are the state-of-the-art platform for hole spin qubits. While they exhibit robust coherence times, they possess weak intrinsic spin-orbit interaction (SOI) due to the heavy-hole (HH) character of the wavefunction. Recently, light-hole (LH) qubits were proposed in GeSn/Ge heterostructures, offering strong, intrinsic, linear-in-momentum SOI. In this work, we propose a switchable HH-LH spin qubit in a bilayer Ge heterostructure with SiGeSn barriers, combining the advantages of HH and LH devices. The character of the qubit can be changed by shuttling from an LH well to an HH well, which also enables fast, hopping-based single-qubit rotations. Additionally, we observe an HH-LH resonance introduced by the in-plane confinement, resulting in $g$-factor peaks and first-order charge noise sweet spots. Our calculations reveal a sweet spot with Rabi frequencies on the order of 100 MHz, comparable to the LH regime, but with a more than tenfold increase in coherence time, on the order of 100 $μ$s.",
+      "date": "2026-08-26",
+      "abs_url": "https://arxiv.org/abs/2608.25914v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25914v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2608.25852v1",
+      "title": "Light-Hole Spin Qubits in Strained SiGe Lattice-Matched to Ge",
+      "authors": [
+        "Edmondo Valvo",
+        "Davide Costa",
+        "Patrick Del Vecchio",
+        "Stefano Bosco",
+        "Giordano Scappucci",
+        "Maximilian Rimbach-Russ"
+      ],
+      "abstract": "Strained germanium ($\\varepsilon$-Ge) quantum wells on metamorphic SiGe buffers have enabled advanced hole-based spin qubit devices. Alternatively, unstrained Ge with lattice-matched strained silicon-germanium ($\\varepsilon$-SiGe) barriers eliminates the need for metamorphic buffers altogether. The ground state character of both these platforms is predominantly heavy-hole (HH) with a largely anisotropic spin response. We propose and study an alternative heterostructure, lattice-matched to Ge, in which both the SiGe quantum well and barriers are tensile strained, with their composition contrast providing the band offset for confinement and the tensile strain stabilizing a light-hole (LH) ground state. We show large spin-orbit coupling (SOC), both linear and cubic, along with a significantly more isotropic spin response compared to strained HH qubits. We also study the decoherence properties of the proposed device, showing an appreciable gain in the quality factor compared to their HH counterparts. Finally, we propose a bilayer heterostructure that allows for electrical switching between HH and LH ground state character.",
+      "date": "2026-08-26",
+      "abs_url": "https://arxiv.org/abs/2608.25852v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.25852v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2608.21542v1",
       "title": "Noise-Robust Spin-Orbit Qubit in Germanium Holes via p-Orbital Encoding",
@@ -969,39 +1007,6 @@
       "pdf_url": "https://arxiv.org/pdf/2605.02785v1.pdf",
       "categories": [
         "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2605.00611v1",
-      "title": "Suppressing spin qubit decoherence during shuttling via confinement modulation",
-      "authors": [
-        "Daniel Q. L. Nguyen",
-        "Maximilian Rimbach-Russ",
-        "Stefano Bosco"
-      ],
-      "abstract": "Reliable long-range qubit shuttling is a powerful tool for scalable quantum computing architectures. We investigate strategies to improve the coherence of moving spin qubits by performing continuous dynamical decoupling by modulating their confinement potential. Specifically, we introduce temporal and spatial breathing shuttling protocols that leverage spin-orbit interactions in hole-spin systems to electrically drive the qubit while moving. This enables efficient dressed-state shuttling, where the spin is continuously rotated during transport, suppressing the effect of low-frequency noise. Using the filter function formalism, we identify driving regimes that efficiently mitigate both global and local magnetic and electric noise sources. We find that confinement-modulated shuttling can significantly enhance coherence during transport, while revealing distinct limitations depending on the correlation length of the noise. Applying our framework to germanium hole-spin qubits, we show that these protocols provide a practical route toward noise-resilient long-range coherent quantum links.",
-      "date": "2026-05-01",
-      "abs_url": "https://arxiv.org/abs/2605.00611v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.00611v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2604.24739v2",
-      "title": "CAbLECAR: efficiently scheduling QLDPC codes on a tileable spin qubit chip with shuttling",
-      "authors": [
-        "Jason D. Chadwick",
-        "Frederic T. Chong"
-      ],
-      "abstract": "Semiconductor spin qubits are a promising platform for large-scale quantum computing, but have yet to take full advantage of the broad class of quantum low-density parity check (QLDPC) codes, which promise high encoding rates and efficient logic but require nonlocal connectivity between physical qubits. In this work, we investigate the implementation of QLDPC codes on a tileable, shuttling-based spin qubit architecture. By tailoring syndrome extraction circuits to the shuttling noise model, we significantly improve on previous surface code proposals and extend the feasible shuttling range of the architecture by 5-10x, enabling the implementation of more complex codes with long-range interactions. Taking inspiration from the field of robotics, we develop a coordinated shuttle scheduling algorithm that supports arbitrary codes and use it to benchmark the logical performance of a variety of promising code families. We find that the optimized schedules are up to 86% faster than hand-optimized schedules for certain code families. Through detailed circuit-level simulations, we identify specific QLDPC codes that improve upon prior surface code implementations by orders of magnitude, increasing encoding efficiency and reducing logical error rates. This work demonstrates the potential of shuttling-based spin qubit hardware platforms for scalable and efficient fault-tolerant quantum computation.",
-      "date": "2026-04-27",
-      "abs_url": "https://arxiv.org/abs/2604.24739v2",
-      "pdf_url": "https://arxiv.org/pdf/2604.24739v2.pdf",
-      "categories": [
-        "quant-ph",
-        "cs.ET"
       ]
     }
   ]
