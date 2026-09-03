@@ -1,7 +1,45 @@
 {
-  "generated_at": "2026-09-02T12:36:18.709784Z",
+  "generated_at": "2026-09-03T12:39:17.983460Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2609.02792v1",
+      "title": "Phonon-limited detection thresholds for genetically encoded fluorescent-protein spin-qubit relaxometry of neural radicals",
+      "authors": [
+        "Parul Raghuvanshi",
+        "Sagnik Ganguly",
+        "Sharika E",
+        "Mohana Priya T.",
+        "Vishvendra S. Poonia"
+      ],
+      "abstract": "The demonstration that enhanced yellow fluorescent protein hosts an optically addressable spin-1 qubit in its metastable triplet state raises the prospect of genetically encoded quantum sensing at molecular length scales. We develop a detection-limit theory for using this fluorescent-protein spin qubit (FPSQ) to sense paramagnetic neural signaling radicals by spin relaxometry. We derive the transition-resolved Redfield relaxation matrix of the zero-field-split triplet coupled to a diffusing radical bath, establish the regime in which it collapses to a single exponential, and validate it against Lindblad simulations and nitrogen-vacancy benchmarks. Propagating the effects of photon shot noise, photobleaching-grounded photon budget, and finite measurement bandwidth, we find that the native room-temperature sensor falls short of physiological sensitivity by six to eight orders of magnitude with the bottleneck being the phonon-limited intrinsic $\\Tone$. Analyzing the underlying direct and two-phonon Raman processes, we show that room-temperature relaxation is Raman-dominated by $\\sim\\!720\\!:\\!1$ and that, because the Raman coefficient scales as $v^{-10}$ with sound velocity, a $\\sim\\!2\\times$ stiffening of the chromophore environment recovers $\\Tone\\sim\\SI{100}{\\micro\\second}$, sufficient for micromolar sensing. Nanomolar sensing is obstructed by a direct-process ceiling of \\SI{79}{\\micro\\second} that vibronic decoupling alone cannot breach. We obtain quantitative design rules, identify photon yield as a co-equal bottleneck, and propose a frequency-resolved protocol for chemical specificity.",
+      "date": "2026-09-02",
+      "abs_url": "https://arxiv.org/abs/2609.02792v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02792v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2609.02641v1",
+      "title": "Transversal Gates and Magic State Distillation in an Optimally Synthesized Spin-Qubit Shuttling Bus",
+      "authors": [
+        "Pau Escofet",
+        "Andrii Semenov",
+        "Niall Murphy",
+        "Elena Blokhina",
+        "Carmen G. Almudéver",
+        "Sergi Abadal",
+        "Eduard Alarcón"
+      ],
+      "abstract": "Fault-tolerant quantum computing requires not only reliable logical qubit storage, but also the ability to perform high-fidelity logical operations between error-corrected qubits at scale. While much of the existing literature focuses on optimizing syndrome extraction for a single logical qubit, the co-design of physical architectures that support both robust error correction and efficient logical computation remains an open challenge. In this work, we propose a multi-qubit spin-qubit shuttling bus architecture that addresses both requirements simultaneously. The architecture optimizes the physical qubit layout for syndrome extraction and supports transversal two-qubit logical gates between an arbitrary number of logical qubits, achieving all-to-all logical connectivity through coherent spin shuttling. We further propose an ancilla-sharing scheme that encodes multiple logical qubits within a single logical element, compressing the physical footprint of the processor and improving long-range gate fidelity. Extending the architecture from a one-dimensional bus to a two-dimensional grid of shuttling tracks reduces the inter-qubit distance, yielding consistent improvements in logical error. Finally, we apply the Quantum Reverse Mapping methodology at the logical level to optimize the layout of a \\textit{15-to-1} magic state distillation circuit, demonstrating how the transversal capabilities of the proposed architecture can be leveraged for universal fault-tolerant computation. Taken together, these results establish a principled co-design framework that bridges the physical, error-correction, and logical computation layers of the quantum stack, and demonstrate that spin-qubit shuttling architectures are a viable and flexible substrate for scalable fault-tolerant quantum computation.",
+      "date": "2026-09-02",
+      "abs_url": "https://arxiv.org/abs/2609.02641v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02641v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2608.25914v1",
       "title": "Switchable heavy-hole/light-hole spin qubit",
@@ -977,36 +1015,6 @@
       "pdf_url": "https://arxiv.org/pdf/2605.05881v1.pdf",
       "categories": [
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2605.03056v1",
-      "title": "Exchange-Only Silicon Based Spin Qubits: Charge Noise, PINN Optimised Pulse Sequences,and Gate-Level Fidelity",
-      "authors": [
-        "Rajdeep Rameshchandra Dwivedi",
-        "Amitoj Singh Miglani",
-        "Vishvendra Singh Poonia"
-      ],
-      "abstract": "Exchange-only (EO) spin qubits in silicon realise all-electrical qubit control through pairwise Heisenberg exchange interactions, making them attractive for scalable quantum computation. Their principal vulnerability is charge noise, which couples multiplicatively to the exchange coupling and degrades gate fidelity. We present a \\emph{two-stage} Physics-Informed Neural Network (PINN) framework for per-gate pulse optimisation. In \\textbf{Stage~I} (iterations~1--100) the PINN maximises the noise-averaged gate fidelity toward a threshold of $\\Fth=0.99$; the pulse duration is held fixed at its nominal hardware value. Once the threshold is crossed, \\textbf{Stage~II} (iterations~101--250) progressively compresses the total pulse time while maintaining $F\\geq\\Fth$ via continuous fine-tuning of the pulse-shape parameters. The cost function is a Monte-Carlo ensemble mean-squared error (MSE) averaged over $N_{\\rm real}=2000$ quasi-static Gaussian noise realisations drawn fresh at every iteration. We benchmark the framework on the single-qubit gate set $\\{X,Y,Z,H\\}$ and the two-qubit set $\\{X,Y,Z,H,\\mathrm{CX}\\}$ at noise levels $\\sigmaJ/J\\in\\{1\\%,5\\%,10\\%\\}$. All single-qubit gates cross $\\Fth$ within the first 100 iterations across all noise levels; Stage~II then reduces pulse durations by 20--40\\% from their nominal values. The two-qubit gates follow the same two-phase behaviour, with the CX gate compressing from its nominal \\SI{31}{\\nano\\second} to $\\approx\\SI{22}{\\nano\\second}$ at 1\\% noise.",
-      "date": "2026-05-04",
-      "abs_url": "https://arxiv.org/abs/2605.03056v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.03056v1.pdf",
-      "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2605.02785v1",
-      "title": "Triplet-assisted leakage during singlet-triplet qubit readout with a quantum point contact",
-      "authors": [
-        "Karol Kawa"
-      ],
-      "abstract": "Quantum point contact readout theory for singlet-triplet qubits in a lateral double quantum dot is extended by including tunneling of triplet configurations into a higher-energy level of the neighboring dot. This additional channel creates energetically allowed leakage pathways that modify the branch-dependent charge and current-noise signatures, even when the Pauli blockade remains effective within the ground-state manifold. The model contains two single-particle levels in each dot. The resulting singlet and triplet block structure is derived together with a Lindblad master equation. Quantum-jump simulations are then used to resolve the dynamics of individual readout events. A complementary Liouvillian steady-state analysis identifies the regime in which tunneling to the excited level qualitatively changes the readout signatures, with the crossover determined by the level spacing.",
-      "date": "2026-05-04",
-      "abs_url": "https://arxiv.org/abs/2605.02785v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.02785v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall"
       ]
     }
   ]
