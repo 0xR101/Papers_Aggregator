@@ -1,7 +1,23 @@
 {
-  "generated_at": "2026-09-08T12:40:14.373796Z",
+  "generated_at": "2026-09-09T12:46:53.587668Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2609.07210v1",
+      "title": "From NISQ to Fault-Tolerance: Applications and Algorithmic Benchmarks for Spin Qubits",
+      "authors": [
+        "Frederik Lohof",
+        "Florian Ginzel",
+        "Wolfgang Lechner"
+      ],
+      "abstract": "Motivated by recent breakthroughs in the development of spin-based quantum processing units based on exchange-only (EO) spin qubits, we provide a roadmap for the implementation of quantum algorithms on the EO platform, ranging from the NISQ to the fault-tolerant era. To provide an algorithm-driven perspective on the scaling of quantum chips, we consider a range of applications targeting different stages of hardware maturity and formulate requirements for a successful realization. We show that the compilation method Parity Twine perfectly complements the hardware's capabilities to perform tasks such as the quantum Fourier transform or QAOA. Furthermore, we describe an error detection technique native to Parity Twine, which EO qubits can leverage in a unique and advantageous way to improve algorithm performance. Finally, since both near-term algorithmic benchmarks and a long-term perspective can be found in digital quantum simulation, we specifically discuss the fermionic fast Fourier transform and the simulation of Fermi-Hubbard models. The latter is explicitly discussed in the context of quantum error correction and a partially fault-tolerant realization. By providing detailed resource estimates and identifying scaling bottlenecks on each level, our work offers a quantitative perspective on EO-based quantum computing and will inform future hardware design choices.",
+      "date": "2026-09-07",
+      "abs_url": "https://arxiv.org/abs/2609.07210v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.07210v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2609.02792v1",
       "title": "Phonon-limited detection thresholds for genetically encoded fluorescent-protein spin-qubit relaxometry of neural radicals",
@@ -992,27 +1008,6 @@
       "date": "2026-05-13",
       "abs_url": "https://arxiv.org/abs/2605.13680v4",
       "pdf_url": "https://arxiv.org/pdf/2605.13680v4.pdf",
-      "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2605.05881v1",
-      "title": "Surface-Code Thresholds and Qubit Footprints in Shuttling-Based Spin-Qubit Railways",
-      "authors": [
-        "Arun John Moncy",
-        "Reza Dastbasteh",
-        "Josu Etxezarreta Martinez",
-        "Ryo Nagai",
-        "Pedro M. Crespo",
-        "Normann Mertig",
-        "Charles Smith",
-        "Ruben M. Otxoa"
-      ],
-      "abstract": "We present a fault-tolerant mapping of rotated surface codes onto a $2\\times N$ silicon spin-qubit railway architecture, utilizing electron shuttling to resolve the wiring fan-out bottleneck. Employing circuit-level noise modeling, we evaluate threshold performances across various noise biases. We demonstrate that shuttling check qubits instead of data qubits fundamentally improves system thresholds. Crucially, under a noise model biased towards dephasing for spin-qubit shuttling, the non-CSS XZZX surface code outperforms standard CSS variants. By tailoring the topological code to this specific inherent bias, we show that the Megaquop footprint is achievable with a distance 7 code requiring a $p = 10^{-3}$ physical error rate, highlighting a pathway for substantial hardware reductions in early fault-tolerant quantum processors.",
-      "date": "2026-05-07",
-      "abs_url": "https://arxiv.org/abs/2605.05881v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.05881v1.pdf",
       "categories": [
         "quant-ph"
       ]
