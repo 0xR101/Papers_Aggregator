@@ -1,7 +1,75 @@
 {
-  "generated_at": "2026-09-12T11:59:57.894478Z",
+  "generated_at": "2026-09-16T13:12:43.552976Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2609.15860v1",
+      "title": "Probing Residual Noise at a Decoherence Sweet Spot in a $^{28}$Si/SiGe Spin Qubit",
+      "authors": [
+        "Shinwoo Lee",
+        "Hanseo Sohn",
+        "Jaemin Park",
+        "Hyeongyu Jang",
+        "Jonginn Yun",
+        "Jun Yoneda",
+        "Lucas E. A. Stehouwer",
+        "Davide Degli Esposti",
+        "Giordano Scappucci",
+        "Dohun Kim"
+      ],
+      "abstract": "In $^{28}$Si/SiGe spin qubits with micromagnets, the longitudinal stray field gradient transduces charge noise into qubit frequency noise and limits coherence. We compare two neighboring qubits in the same device with 800 ppm residual $^{29}$Si, one near a decoherence sweet spot where the gradient is locally minimized and the other at a position with a larger gradient. At the sweet spot, $T_2^*$ reaches 67 $μ\\mathrm{s}$ and the Carr-Purcell-Meiboom-Gill coherence time reaches 4.6 ms, whereas $T_2^*$ is 5.2 $μ\\mathrm{s}$ at the neighboring qubit. Near 1 Hz, the frequency noise power spectral density at the sweet spot is nearly two orders of magnitude lower than at the neighboring qubit. The magnitude and low-frequency decay of the residual spectrum are compatible with the prediction for $^{29}$Si nuclear spin noise, and the weak interqubit correlation indicates that local noise becomes important for dephasing at the sweet spot. Despite a finite correlation with the charge sensor, sweet-spot operation strongly reduced the transduction of charge noise, bringing the residual frequency noise close to the level predicted for $^{29}$Si nuclear spin fluctuations.",
+      "date": "2026-09-14",
+      "abs_url": "https://arxiv.org/abs/2609.15860v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15860v1.pdf",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ]
+    },
+    {
+      "id": "2609.15751v1",
+      "title": "Effects of residual exchange coupling on simultaneously driven spin qubits",
+      "authors": [
+        "Heun Mo Yoo",
+        "Tanner M. Janda",
+        "Victor Yu",
+        "Michael J. Gullans",
+        "Adam R. Mills",
+        "Jason R. Petta"
+      ],
+      "abstract": "Exchange coupling and microwave drives are widely used control mechanisms for spin qubits. However, the influence of exchange coupling on microwave-driven spin dynamics is not fully understood. We report simultaneous drive measurements of two spin qubits as a function of exchange coupling and drive power. When the Rabi frequency exceeds exchange, we observe a beating pattern in the Rabi oscillations. In the opposite limit, two exchange-split patterns emerge in the Rabi chevrons. We find that these exchange-induced effects are suppressed when the difference in the Rabi frequencies exceeds the exchange coupling. A theoretical model is developed that reproduces the main features in our data.",
+      "date": "2026-09-14",
+      "abs_url": "https://arxiv.org/abs/2609.15751v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15751v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2609.13022v1",
+      "title": "Grover Search with Semiconductor Spin Qubits at Ambient Conditions",
+      "authors": [
+        "Sebastian Gemsheim",
+        "Fabian Klüpfel",
+        "Max Kneiß",
+        "Nicole Raatz",
+        "Tobias Herzig",
+        "Matthias Mendt",
+        "Evgeny Kreissig",
+        "Ulrike Rückert",
+        "Albrecht Hänel",
+        "Jan Meijer",
+        "Marius Grundmann"
+      ],
+      "abstract": "Grover's algorithm is executed on a commercial quantum computer based on nitrogen-vacancy centers in diamond operating under ambient conditions, achieving fidelities up to $99.98\\,\\%$. Within a $N=8$ search space of three solid-state nuclear spin qubits, the measured success probabilities of finding a single or two marked states are $(77.3 \\pm 3.4)\\,\\%$ and $(87.0 \\pm 4.2)\\,\\%$, respectively. These values surpass published results for superconducting qubits or any quantum computer operating at room temperature. In addition, the paper also details the calibrated fidelities of the implemented universal gate set.",
+      "date": "2026-09-11",
+      "abs_url": "https://arxiv.org/abs/2609.13022v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.13022v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2609.07210v1",
       "title": "From NISQ to Fault-Tolerance: Applications and Algorithmic Benchmarks for Spin Qubits",
@@ -19,7 +87,7 @@
       ]
     },
     {
-      "id": "2609.02792v1",
+      "id": "2609.02792v2",
       "title": "Phonon-limited detection thresholds for genetically encoded fluorescent-protein spin-qubit relaxometry of neural radicals",
       "authors": [
         "Parul Raghuvanshi",
@@ -30,8 +98,8 @@
       ],
       "abstract": "The demonstration that enhanced yellow fluorescent protein hosts an optically addressable spin-1 qubit in its metastable triplet state raises the prospect of genetically encoded quantum sensing at molecular length scales. We develop a detection-limit theory for using this fluorescent-protein spin qubit (FPSQ) to sense paramagnetic neural signaling radicals by spin relaxometry. We derive the transition-resolved Redfield relaxation matrix of the zero-field-split triplet coupled to a diffusing radical bath, establish the regime in which it collapses to a single exponential, and validate it against Lindblad simulations and nitrogen-vacancy benchmarks. Propagating the effects of photon shot noise, photobleaching-grounded photon budget, and finite measurement bandwidth, we find that the native room-temperature sensor falls short of physiological sensitivity by six to eight orders of magnitude with the bottleneck being the phonon-limited intrinsic $\\Tone$. Analyzing the underlying direct and two-phonon Raman processes, we show that room-temperature relaxation is Raman-dominated by $\\sim\\!720\\!:\\!1$ and that, because the Raman coefficient scales as $v^{-10}$ with sound velocity, a $\\sim\\!2\\times$ stiffening of the chromophore environment recovers $\\Tone\\sim\\SI{100}{\\micro\\second}$, sufficient for micromolar sensing. Nanomolar sensing is obstructed by a direct-process ceiling of \\SI{79}{\\micro\\second} that vibronic decoupling alone cannot breach. We obtain quantitative design rules, identify photon yield as a co-equal bottleneck, and propose a frequency-resolved protocol for chemical specificity.",
       "date": "2026-09-02",
-      "abs_url": "https://arxiv.org/abs/2609.02792v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.02792v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2609.02792v2",
+      "pdf_url": "https://arxiv.org/pdf/2609.02792v2.pdf",
       "categories": [
         "quant-ph"
       ]
@@ -948,66 +1016,6 @@
       "date": "2026-05-27",
       "abs_url": "https://arxiv.org/abs/2605.28936v1",
       "pdf_url": "https://arxiv.org/pdf/2605.28936v1.pdf",
-      "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2605.27841v2",
-      "title": "Coherent Dark State Formation of a Lead-Vacancy Spin Qubit in Diamond",
-      "authors": [
-        "Yiyang Chen",
-        "Koyo Hirai",
-        "Tzyy Zheng Neo",
-        "Eiki Ota",
-        "Takashi Taniguchi",
-        "Masashi Miyakawa",
-        "Shinobu Onoda",
-        "Toshiharu Makino",
-        "Mutsuko Hatano",
-        "Takayuki Iwasaki"
-      ],
-      "abstract": "A lead-vacancy (PbV) center in diamond exhibits coherent emission above the liquid helium temperature, making it highly attractive for quantum network applications. Here, we report the magneto-optical and spin properties of PbV centers in diamond. We record a spin lifetime of 12 ms at 7.5 K under large off-axis magnetic field. Furthermore, we observe formation of the coherent dark state by coherent population trapping and estimate a spin dephasing time of 177 ns at 6.5 K. This work demonstrates the outstanding thermal robustness of the PbV spin compared to other group-IV centers above 4 K.",
-      "date": "2026-05-27",
-      "abs_url": "https://arxiv.org/abs/2605.27841v2",
-      "pdf_url": "https://arxiv.org/pdf/2605.27841v2.pdf",
-      "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2605.17457v1",
-      "title": "Quantum Error Correction Assisted Axion Search in CMOS Spin Qubit Arrays",
-      "authors": [
-        "Xiangjun Tan",
-        "Zhanning Wang"
-      ],
-      "abstract": "Searches for axion and axionlike dark matter based on solid-state spin qubits are fundamentally limited by strong longitudinal dephasing, which rapidly suppresses the sensitivity gains offered by entanglement. Here we show that quantum error correction (QEC) can substantially enhance axion search sensitivity in realistic semiconductor spin qubit platforms by mitigating this dominant noise source. By integrating an optimally chosen repetition code QEC with logical GHZ block entanglement, we derive closed-form expressions for the quantum Fisher information that explicitly incorporate the finite coherence time of the axion field. Our analysis demonstrates that modest QEC cycle frequencies are sufficient to significantly reduce the effective dephasing rate, thereby restoring a broad parameter regime in which entanglement-enhanced sensing surpasses the standard quantum limit. Projecting these results onto CMOS-compatible device parameters, we find that QEC-protected entangled sensing can revive otherwise inaccessible quantum advantages, yielding up to order-of-magnitude improvements in sensitivity to the axion-electron coupling $g_{ae}$. These results establish a practical and theoretically controlled pathway for using QEC to improve qubit array searches for physics beyond the Standard Model.",
-      "date": "2026-05-17",
-      "abs_url": "https://arxiv.org/abs/2605.17457v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.17457v1.pdf",
-      "categories": [
-        "quant-ph",
-        "hep-ex",
-        "hep-ph"
-      ]
-    },
-    {
-      "id": "2605.13680v4",
-      "title": "Comparative assessment of germanium-based spin-qubit modalities: donor, acceptor, gate-defined hole, and gate-defined electron platforms",
-      "authors": [
-        "D. -M. Mei",
-        "K. -M. Dong",
-        "S. A. Panamaldeniya",
-        "A. Prem",
-        "S. Chhetri",
-        "N. Budhathoki",
-        "S. Bhattarai"
-      ],
-      "abstract": "High-purity germanium (Ge) has re-emerged as a versatile semiconductor platform for spin-based quantum information processing because it combines mature materials processing, access to spin-free isotopes, high mobilities, small effective masses, and strong but engineerable spin--orbit coupling. However, ``Ge qubits'' are not a single technology. Donor spin qubits, acceptor spin qubits, gate-defined hole spin qubits, and gate-defined electron spin qubits exploit different parts of the Ge band structure and therefore make distinct trade-offs among coherence, controllability, fabrication complexity, and scalability. Here we compare these four Ge-based spin-qubit modalities on a common physical and architectural footing. We review the shared Ge materials physics, including isotopic purification, the multivalley \\(L\\)-point conduction band, the spin-\\(3/2\\) valence band, heavy-hole/light-hole mixing, strain, interfaces, disorder, and phonons. We also introduce a common framework for estimating phononic-crystal-modified \\(T_1\\) using a calibrated reference relaxation rate, a geometry-dependent strain-density-of-states suppression factor, and parasitic relaxation channels. The comparison shows that gate-defined Ge hole-spin qubits currently offer the strongest combination of all-electrical control, demonstrated multiqubit operation, and scalability. Donor, acceptor, and gate-defined electron qubits remain important complementary directions for memory, hybrid, and exploratory architectures. Overall, Ge supports a diverse qubit ecosystem, with gate-defined hole-spin qubits presently providing the clearest path toward scalable Ge-based quantum processors.",
-      "date": "2026-05-13",
-      "abs_url": "https://arxiv.org/abs/2605.13680v4",
-      "pdf_url": "https://arxiv.org/pdf/2605.13680v4.pdf",
       "categories": [
         "quant-ph"
       ]
