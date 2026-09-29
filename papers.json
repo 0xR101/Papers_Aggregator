@@ -1,7 +1,96 @@
 {
-  "generated_at": "2026-09-16T13:12:43.552976Z",
+  "generated_at": "2026-09-29T14:40:21.437845Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2609.28924v1",
+      "title": "Quantum Gates Built on a Spin Qubit and a Kitaev Parity Qubit",
+      "authors": [
+        "Zhi-Hai Liu",
+        "Jiang Zhang",
+        "Guilu Long",
+        "H. Q. Xu"
+      ],
+      "abstract": "Spin is typically traced out in the description of quantum-dot-based Kitaev chains to simplify the construction of Majorana fermions. Yet the intrinsic spin structure of poor-man's Majorana modes in minimal Kitaev chains under finite Zeeman fields offers a natural interface for the Kitaev parity qubit to interact with other spinful systems. Here, we establish such a platform to bridge the parity qubit and a quantum-dot spin qubit, with the effective coupling governed by the spin-dependent delocalization of the Majorana modes. Depending on whether the spin qubit is coupled to one or two chains constituting the parity qubit, the parity-spin coupling exhibits distinct forms: an anisotropic parity-conserving exchange interaction or a nontrivial exchange tensor tunable via the interchain superconducting-phase bias. Leveraging fast spin-qubit manipulation, we further demonstrate universal parity-qubit control, high-fidelity qubit-state readout, and entangling operations between the parity and spin qubits. These results turn the spinful structure of poor-man's Majoranas from a finite-field imperfection into a resource for hybrid quantum control.",
+      "date": "2026-09-24",
+      "abs_url": "https://arxiv.org/abs/2609.28924v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.28924v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall"
+      ]
+    },
+    {
+      "id": "2609.27648v1",
+      "title": "Charge and spin qubits in interacting quantum dots coupled to Rashba-active leads",
+      "authors": [
+        "Grazia Di Bello",
+        "Fabrizio Pavan",
+        "Mattia Trama",
+        "Roberta Citro",
+        "Giulio De Filippis",
+        "Carmine Antonio Perroni"
+      ],
+      "abstract": "We present a unified study of charge and spin qubits encoded in a single interacting quantum dot tunnel-coupled to Rashba fermionic leads. The dot is described by an Anderson impurity Hamiltonian with either repulsive or attractive local interactions and a magnetic field of arbitrary orientation. In the repulsive regime, a spin qubit is encoded in the singly occupied spin sector, whereas in the attractive regime, close to the degeneracy between the empty and doubly occupied configurations, these two states define a charge-qubit subspace. We combine a weak-coupling Lindblad master equation in the Markovian secular limit with numerically controlled matrix-product-state simulations of the full dot-reservoir system. In equilibrium, we identify magnetic pair breaking in the attractive regime and a weak Rashba-induced magnetic anisotropy when the magnetic field is rotated relative to the spin-orbit axis. In the dynamical regime, relaxation and decoherence are controlled by the energetic gap between the logical manifold and nearby leakage states, and are further enhanced by Rashba-dependent tunneling. These findings show that even a minimal Anderson-impurity description captures key ingredients for coherent spin and charge qubits: the energetic structure of leakage states and spin-orbit-dependent dot-lead hybridization.",
+      "date": "2026-09-23",
+      "abs_url": "https://arxiv.org/abs/2609.27648v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.27648v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2609.20775v1",
+      "title": "Coherent and ultra-low-power EDSR with a flopping-mode spin qubit in germanium",
+      "authors": [
+        "Alexei Orekhov",
+        "Wonjin Jang",
+        "Pan Zhang",
+        "Konstantinos Tsoukalas",
+        "Fabian Oppliger",
+        "Franco De Palma",
+        "Elena Acinapura",
+        "Younghun Ryu",
+        "Inga Seidler",
+        "Lisa Sommer",
+        "Leonardo Massai",
+        "Felix J. Schupp",
+        "Matthias Mergenthaler",
+        "Stefano Bosco",
+        "Patrick Harvey-Collard",
+        "Pasquale Scarlino"
+      ],
+      "abstract": "Hole spin qubits in semiconductor quantum dots (QDs) enable high-fidelity all-electric control, but conventional electric dipole spin resonance (EDSR) can require substantial rf drive power at the low magnetic fields that are favorable for qubit coherence and readout. In planar Ge hole spin qubits, this can reach -27 dBm at the device, posing challenges for scalable architectures due to heating and crosstalk. Here, we demonstrate a flopping-mode (FM) qubit in Ge, where a single spin is delocalized in a double QD, combining first-order protection against charge noise with exceptionally efficient electric driving. By mapping out coherence sweet-spots as a function of magnetic field orientation we achieve $T_2^*= 1.4μ\\mathrm{s}$, $T_2^{\\mathrm{Hahn}}= 11.5 μ\\mathrm{s}$, $T^{φ, \\mathrm{CPMG32}}_2= 130 μ\\mathrm{s}$, and $T_1= 226 μ\\mathrm{s}$, and a single-qubit gate fidelity of up to 99.76$\\%$ for a gate time $t_{Xπ} = 88$ ns. Importantly, these results are obtained at a nearly in-plane magnetic field of 5 mT using only -52 dBm drive power at the device. We further find that qubit relaxation in this regime is consistent with a two-photon Orbach process, providing a route for further optimization. Our results demonstrate that FM-EDSR supports ultra-low-power, high-fidelity single-qubit operations, improvements that could benefit scalable hole-spin-based architectures and hybrid spin-photon interfaces.",
+      "date": "2026-09-17",
+      "abs_url": "https://arxiv.org/abs/2609.20775v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20775v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2609.18485v1",
+      "title": "Chiral classical and quantum acoustics with hole-spin qubits",
+      "authors": [
+        "Zhanning Wang",
+        "Yongtao Li",
+        "Nelson E. Rivas",
+        "Gonzalo García",
+        "Irene Castro",
+        "Rubén Seoane Souto",
+        "Daniel Ramos",
+        "José C. Abadillo-Uriel"
+      ],
+      "abstract": "Gate-defined hole spins combine strong spin-orbit coupling with exceptional strain sensitivity, making surface acoustic waves a natural route to remote, phase-coherent control. We show that counterpropagating surface acoustic waves can differ in coupling strength and in whether they predominantly drive spin rotations or modulate the qubit frequency. We call the transverse transition-strength imbalance spin-acoustic chirality and show that it is tunable through gate-controlled reshaping of the dot confinement. Combining a multiband Luttinger-Kohn Hamiltonian with the Bir-Pikus description of strain and 3D piezoelectric finite-element simulations, we obtain the acoustic g-matrix modulation governing coherent SAW driving. Quantizing the same strain-mediated interaction yields the corresponding single-phonon coupling, and a generalized anisotropic Rabi interaction with co-rotating, counter-rotating, and longitudinal components, linking classical chirality to quantum anisotropy and directional one-phonon emission. Magnetic field orientation and dot shape tune the acoustic chirality and operator selectivity. We illustrate this framework through bichromatic coherence protection and phonon-mediated heralded Bell-state initialization.",
+      "date": "2026-09-16",
+      "abs_url": "https://arxiv.org/abs/2609.18485v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.18485v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2609.15860v1",
       "title": "Probing Residual Noise at a Decoherence Sweet Spot in a $^{28}$Si/SiGe Spin Qubit",
@@ -47,7 +136,7 @@
       ]
     },
     {
-      "id": "2609.13022v1",
+      "id": "2609.13022v2",
       "title": "Grover Search with Semiconductor Spin Qubits at Ambient Conditions",
       "authors": [
         "Sebastian Gemsheim",
@@ -64,8 +153,8 @@
       ],
       "abstract": "Grover's algorithm is executed on a commercial quantum computer based on nitrogen-vacancy centers in diamond operating under ambient conditions, achieving fidelities up to $99.98\\,\\%$. Within a $N=8$ search space of three solid-state nuclear spin qubits, the measured success probabilities of finding a single or two marked states are $(77.3 \\pm 3.4)\\,\\%$ and $(87.0 \\pm 4.2)\\,\\%$, respectively. These values surpass published results for superconducting qubits or any quantum computer operating at room temperature. In addition, the paper also details the calibrated fidelities of the implemented universal gate set.",
       "date": "2026-09-11",
-      "abs_url": "https://arxiv.org/abs/2609.13022v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.13022v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2609.13022v2",
+      "pdf_url": "https://arxiv.org/pdf/2609.13022v2.pdf",
       "categories": [
         "quant-ph"
       ]
@@ -216,7 +305,8 @@
       "abs_url": "https://arxiv.org/abs/2608.19696v1",
       "pdf_url": "https://arxiv.org/pdf/2608.19696v1.pdf",
       "categories": [
-        "cond-mat.mes-hall"
+        "cond-mat.mes-hall",
+        "quant-ph"
       ]
     },
     {
@@ -933,91 +1023,6 @@
       "categories": [
         "quant-ph",
         "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2606.07472v1",
-      "title": "Driving Exchange Interaction in Spin Qubits with Quasi-Zero Pulses",
-      "authors": [
-        "Julian D. Teske",
-        "Remy L. Delva",
-        "Shobhan Kulshreshtha",
-        "Yuval Baum",
-        "Florian Luthi",
-        "Fahd A. Mohiyaddin",
-        "Rostyslav Savytskyy",
-        "Thomas Watson",
-        "Pranav S. Mundada"
-      ],
-      "abstract": "The implementation of high-fidelity quantum gates for spin qubits requires accurate control of exchange interactions between electrons confined in quantum dots, but pulse distortions can limit this control accuracy. Although linear-dynamical distortions can be compensated for by appropriately convolving the control signal, determining the necessary convolution requires detailed knowledge of the distortion's transfer function, and therefore the calibration of numerous parameters. Alternatively, control pulses can be designed to have a net-zero time integral canceling out linear-dynamical pulse distortions. We generalize net-zero pulse designs to quasi-zero pulses allowing net-positive but reduced time integrals. Using these pulse designs, we systematically develop complete gate sets for exchange-only qubits, and study the resulting tradeoffs between pulse duration, fidelity, and the required number of tunable parameters, both in simulation and experiment. We benchmark the optimized gate pulses on Intel's Tunnel Falls six-dot device and show they achieve fidelities similar to those obtained with a full filtering approach, with identical pulse durations and fewer tuning parameters. This reduction in complexity opens the door to fast and easily automated calibration schemes compatible with large-scale commercial quantum devices.",
-      "date": "2026-06-05",
-      "abs_url": "https://arxiv.org/abs/2606.07472v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.07472v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2606.00824v1",
-      "title": "Quantum control of spin qubits using SOT-driven nanomagnets",
-      "authors": [
-        "Aniruddha Chakraborty",
-        "Kanishk Modi",
-        "Dhritiman Bhattacharya",
-        "Uditendu Mukhopadhyay",
-        "Suddhasatta Mahapatra",
-        "Jayasimha Atulasimha"
-      ],
-      "abstract": "Spin rotation (SR) is an essential capability for realization of single and two-qubit gates in spin quantum computing (SQC) architectures. To perform SR, resonant AC magnetic fields are either generated by microwave current pulses fed to an antenna, or voltage pulses applied to a gate, in presence of an inhomogeneous Zeeman field. While the former approach is limited by gate-speed and site-selectivity of SR, the latter adds to the decoherence of the spin qubits. Here, we propose an alternative technique for driving high-speed SR without compromising the qubit coherence, by employing spin-orbit-torque (SOT)-driven nanomagnets to produce oscillating magnetic fields, locally at the qubit site. The proposed scheme is highly energy-efficient, scalable, and compatible with the CMOS fabrication technology.",
-      "date": "2026-05-30",
-      "abs_url": "https://arxiv.org/abs/2606.00824v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.00824v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2605.31185v2",
-      "title": "Fast coherent control of a charge qubit on solid neon with a spin-qubit-compatible resonator",
-      "authors": [
-        "Jun Wang",
-        "Yiran Tian",
-        "Ivan Grytsenko",
-        "Asher Jennings",
-        "Beatriz Pérez González",
-        "Xianjing Zhou",
-        "Hirotaka Terai",
-        "Dafei Jin",
-        "Monica Benito",
-        "Erika Kawakami"
-      ],
-      "abstract": "Electrons floating in vacuum provide a clean platform for quantum information processing owing to their isolation from material defects. In particular, electrons on solid neon have emerged as a promising qubit platform because of their potentially long coherence times. Here, toward spin-qubit realization, we couple a single electron on solid neon to a magnetic-field-compatible superconducting NbTiN nanowire resonator. We realize a charge qubit and demonstrate microwave readout and coherent control, with Rabi frequencies up to 76 MHz, an order of magnitude larger than in previous studies. Under strong driving, we observe a qubit frequency shift from nonlinear interactions with the intense microwave field. Deterministic electron trapping at an intended position remains challenging due to solid neon surface roughness; we characterize the electron's position from its differential coupling to distinct electrodes. Although not trapped at an intended position, our estimates indicate that spin-qubit demonstrations remain feasible.",
-      "date": "2026-05-29",
-      "abs_url": "https://arxiv.org/abs/2605.31185v2",
-      "pdf_url": "https://arxiv.org/pdf/2605.31185v2.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2605.28936v1",
-      "title": "Hardware-Tailored Resource Estimation for Magic-State Distillation on Silicon Spin Qubits",
-      "authors": [
-        "Songqinghao Yang",
-        "Christopher K. Long",
-        "Rubén M. Otxoa",
-        "Prakash Murali",
-        "Crispin H. W. Barnes",
-        "David R. M. Arvidsson-Shukur"
-      ],
-      "abstract": "We present a resource analysis for generating high-fidelity logical magic states on silicon spin-qubit platforms. We consider a range of architectures, including a shuttling-based SpinBus design, a dense nearest-neighbor layout, and a hybrid scheme with shuttling-connected patches. We compare surface, color, and biased error-correcting codes, and analyze the $5\\to1$ and $15\\to1$ magic-state distillation protocols. Our approach combines bottom-up and top-down methodologies. We construct a hardware-level noise model based on a silicon-processor Hamiltonian with realistic parameters and $1/f$ non-Markovian noise, enabling estimation of physical resources required to reach target logical error rates. These results are propagated to system-level overheads for applications including spin dynamics, integer factorization, and quantum chemistry. Conversely, we fix target logical fidelities and derive corresponding constraints on hardware performance. Our framework enables systematic evaluation of resource-reduction strategies. We find that optimized control pulses reduce magic-state distillation overhead by 42\\% compared to standard gate implementations. In addition, silicon-tailored biased error-correcting codes achieve an approximately threefold reduction in physical footprint relative to the surface code, even without physical-bias-preserving operations.",
-      "date": "2026-05-27",
-      "abs_url": "https://arxiv.org/abs/2605.28936v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.28936v1.pdf",
-      "categories": [
-        "quant-ph"
       ]
     }
   ]
