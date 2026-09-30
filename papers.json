@@ -1,7 +1,26 @@
 {
-  "generated_at": "2026-09-29T14:40:21.437845Z",
+  "generated_at": "2026-09-30T14:41:30.515322Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2609.37318v1",
+      "title": "A magnetic-field insensitive gate set for trapped-ion nuclear spin qubits",
+      "authors": [
+        "Jonathan Paul Home",
+        "Jeremy Flannery",
+        "Matteo Mazzanti",
+        "Jan Apolin",
+        "Shreyans Jain"
+      ],
+      "abstract": "We outline a complete set of operations for manipulating nuclear spin qubits of trapped-ions stored in high magnetic fields such as required for Penning trapping, where the nuclear and electron spins are largely decoupled due to the dominance of the external field Hamiltonian. The reduced nuclear magnetic moment results in insensitivity to external magnetic fields compared to the use of an electron spin, but also makes the nuclear spin hard to manipulate on fast timescales. To maintain speed, we propose a two-qubit phase gate technique which utilizes the electron spin, but for which the qubit remains protected from magnetic fields through retaining the nuclear encoding. This method works for magnetic-field insensitive qubits at lower fields as well as for both microwave and laser field gradients.",
+      "date": "2026-09-29",
+      "abs_url": "https://arxiv.org/abs/2609.37318v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.37318v1.pdf",
+      "categories": [
+        "quant-ph",
+        "physics.atom-ph"
+      ]
+    },
     {
       "id": "2609.28924v1",
       "title": "Quantum Gates Built on a Spin Qubit and a Kitaev Parity Qubit",
@@ -1005,24 +1024,6 @@
       "categories": [
         "cond-mat.mes-hall",
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2606.08874v1",
-      "title": "Impact of gate-voltage noise on silicon spin-qubit variational quantum eigensolvers",
-      "authors": [
-        "Xinning Wang",
-        "Bohdan Khromets",
-        "Zachery Merino",
-        "Jonathan Baugh"
-      ],
-      "abstract": "Quantum computers offer a route to outperform classical methods in tasks such as molecular simulation, motivating hybrid algorithms like the Variational Quantum Eigensolver (VQE) for near-term devices. Silicon spin qubits are a promising platform for scalable quantum computation, but their performance is limited by hardware imperfections -- most notably charge-noise-induced potential fluctuations and static miscalibration of gate-electrode voltages -- which degrade quantum gate fidelities and, ultimately, algorithmic accuracy. Here we develop a hardware-algorithm co-simulation framework for silicon quantum-dot processors that links 3D electrostatics to effective $g$-factors and exchange couplings, and propagates voltage-level noise through realistic control pulses. Using VQE for $\\mathrm{H}_2$ ground-state energy estimation as a circuit-level testbed, we study both static scaling/offset errors on the gate-electrode voltages and stochastic fluctuations modeled as random-telegraph noise with tunable amplitudes and switching times. At the gate level, we show that exchange-based two-qubit gates are roughly an order of magnitude more sensitive to these types of noise than ESR-driven single-qubit rotations. Quantum process tomography and Kraus-operator analysis further distinguish coherent and incoherent contributions and quantify the fraction of error that is, in principle, correctable by a compensating unitary. Embedding these noise models into the VQE circuit, we identify regimes of miscalibration strength and noise switching time compatible with chemically accurate energy estimates, and discuss how statistical post-processing based on the full distribution of noisy energy estimates could further improve accuracy.",
-      "date": "2026-06-07",
-      "abs_url": "https://arxiv.org/abs/2606.08874v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.08874v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall"
       ]
     }
   ]
