@@ -1,7 +1,28 @@
 {
-  "generated_at": "2026-09-30T14:41:30.515322Z",
+  "generated_at": "2026-10-01T15:10:29.341259Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2609.39415v1",
+      "title": "Reservoir- and Measurement-free Microwave Initialization of Semiconductor Spin Qubits",
+      "authors": [
+        "Leon C. Camenzind",
+        "Ik Kyeong Jin",
+        "Akito Noiri",
+        "Kenta Takeda",
+        "Takashi Nakajima",
+        "Takashi Kobayashi",
+        "Seigo Tarucha"
+      ],
+      "abstract": "Scalable quantum processors require repeated qubit initialization throughout large arrays. In semiconductor spin qubits, fast initialization commonly relies on local reservoir access or measurement-based feedback, requiring dedicated infrastructure that becomes increasingly difficult to distribute as processors scale. Here, we demonstrate reservoir- and measurement-free initialization of a silicon spin-qubit pair in an industrially fabricated Si/SiGe quantum-dot device using a fixed sequence of microwave and baseband pulses. Odd spin-parity states relax to the singlet charge state, whereas blocked even spin-parity states are microwave-driven through the triplet manifold and subsequently converted to the singlet by singlet-triplet mixing and charge hybridization. Repeated cycles produce the singlet-associated charge outcome with a median probability of 99.4% across the sampled preparation states, while exchange spectroscopy independently verifies mapping to the target $|\\uparrow\\downarrow\\rangle$ operational state. Microwave spectroscopy and time-domain measurements identify the dark-state-limited single-cycle transfer and the subsequent blockade-lifting dynamics that set the initialization time scale. The demonstrated pumping sequence uses approximately $12\\,μ\\mathrm{s}$ of microwave bursts and mixing dwells, while we project sub-microsecond initialization under improved device conditions. These results establish fixed-sequence microwave initialization as a scalable control primitive for semiconductor spin-qubit processors, based on singlet-triplet physics that can be adapted to platforms with suitable Pauli-blockade transitions.",
+      "date": "2026-09-30",
+      "abs_url": "https://arxiv.org/abs/2609.39415v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.39415v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2609.37318v1",
       "title": "A magnetic-field insensitive gate set for trapped-ion nuclear spin qubits",
@@ -1006,24 +1027,6 @@
         "cond-mat.mtrl-sci",
         "cond-mat.str-el",
         "cond-mat.supr-con"
-      ]
-    },
-    {
-      "id": "2606.14683v1",
-      "title": "Quantum geometrical description of hole spin qubits far away from the $Γ$-point",
-      "authors": [
-        "Zoltán György",
-        "Dmitry Miserev",
-        "Jelena Klinovaja",
-        "Daniel Loss"
-      ],
-      "abstract": "Hole spin qubits provide one of the leading platforms for spin-based quantum computing due to their large intrinsic spin-orbit interaction (SOI), which enables fast electrical manipulation. The SOI of planar quantum dots has mostly been investigated in theoretical studies by examining the SOI already present in the two-dimensional hole gas (2DHG). Here, we study the SOI created by the in-plane confinement by deriving non-perturbative effective Hamiltonians numerically for hole spin qubits. We find that the quantum geometry of the 2DHG naturally emerges, leading to a meaningful non-perturbative definition of pseudospin valid far away from the $Γ$-point. The SOI of the 2DHG and of the in-plane confinement have different forms; therefore, they cannot be turned off simultaneously, ruining the perfect spin-orbit switch functionality of spin qubits. We construct effective Hamiltonians using the symmetry approach for various low-dimensional hole systems: (i) a heavy-hole confined in a SiGe/Ge/SiGe heterostructure, (ii) a light-hole confined in SnGe/Ge, (iii) a gate-defined nanowire in SiGe/Ge/SiGe, and (iv) a hole confined in a Ge/Si core/shell nanowire. The non-perturbative effective Hamiltonians provide results with excellent agreement with the full Hamiltonians.",
-      "date": "2026-06-12",
-      "abs_url": "https://arxiv.org/abs/2606.14683v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.14683v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
       ]
     }
   ]
