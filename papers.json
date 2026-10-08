@@ -1,7 +1,44 @@
 {
-  "generated_at": "2026-10-06T14:48:23.186417Z",
+  "generated_at": "2026-10-08T15:17:05.140362Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2610.08557v1",
+      "title": "Quasiparticle-resolved variational theory of Andreev spin qubits",
+      "authors": [
+        "Teodor Iličin",
+        "Rok Žitko"
+      ],
+      "abstract": "An Andreev spin qubit stores a single unpaired spin, yet its coupling to the superconducting phase can be dominated by coherent virtual quasiparticle pairs. We develop a continuum variational description of the odd-parity doublet in a quantum-dot Josephson junction with Coulomb interaction and spin-dependent background tunneling. Retaining configurations with up to two Bogoliubov quasiparticles provides compact analytical expressions for energies and wavefunctions. We benchmark the results against numerical renormalization group calculations and identify sources of error. We obtain closed-form expressions for the conventional and spin-dependent Josephson couplings. Despite their small probability, two-quasiparticle configurations, through coherence with the zero-quasiparticle component, supply exactly half of the leading spin-dependent Josephson coupling even without Coulomb repulsion and dominate it as the repulsion grows. Spin-orbit-induced spin transfer between the dot and the leads produces a Josephson-current contribution that is common to both qubit states and finite at zero phase bias when the dot and lead Zeeman energies differ. We also map the localization of the virtual quasiparticles and the spin density in the leads. The results connect strongly correlated quantum-dot models to effective Hamiltonians used for Andreev-spin-qubit circuits and clarify how the wavefunction structure determines their couplings.",
+      "date": "2026-10-06",
+      "abs_url": "https://arxiv.org/abs/2610.08557v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08557v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "cond-mat.str-el"
+      ]
+    },
+    {
+      "id": "2610.08411v1",
+      "title": "A 3D-Printed GHz Microwave-Resonator Paul Trap for Electron Confinement and Millisecond Spin-Qubit Coherence",
+      "authors": [
+        "Niklas V. Lausti",
+        "Vineet Kumar",
+        "Ivan Hudák",
+        "Jiří Hajnyš",
+        "Peter Kúš",
+        "Radek Plašil",
+        "Michal Hejduk"
+      ],
+      "abstract": "We report a 3D-printed microwave-resonator Paul trap that operates at the GHz frequencies required for electron confinement while preserving an open geometry suitable for laser access and imaging ion Coulomb crystals. The resonator exhibits moderate quality factors of approximately 1000, enabling large confining electric-field amplitudes at low input power, and is in good agreement with finite-element-method (FEM) predictions despite manufacturing imperfections, which we experimentally characterize. The validated FEM model is then used to calculate the electromagnetic fields in the trapping region. These field distributions, together with surface-roughness measurements, are incorporated into a model of electron spin-qubit decoherence to estimate the coherence time. Our analysis predicts that electron spin-qubit coherence times on the order of 10 ms should be achievable under the assumption that motional heating is dominated by Johnson noise, making such systems relevant for quantum information processing. The method of obtaining the coherence time is applicable to any electron Paul trap.",
+      "date": "2026-10-06",
+      "abs_url": "https://arxiv.org/abs/2610.08411v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08411v1.pdf",
+      "categories": [
+        "quant-ph",
+        "physics.app-ph"
+      ]
+    },
     {
       "id": "2609.39415v1",
       "title": "Reservoir- and Measurement-free Microwave Initialization of Semiconductor Spin Qubits",
@@ -984,49 +1021,6 @@
       "pdf_url": "https://arxiv.org/pdf/2606.22067v1.pdf",
       "categories": [
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2606.21452v1",
-      "title": "Spin qubit operations by conveyor-mode shuttling",
-      "authors": [
-        "M. De Smet",
-        "Y. Matsumoto",
-        "D. Fernández-Fernández",
-        "L. Tryputen",
-        "S. L. de Snoo",
-        "D. J. Michalak",
-        "H. G. J. Eenink",
-        "G. Platero",
-        "S. Bosco",
-        "G. Scappucci",
-        "L. M. K. Vandersypen"
-      ],
-      "abstract": "Dynamic qubit routing is emerging as a promising architectural path for semiconductor quantum processors. Charge carriers can be rapidly moved around on a chip using traveling-wave potentials known as conveyors, preserving the spin state with high fidelity. Originally developed for spin transport, conveyor-mode shuttling may also offer opportunities for performing qubit operations directly controlled by the motion itself. Here, we demonstrate coherent single- and two-qubit control by conveyor-mode electron shuttling, using two conceptually different approaches. First, conveyor electric-dipole spin resonance (conveyor EDSR) achieves high-fidelity rotations by resonantly shuttling spins through transverse magnetic-field gradients at their mean Larmor frequency. Second, conveyor diabatic gates exploit quantization-axis tilts for tunable bang-bang control. Combining diabatic conveyor transport with exchange activation controlled by the motion directly yields a variety of effective two-qubit interactions selectable via the shuttling speed and distance. These experimental results motivate an architectural paradigm of reconfigurable and transport-driven spin qubits.",
-      "date": "2026-06-19",
-      "abs_url": "https://arxiv.org/abs/2606.21452v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.21452v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2606.15711v1",
-      "title": "Mapping the Stability of Spin Qubits in Superconducting Pseudogap Systems",
-      "authors": [
-        "Chen-How Huang",
-        "Miguel A. Cazalilla"
-      ],
-      "abstract": "Superconducting spin qubits, realized as Yu-Shiba-Rusinov spin-doublet states in quantum-dot-superconductor systems, represent a cornerstone of current research in quantum technologies. We analyze these ground states of quantum impurities in superconducting pseudogap systems, namely systems with a pseudogap tunneling density of states $ρ(ε) \\sim |ε|^r$ for energies $|ε|\\gg Δ$ ($Δ$ being a $s$-wave pairing potential). For $r=1$, these hosts are realized as Dirac materials (graphene or 3D topological insulator surfaces) in proximity to conventional superconductors, or as $d+i s$ superconductors. Using effective field theory and numerical renormalization group, we map the phase diagram against the pseudogap exponent $r > 0$ and particle-hole symmetry-breaking perturbations. At particle-hole symmetry, increasing $r$ also increases the critical value, $J_c$, of the Kondo coupling that triggers the transition from spin doublet to singlet. Unlike the gapless pseudogap Kondo systems, numerical and analytical evidence suggest that Andreev reflection stabilizes a singlet ground state at $J$ for all $r > 0$. Breaking particle-hole symmetry -- by potential scattering or chemical potential -- eventually restores the transition at lower $J_c$. Our results indicate that coupling to superconducting hosts with large pseudogap exponents enhances the stability of spin qubits at large Kondo coupling.",
-      "date": "2026-06-14",
-      "abs_url": "https://arxiv.org/abs/2606.15711v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.15711v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "cond-mat.mtrl-sci",
-        "cond-mat.str-el",
-        "cond-mat.supr-con"
       ]
     }
   ]
