@@ -1,7 +1,26 @@
 {
-  "generated_at": "2026-10-15T13:08:34.514534Z",
+  "generated_at": "2026-10-16T13:03:21.970384Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2610.22199v1",
+      "title": "Energetics of Fault-Tolerant Spin-Qubit Quantum Computation",
+      "authors": [
+        "João Santos",
+        "Jayshankar Nath",
+        "Marco Pezzutto",
+        "Valentin Savin",
+        "Tristan Meunier",
+        "Yasser Omar"
+      ],
+      "abstract": "Semiconductor spin qubits offer a promising route to compact and scalable quantum computers, combining long coherence times in isotopically purified silicon with compatibility with semiconductor manufacturing. Beyond computational speedup, their energy efficiency is an important consideration for future large-scale systems. We evaluate the power and energy requirements of a Loss-DiVincenzo spin-qubit quantum computer by analyzing the Quantum Fourier Transform (QFT) and benchmarking it against the classical Fast Fourier Transform (FFT). We develop a detailed energy budget, identifying cryogenic cooling as the dominant baseline contribution before quantum error correction (QEC). The comparison between the QFT and the classical FFT reveals that, for any quantum workload operating under a polynomially bounded sampling regime, the crossover in energy consumption occurs at smaller problem sizes than the crossover in execution time. Thus, quantum computing can become energetically competitive before achieving a speedup in execution time. We then incorporate surface-code QEC and analyze the energy costs of QEC cycles, gate synthesis, and decoding. At scale, instrumentation and decoding become dominant contributions, while cryogenic cooling imposes a constraint on scalability. We show that optimizing the control-signal demultiplexing ratio can reduce the overall energy cost by approximately two orders of magnitude. For a system with about one million physical qubits, we estimate a power consumption of approximately 100 kW, at least one order of magnitude below that of today's highest-performance classical computing systems.",
+      "date": "2026-10-15",
+      "abs_url": "https://arxiv.org/abs/2610.22199v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22199v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2610.08557v2",
       "title": "Quasiparticle-resolved variational theory of Andreev spin qubits",
@@ -1000,26 +1019,6 @@
       "pdf_url": "https://arxiv.org/pdf/2606.24150v1.pdf",
       "categories": [
         "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2606.22067v1",
-      "title": "Detector-Grade Germanium as a Low-Disorder Host for Indium-Acceptor Spin Qubits: A Five-Qubit Materials-to-Architecture Design Study",
-      "authors": [
-        "D. -M. Mei",
-        "K. -M. Dong",
-        "S. A. Panamaldeniya",
-        "N. Budhathoki",
-        "S. Chhetri",
-        "A. Prem",
-        "S. Bhattarai"
-      ],
-      "abstract": "Acceptor-bound hole spins in germanium (Ge) offer a promising but underexplored route to semiconductor quantum information processing. We present a theory-guided design study of a detector-grade Ge acceptor-spin platform based on intentionally incorporated indium (In) acceptors in ultra-high-purity Ge. The proposed materials strategy combines a residual impurity background near $10^{10} \\mathrm{cm^{-3}}$ with a target In density of approximately $2\\times10^{14} \\mathrm{cm^{-3}}$, corresponding to an acceptor spacing of about 170 nanometer. A 1 $μ$m-long active channel with a suitable transverse mode volume can contain about five acceptors on average, enabling a statistically selected post-fabrication register rather than a deterministically placed chain. We analyze the physical basis, device architecture, strain and disorder limits, coupling hierarchy, modeling workflow, fabrication pathway, and scaling prospects. Our results indicate that detector-grade Ge can suppress uncontrolled bulk electrostatic and strain disorder to levels compatible with acceptor-hole qubits, while the spin--orbit-active valence-band manifold supports all-electrical control and dipolar or phonon-mediated coupling. Direct exchange is treated as a close-pair or gate-enhanced interaction rather than the generic mean-spacing coupling. Phononic crystal engineering is identified as a second-stage enhancement for suppressing unwanted acoustic modes and enabling selected cavity-mediated interactions after baseline control, readout, and nearest-neighbor coupling are validated. Remaining challenges include statistical acceptor placement, interface disorder, charge noise, readout integration, and experimental validation. This work identifies detector-grade Ge In-acceptor qubits as a credible intermediate architecture between donor-based impurity qubits and fully gate-defined Ge hole-spin hardware.",
-      "date": "2026-06-20",
-      "abs_url": "https://arxiv.org/abs/2606.22067v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.22067v1.pdf",
-      "categories": [
         "quant-ph"
       ]
     }
