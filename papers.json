@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-10-18T12:28:46.558407Z",
+  "generated_at": "2026-10-19T15:19:56.655585Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2610.23316v1",
+      "title": "SpinControl: Control Software for Prototyping and Benchmarking of Spin-Qubit Devices and Measurement Protocols",
+      "authors": [
+        "Harold B. Meerwaldt",
+        "Daniël P. van der Velde",
+        "Pieter T. Eendebak",
+        "Michiel J. Haye"
+      ],
+      "abstract": "Quantum computers require software to control the states of the qubits. As the actions on qubits grow in complexity with circuit execution, calibration, and benchmarking, the complexity of the control software grows in tandem. Spin-qubit quantum computers are at a stage where experimentalists need low-level access for tuning and calibration, and quantum algorithm researchers want high-level circuit-level access. In this article, we present the software design of SpinControl. SpinControl integrates three architectural metrics: 1) customizability, to allow prototyping devices and measurement protocols, is achieved by separating data and behaviour; 2) modularity and extensibility are achieved by separating functionalities into different components; and 3) robustness, to reliably execute quantum circuits on many qubits, is achieved by CI pipelines and input validation. SpinControl allows different types of measurements while customizing the instruments used, the pulse or circuit program executed, and the data processing. It allows building standardized experiments from measurement and analysis building blocks and executing these for calibration in a custom and conditional order. SpinControl implements these functionalities alongside robust configuration and data management, a connection to the cloud, and calibration scheduling. Pulse and circuit compilation, virtual gate matrices, as well as spin-qubit-specific GUIs integrated by SpinControl, make heavy use of software packages developed by Delft University of Technology: pulse lib, core-tools (both open source), and QConstruct",
+      "date": "2026-10-16",
+      "abs_url": "https://arxiv.org/abs/2610.23316v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23316v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cs.SE"
+      ]
+    },
     {
       "id": "2610.22199v1",
       "title": "Energetics of Fault-Tolerant Spin-Qubit Quantum Computation",
@@ -1002,21 +1020,6 @@
       "date": "2026-06-24",
       "abs_url": "https://arxiv.org/abs/2606.26066v2",
       "pdf_url": "https://arxiv.org/pdf/2606.26066v2.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2606.24150v1",
-      "title": "Gate-Controlled Spin Qubits in Confined Altermagnets",
-      "authors": [
-        "Hamed Vakili"
-      ],
-      "abstract": "We propose gate-defined spin qubits in electrostatically confined altermagnetic quantum dots. Elliptical confinement of the $d$-wave altermagnetic structure produces a low-energy doublet with opposite spin polarization. For the range of parameters used here, the qubit states energy gap lies in the microwave range while the leakage gap remains in the meV range. Even without spin-orbit coupling, time-dependent simulations show that a phase-controlled quadrupolar gate drive about a fixed bias point implements $X_{π/2}$ and $X_π$ rotations by resonantly modulating the confinement anisotropy. We extend the study to two-qubits using a double quantum dot. We show that the double quantum dot spectrum can be cleanly projected onto isolated quantum dot product states with a nonzero nonlocal Pauli block in the effective logical two-qubit Hamiltonian. Resonant central-barrier modulation then drives the logical two-qubit component close to a maximally entangled state. These calculations show anisotropic altermagnetic quantum dots as a route to locally gate-controlled spin qubits without requiring spin-orbit coupling.",
-      "date": "2026-06-23",
-      "abs_url": "https://arxiv.org/abs/2606.24150v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.24150v1.pdf",
       "categories": [
         "cond-mat.mes-hall",
         "quant-ph"
