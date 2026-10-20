@@ -1,7 +1,27 @@
 {
-  "generated_at": "2026-10-19T15:19:56.655585Z",
+  "generated_at": "2026-10-20T13:23:07.694948Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2610.24582v1",
+      "title": "Concatenated continuous-drive protection of exchange-based spin-qubit gates",
+      "authors": [
+        "Takuma Kuno",
+        "Takeru Utsugi",
+        "Andrew J. Ramsay",
+        "Hideo Arimoto",
+        "Tetsuo Kodera",
+        "Hiroyuki Mizuno"
+      ],
+      "abstract": "Exchange-based two-qubit gates in semiconductor spin qubits are sensitive to low-frequency detuning noise and control errors. Here, we extend concatenated continuous driving (CCD), implemented by phase modulation of a global microwave drive, to exchange-based SWAP and $\\sqrt{\\mathrm{SWAP}}$ operations between double-dressed spin qubits and investigate its effectiveness for protecting two-qubit gates. We find that CCD retains strong protection against quasistatic common-mode detuning errors while substantially improving robustness against Rabi-frequency errors and qubit-to-qubit Rabi-frequency mismatch compared with conventional continuous dressing. By contrast, the gate fidelity is impacted by differential detuning errors. By modeling partially correlated quasistatic detuning noise, we further show that the noise-averaged gate fidelity depends strongly on the spatial correlation of the qubit-frequency fluctuations, with positive correlations enhancing CCD protection by suppressing the differential-noise component. These results identify the symmetry and spatial correlation of qubit-frequency noise as key factors governing continuous-drive protection in coupled spin-qubit systems.",
+      "date": "2026-10-17",
+      "abs_url": "https://arxiv.org/abs/2610.24582v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.24582v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2610.23316v1",
       "title": "SpinControl: Control Software for Prototyping and Benchmarking of Spin-Qubit Devices and Measurement Protocols",
@@ -1004,25 +1024,6 @@
       "categories": [
         "quant-ph",
         "cond-mat.mtrl-sci"
-      ]
-    },
-    {
-      "id": "2606.26066v2",
-      "title": "All-electrical dephasing-protected spin qubits in altermagnets",
-      "authors": [
-        "José Carlos Abadillo-Uriel",
-        "Andrea Maiani",
-        "Alberto Cortijo",
-        "Ramón Aguado",
-        "Rubén Seoane Souto"
-      ],
-      "abstract": "We propose altermagnetic semiconductors as a platform for field-free, all-electrically controlled spin qubits in gate-defined quantum dots. The momentum-dependent spin splitting of an altermagnet produces a Zeeman-like qubit splitting whose magnitude and sign are set by the dot ellipticity, enabling local frequency tunability without external magnetic fields or micromagnets. Because the splitting is tied to a fixed altermagnetic quantization axis, electric-field noise is longitudinally suppressed at leading order, while quantization-axis fluctuations couple transversely and therefore cause relaxation rather than pure dephasing. The compensated magnetic order also avoids stray fields, making the platform naturally compatible with superconducting resonators and dispersive circuit-QED readout through the qubit's spin-dependent electric dipole. Starting from an effective quantum-dot model, supported by a microscopic lattice model, we derive the single- and two-dot Hamiltonian models. We show that electric-dipole spin resonance enables single-qubit control, while tunable exchange and electrically addressable qubit frequencies realize fSim two-qubit gates. The same double-dot architecture also supports singlet-triplet qubits with electrical control of both exchange and splitting gradients, removing the need for micromagnets or nuclear-polarization gradients. These results establish altermagnetic quantum dots as a route to field-free spin qubits with intrinsic electrical tunability and enhanced dephasing protection.",
-      "date": "2026-06-24",
-      "abs_url": "https://arxiv.org/abs/2606.26066v2",
-      "pdf_url": "https://arxiv.org/pdf/2606.26066v2.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
       ]
     }
   ]
