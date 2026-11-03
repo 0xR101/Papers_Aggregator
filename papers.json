@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-11-02T17:55:13.259185Z",
+  "generated_at": "2026-11-03T15:54:31.748868Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2611.02972v1",
+      "title": "Towards Optimal Routing Strategies for qLDPC codes on Silicon Spin Qubits",
+      "authors": [
+        "Merlin Incerti-Medici",
+        "Minh T. P. Nguyen",
+        "Stefano Bosco",
+        "James R. Wootton",
+        "Daniel Bultrini"
+      ],
+      "abstract": "One of the major challenges of implementing high-rate quantum error correction codes, like qLDPC codes, is realizing the required long-range interactions. Spin qubit platforms can provide this connectivity by shuttling qubits next to each other whenever they need to interact. When doing this, the performance of the code depends on the shuttling strategy. We study memory experiments of the [[144,12,12]] bivariate bicycle (Gross) code on two shuttling grids for future spin qubit devices: a square grid and a square grid with diagonals. We compare three shuttling strategies, structured and random initial layouts, and a range of shuttling noise models spanning best- and worst-case scenarios. The best strategy minimizes the longest distance travelled rather than the total distance. The initial layout has only a weak effect, whereas adding diagonals to the grid reduces the logical error rate by up to two orders of magnitude which may have implications for future hardware design.",
+      "date": "2026-11-02",
+      "abs_url": "https://arxiv.org/abs/2611.02972v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.02972v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
     {
       "id": "2610.24582v1",
       "title": "Concatenated continuous-drive protection of exchange-based spin-qubit gates",
@@ -997,33 +1015,6 @@
         "cond-mat.mes-hall",
         "physics.app-ph",
         "physics.data-an"
-      ]
-    },
-    {
-      "id": "2606.28695v1",
-      "title": "High-Fidelity Hole Spin Qubits Reveal Quadrupolar Nuclear-Bath Dynamics in Isotopically Purified Planar Germanium",
-      "authors": [
-        "Jian Zeng",
-        "Xiangjun Tan",
-        "Hongzhang Wang",
-        "Yulei Zhang",
-        "Wendong Bian",
-        "Lingting Wu",
-        "Chenggang Yang",
-        "Zhengshan Guo",
-        "Jiankun Li",
-        "Yongfeng Wang",
-        "Jun Lu",
-        "Jun-Wei Luo",
-        "Tian Pei"
-      ],
-      "abstract": "Planar Germanium has emerged as a promising platform to build spin-based large scale quantum computers. By exploiting the anisotropic hyperfine interaction of holes in Ge, qubits with long T2* have been recently realized. While the performance of single qubits is still more or less limited by 73Ge nuclear spin fluctuations, the site-to-site variation of qubit sweet spot becomes obstacles to maintaining high fidelity of each qubit across the whole wafer. To achieve high performance Ge-based quantum circuit, it is therefore essential to eliminate the origin source of hyperfine noise. In its Silicon counterparts, reduction of 29Si abundance enables exceptional high-fidelity operation. In contrast, hole qubits based on isotopically purified Ge have not been demonstrated. Here, we report the synthesis of high quality 2-dimensional hole gas (2DHG) with enriched 70GeH4 precursor. Due to the suppression of nonzero spin nucleus, the qubits' T2* on the sweet spot is moderately extended beyond 20 us, surpassing the previous best reported Ge hole qubits. More importantly, the qubits' T2* off the sweet spot is enhanced to above 3 us, enabling single qubit gate fidelity exceeding 99.9% in both operating regimes. Hahn-echo spectroscopy further resolves a finite-frequency nuclear-noise channel that is distinct from the conventional Larmor-linked hyperfine response. We associate this channel with quadrupole-modified dynamics of residual 73Ge nuclei sampling local electric-field gradients near the Ge/SiGe interface. Its field scaling and angle-dependent visibility are consistent with a qubit-visible quadrupolar nuclear-noise component transduced through the anisotropic hyperfine interaction of Ge holes. These results establish isotopically purified planar Ge as a high-coherence scalable platform for hole spin qubits and provide a spectroscopic probe of interfacial quadrupolar nuclear dynamics.",
-      "date": "2026-06-27",
-      "abs_url": "https://arxiv.org/abs/2606.28695v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.28695v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mtrl-sci"
       ]
     }
   ]
