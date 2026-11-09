@@ -1,7 +1,26 @@
 {
-  "generated_at": "2026-11-08T14:49:35.022021Z",
+  "generated_at": "2026-11-09T18:26:13.755726Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2611.09873v1",
+      "title": "Trajectory-Dependent Decoherence and Leakage During Shuttling of Multi-Spin Qubits",
+      "authors": [
+        "Yu-Ning Zhang",
+        "Aleksandr S. Mokeev",
+        "Maximilian Rimbach-Russ",
+        "David P. DiVincenzo",
+        "Viatcheslav V. Dobrovitski"
+      ],
+      "abstract": "Logical qubits encoded in collective states of multiple spins are promising building blocks for large-scale semiconductor quantum processors. As novel fault-tolerant architectures increasingly rely on qubit shuttling, understanding decoherence of the shuttled multi-spin qubits becomes crucial. We analyze fidelity and leakage of the logical qubits dephased by the spatio-temporally correlated $1/f$ noise, considering two-, three-, and four-spin encodings. We study different shuttling protocols and establish that for all encodings generally, parallel shuttling provides the best protection against decoherence at short distances, whereas sequential shuttling outperforms others for long-range transport (although the exact boundaries depend on the specific device parameters). We explain this common behavior in terms of the dephasing factors of pairs of the shuttled spins; we provide explicit expressions for fidelities and leakage, thus enabling experimentalists to predict performance of the multi-spin qubits from only several independently measured pairwise dephasing factors. Our results establish a connection between shuttling trajectories, noise correlations, and qubit decoherence, and provide guidance for achieving noise-resilient shuttling in scalable semiconductor quantum processors.",
+      "date": "2026-11-06",
+      "abs_url": "https://arxiv.org/abs/2611.09873v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09873v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2611.02972v1",
       "title": "Towards Optimal Routing Strategies for qLDPC codes on Silicon Spin Qubits",
@@ -997,24 +1016,6 @@
       "pdf_url": "https://arxiv.org/pdf/2606.32030v2.pdf",
       "categories": [
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2606.30883v1",
-      "title": "Overcoming Configuration Bottleneck: Modular Pathways to Stable Semiconductor Spin-Qubit Arrays",
-      "authors": [
-        "Justyna P. Zwolak",
-        "Anthony Sigillito"
-      ],
-      "abstract": "Over the past decade, semiconductor spin qubits have progressed from few-qubit demonstrations towards larger-scale devices fabricated in increasingly reproducible academic and industrial processes. This progress marks an inflection point: the central challenge is no longer to demonstrate high-fidelity operation in carefully tuned devices, but to discover, verify, and maintain stable operating conditions reliably across many interdependent controls, varied device geometries, and disparate material platforms. In this Perspective, we frame spin-qubit operation as a modular automation problem. We decompose the workflow into five modules: bootstrapping from minimal prior information, configuration tuning, virtualization of physical gates into effective control axes, qubit-level tuning, and an operation layer with drift-aware maintenance. Using recent demonstrations from our work and the broader community, we argue that scalability will depend on explicit interfaces between modules, standardized intermediate data products, and workflow-level metrics such as throughput, success probability, stability time, recovery time, and robustness. We close by outlining the infrastructure needed to move beyond isolated tuning demonstrations toward sustained operation: qubit-performance-aware feedback, reusable software and benchmark tasks, and tight collaboration among experimental, theoretical, and software efforts.",
-      "date": "2026-06-29",
-      "abs_url": "https://arxiv.org/abs/2606.30883v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.30883v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall",
-        "physics.app-ph",
-        "physics.data-an"
       ]
     }
   ]
