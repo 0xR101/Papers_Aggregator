@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-11-09T18:26:13.755726Z",
+  "generated_at": "2026-11-10T16:10:46.456695Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2611.11405v1",
+      "title": "Industrial RPCVD growth of high-purity 28Si epilayers with 29Si content below 30 ppm for high-fidelity electron spin qubits",
+      "authors": [
+        "Zhenzhen Kong",
+        "Weizhu Liao",
+        "Ning Chu",
+        "Yiwen Zhang",
+        "Ying Zhang",
+        "Jixuan Li",
+        "Changyang Xu",
+        "Yongliang Hao",
+        "Yi Zhou",
+        "Yanpeng Song",
+        "Xiaomeng Liu",
+        "Hailing Wang",
+        "Xiangsheng Wang",
+        "Jinbiao Liu",
+        "Chao Zhao",
+        "Hao Meng",
+        "Gang Cao",
+        "Guo-Ping Guo",
+        "Hai-Ou Li",
+        "Guilei Wang"
+      ],
+      "abstract": "Silicon quantum-dot spin qubits are among the most promising routes to large-scale quantum computation, but the residual 29Si nuclear spins in natural silicon impose a hyperfine dephasing limit that must be overcome by isotopic purification. Here, we report the epitaxial growth of high-purity 28Si on float-zone silicon using an industrial reduced-pressure chemical vapor deposition (RPCVD) system. Secondary-ion mass spectrometry (SIMS) confirms an 28Si isotopic purity of 99.997%, with the 29Si concentration below 30 ppm. Through a systematic vacuum annealing matrix (850-1150 C), combined with atomic force microscopy and SIMS, we investigate the defect-mediated decomposition of the native oxide and the injection of non-equilibrium vacancies. We identify a thermal-budget window below 950 C within which the thin-layer structure of 28Si remains intact. At 1.5 K, magnetotransport measurements reveal a peak Hall mobility of 12,858 cm^2 V^-1 s^-1 and a quantum scattering lifetime of 0.659 ps, corresponding to a single-particle level broadening of 499 micro-eV. A double quantum dot fabricated on this platform exhibits a T2* of 0.62 us, a Hahn-echo coherence time of 28.8 us, and single-qubit gate fidelities of up to 99.9% measured by randomized benchmarking. Our results establish industrial RPCVD as a promising route toward high-coherence, high-fidelity silicon spin qubits.",
+      "date": "2026-11-08",
+      "abs_url": "https://arxiv.org/abs/2611.11405v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.11405v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall",
+        "quant-ph"
+      ]
+    },
     {
       "id": "2611.09873v1",
       "title": "Trajectory-Dependent Decoherence and Leakage During Shuttling of Multi-Spin Qubits",
@@ -999,22 +1033,6 @@
       "pdf_url": "https://arxiv.org/pdf/2607.06342v1.pdf",
       "categories": [
         "cond-mat.mes-hall",
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2606.32030v2",
-      "title": "Simulation of Two-qubit Gate Variability and Fidelity of Spin Qubits Built on Nanosheet Technology",
-      "authors": [
-        "Trung Nguyen",
-        "Sarah Dweik",
-        "Hiu Yung Wong"
-      ],
-      "abstract": "Silicon spin qubits are promising for large-scale quantum-computer integration because they can fully leverage the well-developed semiconductor infrastructure. However, the low fidelity of two-qubit entanglement gates remains a key barrier to large-scale integrations. Recent simulations of silicon spin-qubit two-qubit gates have been performed on silicon-on-insulator (SOI) platforms, while nanosheet-based charge-qubit work has been limited to single-qubit operation using a two-dimensional Schrödinger approximation. In this work, we study silicon spin-qubit double quantum dots built on nanosheet technology using the Quantum Technology Computer-Aided Design (QTCAD) simulation suite to run three-dimensional Poisson and Schroedinger solvers, followed by a many-body solver to extract exchange interactions. We evaluate the exchange energy sensitivity to process and bias variations and then use QuTiP to solve the master equation for a two-qubit gate. The results show that millivolt-level bias variations at the plunger and middle barrier gates can reduce the gate fidelity below 99%, a common threshold target for many fault-tolerant quantum-computing algorithms. Gate-referred 1/f charge-noise effects are also analyzed through the resulting coherence time.",
-      "date": "2026-06-30",
-      "abs_url": "https://arxiv.org/abs/2606.32030v2",
-      "pdf_url": "https://arxiv.org/pdf/2606.32030v2.pdf",
-      "categories": [
         "quant-ph"
       ]
     }
