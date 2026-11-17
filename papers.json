@@ -1,7 +1,38 @@
 {
-  "generated_at": "2026-11-16T18:01:10.649662Z",
+  "generated_at": "2026-11-17T17:26:20.743983Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2611.19986v1",
+      "title": "Pulse-timing errors in exchange-only spin qubits: how one control imperfection propagates to VQE, QAOA and fault-tolerance primitives",
+      "authors": [
+        "Yuichiro Minato"
+      ],
+      "abstract": "In an exchange-only (EO) spin qubit every gate is a sequence of Heisenberg exchange pulses whose only continuous parameter is the pulse area. We ask how an error in that area propagates to an algorithm's result. On up to six encoded qubits we compile VQE for H$_2$ and LiH, QAOA MaxCut, Grover search, phase estimation and a distance-3 repetition code into exchange pulses and perturb every pulse with a systematic fractional error $\\varepsilon$, an offset or per-pulse jitter. For circuits whose first-order response is negligible at the threshold, the useful regime ends at $\\varepsilon$ of a few $10^{-3}$: chemical accuracy is lost at $\\approx6\\times10^{-3}$ for both molecules and 5% of success probability between 3 and $9\\times10^{-3}$ for 498-1216 pulses. A systematic error accumulates as the square of the depth and biases the answer; jitter accumulates linearly and, within statistics, does not bias phase estimation. Leakage from inter-block pulses is a third of the CNOT error, survives variational re-optimisation and a leakage-controlled entangler, and makes a leakage-blind repetition-code round worse than its uncorrected data by a factor 38-93 at $\\varepsilon=10^{-2}$ in three of four compilations; in the fourth the uncorrected data already fail. The compilation moves the thresholds by a factor of two to eight. Measured over-rotation and exchange noise put devices at the edge of this regime, and with the measured 3.5 $μ$s $T_2^*$ a quasi-static magnetic gradient limits thousand-pulse circuits unless $J/h$ reaches several hundred MHz with continuous areas, because a duration grid of 2-5% of the SWAP time starts to cost chemical accuracy. As a bit budget, a common-mode area error needs 8-10 significant bits and a 6-bit significand for the durations suffices in the tested circuits; half-precision words and picosecond timers exceed this; older devices had 6-8 bits of analog stability.",
+      "date": "2026-11-15",
+      "abs_url": "https://arxiv.org/abs/2611.19986v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.19986v1.pdf",
+      "categories": [
+        "quant-ph"
+      ]
+    },
+    {
+      "id": "2611.18888v1",
+      "title": "Gate tunable spin splitting for Andreev spin qubits in Ge quantum well heterostructures",
+      "authors": [
+        "Avani Vivrekar",
+        "Benjamin D. Woods",
+        "Mark Friesen"
+      ],
+      "abstract": "Ge-based super-semi heterostructures are a promising platform for implementing Andreev spin qubits (ASQs). For example, they can be isotopically purified to eliminate nuclear spins that cause decoherence. However, spin-orbit coupling (SOC), which is a key ingredient for ASQs, is cubic in momentum for hole-based materials like Ge, in contrast with more-conventional ASQ materials (e.g., InAs wires), for which the SOC is linear in momentum. In this work, we study the interplay between geometrical properties like the channel width, and gate-tunable properties like the chemical potential, on ASQ operations. Intriguingly, we find that the spin splitting in a planar Ge Josephson junction does not depend on the junction width, in contrast with InAs nanowires. We explore the possibility of exploiting this property to suppress the harmful effects of charge traps. However, this prospect is spoiled by the fact that charge traps also affect the chemical potential, in addition to the channel width. Our results provide insights into the fundamental mechanisms governing spin splitting in ASQs and offer guidance for optimizing ASQs in other materials with cubic SOC.",
+      "date": "2026-11-13",
+      "abs_url": "https://arxiv.org/abs/2611.18888v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18888v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2611.11405v1",
       "title": "Industrial RPCVD growth of high-purity 28Si epilayers with 29Si content below 30 ppm for high-fidelity electron spin qubits",
@@ -988,52 +1019,6 @@
       "categories": [
         "quant-ph",
         "cond-mat.mes-hall"
-      ]
-    },
-    {
-      "id": "2607.07822v2",
-      "title": "Routing Techniques for Error-Corrected Silicon Spin Qubit Quantum Architectures",
-      "authors": [
-        "Julian Shen",
-        "Ludwig Schmid",
-        "Robert Wille"
-      ],
-      "abstract": "Silicon spin qubits have emerged as a promising qubit technology due to their favorable scaling and fabrication properties. However, efficiently compiling quantum circuits onto spin qubit platforms remains challenging, particularly when accounting for hardware constraints and the high sensitivity to static defects. Existing compilation approaches for spin qubits either largely ignore error correction, despite its critical role for large-scale quantum computation, or focus on low-level schedule constructions, missing a high-level compilation and routing for logical, error-corrected algorithms. To address this gap, we introduce a compilation framework for spin qubits based on the recent snakes on a plane model, which utilizes a 2D surface code and qubit teleportation to mitigate errors. Building on this model, we propose shortest-path and rotation-based algorithms as two novel classes of qubit-routing techniques, along with additional defect-handling and initial-mapping strategies. We evaluate both algorithms across diverse architectural settings and problem sizes, demonstrating that shortest-path methods excel in sparse, low-defect scenarios, while rotation-based approaches perform better in high-density environments. An open-source implementation of our framework is publicly available on GitHub as part of the Munich Quantum Toolkit (MQT) at https://github.com/munich-quantum-toolkit/spin-qubit-routing.",
-      "date": "2026-07-08",
-      "abs_url": "https://arxiv.org/abs/2607.07822v2",
-      "pdf_url": "https://arxiv.org/pdf/2607.07822v2.pdf",
-      "categories": [
-        "quant-ph",
-        "cs.ET"
-      ]
-    },
-    {
-      "id": "2607.06342v1",
-      "title": "Radio frequency readout and control of Ge/SiGe hole spin qubits with a global accumulation gate",
-      "authors": [
-        "Tien-Ho Chang",
-        "Chi-Wei Lee",
-        "Jian-Chang Zeng",
-        "Chia-Hao Wei",
-        "Ching-Shiang Wang",
-        "Fu-Yuan Gu",
-        "Guan-Yu Yang",
-        "Ruei-Syuan Chiang",
-        "Ho-Chun Wu",
-        "Ming-Hao Lee",
-        "Ming-Wen Chu",
-        "Guang Li Luo",
-        "Ta-Chun Cho",
-        "Shawn S. H. Hsu",
-        "Tzu-Kan Hsiao"
-      ],
-      "abstract": "Hole spin qubits in undoped Ge/SiGe quantum well structures have advanced rapidly in performance and scalability. However, stringent multi-layer patterning and overlay requirements of conventional overlapping-gate devices create a bottleneck for academic proof-of-concept experiments involving few-qubit devices. Here we present fabrication and measurements of Ge/SiGe spin qubit devices with a global accumulation gate and single-layer depletion fine gates, which substantially reduce fabrication complexity. With careful design of the gate-2DHG capacitance, we demonstrate RF-based single-shot spin readout and coherent control of two single-spin qubits. We also characterize the spin coherence times and exchange tunability, which are similar to those reported in recent overlapping-gate Ge/SiGe spin qubit devices. By simplifying fabrication without sacrificing performance, our approach offers a more accessible device design for spin-based quantum technology research.",
-      "date": "2026-07-07",
-      "abs_url": "https://arxiv.org/abs/2607.06342v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.06342v1.pdf",
-      "categories": [
-        "cond-mat.mes-hall",
-        "quant-ph"
       ]
     }
   ]
