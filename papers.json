@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-11-18T16:58:59.022516Z",
+  "generated_at": "2026-11-20T16:45:36.398249Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2611.26215v1",
+      "title": "To predict or to persist: how decoherence shapes learning in a spin-qubit quantum reservoir",
+      "authors": [
+        "Nikolaos Petropoulos",
+        "Elena Blokhina"
+      ],
+      "abstract": "In this work we investigate how dephasing and the choice of measured observables affect learning in a simulated six-qubit spin chain with Markovian dissipation and exact expectation-value readout. For externally driven nonlinear autoregressive moving-average signals, combining single- and two-qubit observables gives better predictions than a population-only readout at comparable polynomial feature counts. Most of the configurations we tested become more accurate than a reference with relaxation and dephasing disabled, most strongly at $T_2=1\\,μ$s, where total memory capacity drops, and still at $T_2=5$-$10\\,μ$s, where memory is only redistributed across delays. For autonomous generation, we train the readout with scheduled sampling and iterative dataset aggregation to expose it to states reached under its own feedback. We do not find a clear systematic dependence of limit-cycle persistence on coherence across the reservoir ensemble. For chaotic forecasting, in contrast, prediction horizons at $T_2=1\\,μ$s shorten in all 10 reservoir realizations relative to that reference. For the noise-driven strange non-chaotic attractor, the model produces a smooth, approximately closed orbit, and neither captures the target's scatter nor follows its trajectory pointwise. We conclude that, within this simulated reservoir, the impact of coherence depends strongly on the task.",
+      "date": "2026-11-19",
+      "abs_url": "https://arxiv.org/abs/2611.26215v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.26215v1.pdf",
+      "categories": [
+        "quant-ph",
+        "cond-mat.mes-hall",
+        "nlin.CD"
+      ]
+    },
     {
       "id": "2611.19986v1",
       "title": "Pulse-timing errors in exchange-only spin qubits: how one control imperfection propagates to VQE, QAOA and fault-tolerance primitives",
@@ -17,7 +34,7 @@
       ]
     },
     {
-      "id": "2611.18888v1",
+      "id": "2611.18888v2",
       "title": "Gate tunable spin splitting for Andreev spin qubits in Ge quantum well heterostructures",
       "authors": [
         "Avani Vivrekar",
@@ -26,8 +43,8 @@
       ],
       "abstract": "Ge-based super-semi heterostructures are a promising platform for implementing Andreev spin qubits (ASQs). For example, they can be isotopically purified to eliminate nuclear spins that cause decoherence. However, spin-orbit coupling (SOC), which is a key ingredient for ASQs, is cubic in momentum for hole-based materials like Ge, in contrast with more-conventional ASQ materials (e.g., InAs wires), for which the SOC is linear in momentum. In this work, we study the interplay between geometrical properties like the channel width, and gate-tunable properties like the chemical potential, on ASQ operations. Intriguingly, we find that the spin splitting in a planar Ge Josephson junction does not depend on the junction width, in contrast with InAs nanowires. We explore the possibility of exploiting this property to suppress the harmful effects of charge traps. However, this prospect is spoiled by the fact that charge traps also affect the chemical potential, in addition to the channel width. Our results provide insights into the fundamental mechanisms governing spin splitting in ASQs and offer guidance for optimizing ASQs in other materials with cubic SOC.",
       "date": "2026-11-13",
-      "abs_url": "https://arxiv.org/abs/2611.18888v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.18888v1.pdf",
+      "abs_url": "https://arxiv.org/abs/2611.18888v2",
+      "pdf_url": "https://arxiv.org/pdf/2611.18888v2.pdf",
       "categories": [
         "quant-ph",
         "cond-mat.mes-hall"
@@ -1002,23 +1019,6 @@
       "categories": [
         "cond-mat.mes-hall",
         "quant-ph"
-      ]
-    },
-    {
-      "id": "2607.09508v1",
-      "title": "Superconducting singlet-triplet qubits",
-      "authors": [
-        "Anatoliy Lotkov",
-        "Maria Spethmann",
-        "Daniel Loss"
-      ],
-      "abstract": "Hybrid devices integrating quantum dots with Josephson junctions are gaining interest because they combine spin-based quantum computing with circuit quantum electrodynamics (circuit QED) methods. In particular, Andreev spin qubits have shown significant experimental progress including strong two-qubit coupling, and are predicted to exhibit all-to-all connectivity. Here we propose superconducting singlet-triplet (SST) qubits that rely on parallel-aligned double quantum dots in Josephson junctions. While Andreev spin qubits require spin-orbit interaction to unlock the spin degree-of-freedom, SST qubits do not require spin-orbit interaction, making the advantages of hybrid devices available to a wider range of materials. Similar to Andreev spin qubits, the qubit states couple to the superconducting phase across the junction, which allows for control and readout using circuit QED, and supports all-to-all connectivity. Only $N$ flux lines are required to perform any single- and two-qubit gate among $N$ qubits, and thus the overhead of control lines is small. Finally, linear protection from charge or flux noise makes these qubits interesting candidates for a future quantum processor.",
-      "date": "2026-07-10",
-      "abs_url": "https://arxiv.org/abs/2607.09508v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.09508v1.pdf",
-      "categories": [
-        "quant-ph",
-        "cond-mat.mes-hall"
       ]
     }
   ]
