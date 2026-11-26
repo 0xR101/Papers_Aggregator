@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-11-25T18:29:16.000213Z",
+  "generated_at": "2026-11-26T18:11:01.948153Z",
   "total": 50,
   "papers": [
+    {
+      "id": "2611.34812v1",
+      "title": "Localization of an Individual Charge Fluctuator in a Si/SiGe Spin Qubit Device",
+      "authors": [
+        "Leah Tom",
+        "John Nichol",
+        "Chris Anderson",
+        "Mark F. Gyure"
+      ],
+      "abstract": "Charge noise from two-level fluctuators (TLFs) limits gate fidelities in semiconductor spin qubits, yet locating individual fluctuators within a device remains challenging. Here, we demonstrate a spatial triangulation method that combines the gate dependence of a TLF's detuning with the chemical potential shifts it induces in a sensing dot. Applying this method to previously reported measurements from a gated Si/SiGe quantum dot device, we use electrostatic simulations to jointly constrain the fluctuator's three-dimensional position and the magnitude of its electric dipole moment. We localize the fluctuator to a region spanning 31 nm by 1 nm laterally and 4 nm vertically within the bulk of the atomic layer deposited aluminum oxide, identifying the material hosting this individual charge-noise source. The measurements are consistent with a vertically oriented TLF with a magnitude of 3 to 4 e$\\mathring{A}$. This approach provides a route to determining which materials and interfaces host active charge fluctuators in semiconductor spin qubit devices.",
+      "date": "2026-11-25",
+      "abs_url": "https://arxiv.org/abs/2611.34812v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34812v1.pdf",
+      "categories": [
+        "cond-mat.mes-hall"
+      ]
+    },
     {
       "id": "2611.30931v1",
       "title": "Mitigating drift in spin-qubit control with calibration-insensitive pulses",
@@ -78,8 +95,8 @@
       ]
     },
     {
-      "id": "2611.18888v2",
-      "title": "Gate tunable spin splitting for Andreev spin qubits in Ge quantum well heterostructures",
+      "id": "2611.18888v3",
+      "title": "Gate-tunable spin splitting for Andreev spin qubits in Ge quantum well heterostructures",
       "authors": [
         "Avani Vivrekar",
         "Benjamin D. Woods",
@@ -87,8 +104,8 @@
       ],
       "abstract": "Ge-based super-semi heterostructures are a promising platform for implementing Andreev spin qubits (ASQs). For example, they can be isotopically purified to eliminate nuclear spins that cause decoherence. However, spin-orbit coupling (SOC), which is a key ingredient for ASQs, is cubic in momentum for hole-based materials like Ge, in contrast with more-conventional ASQ materials (e.g., InAs wires), for which the SOC is linear in momentum. In this work, we study the interplay between geometrical properties like the channel width, and gate-tunable properties like the chemical potential, on ASQ operations. Intriguingly, we find that the spin splitting in a planar Ge Josephson junction does not depend on the junction width, in contrast with InAs nanowires. We explore the possibility of exploiting this property to suppress the harmful effects of charge traps. However, this prospect is spoiled by the fact that charge traps also affect the chemical potential, in addition to the channel width. Our results provide insights into the fundamental mechanisms governing spin splitting in ASQs and offer guidance for optimizing ASQs in other materials with cubic SOC.",
       "date": "2026-11-13",
-      "abs_url": "https://arxiv.org/abs/2611.18888v2",
-      "pdf_url": "https://arxiv.org/pdf/2611.18888v2.pdf",
+      "abs_url": "https://arxiv.org/abs/2611.18888v3",
+      "pdf_url": "https://arxiv.org/pdf/2611.18888v3.pdf",
       "categories": [
         "quant-ph",
         "cond-mat.mes-hall"
@@ -1013,20 +1030,6 @@
       "date": "2026-07-13",
       "abs_url": "https://arxiv.org/abs/2607.12002v1",
       "pdf_url": "https://arxiv.org/pdf/2607.12002v1.pdf",
-      "categories": [
-        "quant-ph"
-      ]
-    },
-    {
-      "id": "2607.11992v1",
-      "title": "Quantum-classical neurons upgraded with optical spin qubits for advanced computing and networking architectures",
-      "authors": [
-        "Osama M. Nayfeh"
-      ],
-      "abstract": "Hardware neurons incorporating built-in memory components are critical technologies for implementing large scale neural networks that exhibit adaptive-itinerant behavior and produce biological-inspired spiking patterns that match neuroscience known operations (1). Moreover, neurons capable of full quantum information processing through their qubit states and quantum trajectory provides capability for hybrid quantum-classical operations through the level of coherence/entanglement and non-Markovianity (2,3). These attributes further contribute to solving complex quantum mechanical problems by providing a rich and diverse group for expressing quantum neural states. Upgrading these hardware neurons now with optical spin qubits excitable with pulsed laser excitation in the near infrared and designed from negatively charged silicon vacancies in semiconductor silicon carbide (4) and Neodymium rare earth ions in the superconducting Niobium/Niobium oxide film (5) that form the memory provides access to the unique spin Hamiltonian that considers electronic and nuclear interactions. In this manuscript, we experimentally measure opto-electronic quantum-classical neurons integrated with a optical spin qubit and examine how tailored neuronal spiking sequences drive the photoluminescence oscillations and modulate the quantum spin transitions. We derive a quantum model for the system that considers the interaction between the neuron and optical qubit spin and perform calculations to project how quantum computing operations are expandable across the state space in the quantum-classical neuron and spin qubit system. For example, the resulting impact on the neuron quantum states where the strength is adjustable due to dynamical memory changes. These results are critical for realizing hardware neurons with quantum optical capabilities and inspired by the existence in biology of biophotons.",
-      "date": "2026-07-13",
-      "abs_url": "https://arxiv.org/abs/2607.11992v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.11992v1.pdf",
       "categories": [
         "quant-ph"
       ]
